@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title> 
+    
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> 
+<script type="text/javascript" src="gridviewScroll.min.js"></script> 
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        gridviewScroll();
+    });
+
+    function gridviewScroll() {
+        screenW = $("body").innerWidth();
+//alert(screenW)
+        $('#Table1').gridviewScroll({
+            width: screenW-6,
+            height: 200,
+            freezesize: 2
+        });
+    } 
+</script> 
+<style>
+.GridviewScrollHeader TH, .GridviewScrollHeader TD 
+{ 
+    padding: 5px; 
+    font-weight: bold; 
+    white-space: nowrap; 
+    border-right: 1px solid #AAAAAA; 
+    border-bottom: 1px solid #AAAAAA; 
+    background-color: #EFEFEF; 
+    text-align: left; 
+    vertical-align: bottom; 
+} 
+.GridviewScrollItem TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    border-right: 1px solid #AAAAAA; 
+    border-bottom: 1px solid #AAAAAA; 
+    background-color: #FFFFFF; 
+} 
+.GridviewScrollPager  
+{ 
+    border-top: 1px solid #AAAAAA; 
+    background-color: #FFFFFF; 
+} 
+.GridviewScrollPager TD 
+{ 
+    padding-top: 3px; 
+    font-size: 14px; 
+    padding-left: 5px; 
+    padding-right: 5px; 
+} 
+.GridviewScrollPager A 
+{ 
+    color: #666666; 
+}
+.GridviewScrollPager SPAN
+
+{
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+</style>
+</head>
+<body>
+<table cellspacing="0" id="Table1" style="width:100%;border-collapse:collapse;"> 
+    <tr class="GridviewScrollHeader"> 
+        <th scope="col">ProductID</th> 
+        <th scope="col">Name</th> 
+        <th scope="col">ProductNumber</th> 
+        <th scope="col">SafetyStockLevel</th> 
+        <th scope="col">ReorderPoint</th> 
+        <th scope="col">StandardCost</th> 
+        <th scope="col">ListPrice</th> 
+        <th scope="col">Weight</th> 
+        <th scope="col">SellStartDate</th> 
+    </tr> 
+    <tr class="GridviewScrollItem"> 
+        <td style="background-color: #EFEFEF;">747</td> 
+        <td style="background-color: #EFEFEF;">HL Mountain Frame - Black, 38</td> 
+        <td>FR-M94B-38</td> 
+        <td>500</td> 
+        <td>375</td> 
+        <td>739.0410</td> 
+        <td>1349.6000</td> 
+        <td>2.68</td> 
+        <td>7/1/2005 12:00:00 AM</td> 
+    </tr> 
+    <tr class="GridviewScrollItem"> 
+        <td style="background-color: #EFEFEF;">748</td> 
+        <td style="background-color: #EFEFEF;">HL Mountain Frame - Silver, 38</td> 
+        <td>FR-M94S-38</td> 
+        <td>500</td> 
+        <td>375</td> 
+        <td>747.2002</td> 
+        <td>1364.5000</td> 
+        <td>2.68</td> 
+        <td>7/1/2005 12:00:00 AM</td> 
+    </tr> 
+</table>
+</body>
+</html>

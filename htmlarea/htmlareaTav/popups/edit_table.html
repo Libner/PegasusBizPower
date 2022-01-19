@@ -1,0 +1,421 @@
+<html STYLE="width: 364px; height: 415px; ">
+<head><title>Insert Table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1255">
+<head>
+<style>
+  html, body, button, div, input, select, td, fieldset { font-family: MS Shell Dlg; font-size: 8pt; };
+</style>
+<script>
+
+// if we pass the "window" object as a argument and then set opener to
+// equal that we can refer to dialogWindows and popupWindows the same way
+opener = window.dialogArguments;
+var elmSelectedTable;
+var editdoc = window.dialogArguments;
+var objTableLoaded = false;
+var qrows; // quantity of the table rows
+var qcols; // quantity of the table columns
+function _CloseOnEsc() {
+  if (event.keyCode == 27) { window.close(); return; }
+}
+
+window.onerror = HandleError
+
+function HandleError(message, url, line) {
+  var str = "An error has occurred in this dialog." + "\n\n"
+  + "Error: " + line + "\n" + message;
+  alert(str);
+//  window.close();
+  return true;
+}
+
+function Init() {
+  var htmlSelectionControl = "Control";
+  var grngMaster = editdoc.selection.createRange();
+  
+  document.body.onkeypress = _CloseOnEsc;
+  
+  if (editdoc.selection.type == htmlSelectionControl) {
+    if (grngMaster.length == 1) {
+      elmSelectedTable = grngMaster.item(0);
+      if (elmSelectedTable.tagName == "TABLE") {
+		objTableLoaded = true;
+		setSelectList();
+		qcols = parseInt(elmSelectedTable.cells.length / qrows ) ;
+		var oOption = document.createElement("OPTION");
+		formCols.options.add(oOption);
+		oOption.innerText = '    ';
+		oOption.value = '';
+		for(i=1; i<=qcols; i++){
+			var oOption = document.createElement("OPTION");
+			formCols.options.add(oOption);
+			oOption.innerText = i;
+			oOption.value = i-1;
+		}
+		button1.focus();
+      }else{
+	      window.close();
+      }
+    }else{
+	    window.close();
+    }
+  }else{
+	   window.close();
+  }
+}
+
+function _isValidNumber(txtBox) {
+  var val = parseInt(txtBox);
+  if (isNaN(val) || val < 0 || val > 9999) { return false; }
+  return true;
+}
+
+function setBgrColor()
+{
+	var oldcolor = document.all.RowbgrColor.value;
+    var newcolor = showModalDialog("select_color.html", oldcolor, "resizable: no; help: no; status: no; scroll: no;");
+    if (newcolor != null) { document.all.RowbgrColor.value = "#"+newcolor; document.all.imgRowbgrColor.style.backgroundColor = "#"+newcolor;}
+}
+function setCellColor()
+{
+	var oldcolor = document.all.CellbgrColor.value;
+    var newcolor = showModalDialog("select_color.html", oldcolor, "resizable: no; help: no; status: no; scroll: no;");
+    if (newcolor != null) { document.all.CellbgrColor.value = "#"+newcolor; document.all.imgCellbgrColor.style.backgroundColor = "#"+newcolor;}
+}
+function setColColor()
+{
+	var oldcolor = document.all.ColbgrColor.value;
+    var newcolor = showModalDialog("select_color.html", oldcolor, "resizable: no; help: no; status: no; scroll: no;");
+    if (newcolor != null) { document.all.ColbgrColor.value = "#"+newcolor; document.all.imgColbgrColor.style.backgroundColor = "#"+newcolor;}
+}
+function faddrow(){
+	if(objTableLoaded){
+		var tr = elmSelectedTable.insertRow(qrows);
+		if (tr){
+			for (j=0; j < qcols; j++) {
+			    elmSelectedTable.rows(qrows).insertCell();
+			    elmSelectedTable.rows(qrows).cells(j).vAlign = 'top';
+			}
+			qrows = elmSelectedTable.rows.length ;
+			setSelectList();
+		}
+		
+	}
+}
+function fdelrow(){
+	if(delRows.value==''){
+		alert('Choose a row for deleting !');
+		return;
+	}
+	if (confirm('You are sure that want to delete the row ?')){
+		if (qrows == 1){
+			alert("It is impossible to delete last row !")
+			return;
+		}
+		elmSelectedTable.deleteRow(delRows.value);
+		setSelectList();
+	}
+}
+function setSelectList(){
+	qrows = elmSelectedTable.rows.length ;
+	delRows.innerHTML = '';
+	formRows.innerHTML = '';
+	CformRows.innerHTML = '';
+	var oOption = document.createElement("OPTION");
+	var oOption1 = document.createElement("OPTION");
+	var oOption2 = document.createElement("OPTION");
+	delRows.options.add(oOption);
+	formRows.options.add(oOption1);
+	CformRows.options.add(oOption2);
+	oOption.innerText = '    ';
+	oOption.value = '';
+	oOption1.innerText = '    ';
+	oOption1.value = '';
+	oOption2.innerText = '    ';
+	oOption2.value = '';
+	for(i=1; i<=qrows; i++){
+		var oOption = document.createElement("OPTION");
+		var oOption1 = document.createElement("OPTION");
+		var oOption2 = document.createElement("OPTION");
+		delRows.options.add(oOption);
+		formRows.options.add(oOption1);
+		CformRows.options.add(oOption2);
+		oOption.innerText = i;
+		oOption.value = i-1;
+		oOption1.innerText = i;
+		oOption1.value = i-1;
+		oOption2.innerText = i;
+		oOption2.value = i-1;
+	}
+}
+function sel1click(){
+	if(formRows.value != ''){
+		button2.disabled = false;
+		if(parseInt(elmSelectedTable.rows(parseInt(formRows.value)).style.height))
+		{
+			txtRowHeight.value = parseInt(elmSelectedTable.rows(parseInt(formRows.value)).cells(0).style.height) ;
+		}else{
+			txtRowHeight.value = '' ;
+		}
+		RowbgrColor.value = elmSelectedTable.rows(parseInt(formRows.value)).cells(0).style.backgroundColor ;
+		document.all.imgRowbgrColor.style.backgroundColor = RowbgrColor.value ;
+	}else{
+		button2.disabled = true;
+		txtRowHeight.value = '' ;
+		RowbgrColor.value = '' ;
+		document.all.imgRowbgrColor.style.backgroundColor = "#000000" ;
+	}
+}
+function sel2click(){
+	var qcells;
+	if(CformRows.value != ''){
+		qcells = elmSelectedTable.rows(parseInt(CformRows.value)).cells.length ;
+		formCells.innerHTML = '';
+		var oOption = document.createElement("OPTION");
+		formCells.options.add(oOption);
+		oOption.innerText = '    ';
+		oOption.value = '';
+		for(i=1; i<=qcells; i++){
+			var oOption = document.createElement("OPTION");
+			formCells.options.add(oOption);
+			oOption.innerText = i;
+			oOption.value = i-1;
+		}
+		formCells.disabled = false;
+	}else{
+		formCells.disabled = true;
+		formCells.innerHTML = '';
+		button3.disabled = true;
+		cheight.value = '' ;
+		cwidth.value = '' ;
+		CellbgrColor.value = '' ;
+		document.all.imgCellbgrColor.style.backgroundColor = "#000000" ;
+	}
+}
+function sel3click(){
+	if(formCells.value != ''){
+		button3.disabled = false;
+		if(parseInt(elmSelectedTable.rows(parseInt(CformRows.value)).cells(parseInt(formCells.value)).style.height))
+		{
+			cheight.value = parseInt(elmSelectedTable.rows(parseInt(CformRows.value)).cells(parseInt(formCells.value)).style.height) ;
+		}else{
+			cheight.value = '' ;
+		}
+		cwidth.value = elmSelectedTable.rows(parseInt(CformRows.value)).cells(parseInt(formCells.value)).style.width ;
+		CellbgrColor.value = elmSelectedTable.rows(parseInt(CformRows.value)).cells(parseInt(formCells.value)).style.backgroundColor ;
+		document.all.imgCellbgrColor.style.backgroundColor = CellbgrColor.value ;
+	}else{
+		button3.disabled = true;
+		cheight.value = '' ;
+		cwidth.value = '' ;
+		CellbgrColor.value = '' ;
+		document.all.imgCellbgrColor.style.backgroundColor = "#000000" ;
+	}
+}
+
+function sel4click(){
+	if(formCols.value != ''){
+		button8.disabled = false;
+		txtColWidth.value = elmSelectedTable.rows(0).cells(parseInt(formCols.value)).style.width ;
+		ColbgrColor.value = elmSelectedTable.rows(0).cells(parseInt(formCols.value)).style.backgroundColor ;
+		document.all.imgColbgrColor.style.backgroundColor = ColbgrColor.value ;
+	}else{
+		button8.disabled = true;
+		txtColWidth.value = '' ;
+		ColbgrColor.value = '' ;
+		document.all.imgColbgrColor.style.backgroundColor = "#000000" ;
+	}
+}
+
+function setRow(){
+	if (txtRowHeight.value != '' && !_isValidNumber(txtRowHeight.value)) {
+      alert("You must specify a number between 0 and 9999 for Row height !");
+      txtRowHeight.select();
+      return;
+    }
+    if(txtRowHeight.value != ''){
+		for(i=0 ; i<qcols; i++ )
+		{
+			if(elmSelectedTable.rows(parseInt(formRows.value)).cells(i))
+			{elmSelectedTable.rows(parseInt(formRows.value)).cells(i).style.height=txtRowHeight.value + 'px';}
+		}
+	}
+    if(RowbgrColor.value != ''){
+		for(i=0 ; i<qcols; i++ )
+		{
+			if(elmSelectedTable.rows(parseInt(formRows.value)).cells(i))
+			{elmSelectedTable.rows(parseInt(formRows.value)).cells(i).style.backgroundColor=RowbgrColor.value;}
+		}
+	}else{
+		for(i=0 ; i<qcols; i++ )
+		{
+			if(elmSelectedTable.rows(parseInt(formRows.value)).cells(i))
+			{elmSelectedTable.rows(parseInt(formRows.value)).cells(i).style.backgroundColor='';}
+		}
+	}
+    button2.disabled = true;
+    formRows.selectedIndex = 0;
+    txtRowHeight.value = '' ;
+	RowbgrColor.value = '' ;
+	document.all.imgRowbgrColor.style.backgroundColor = "#000000" ;
+}
+function setCell(){
+	if (cheight.value != '' && !_isValidNumber(cheight.value)) {
+      alert("You must specify a number between 0 and 9999 for Cell Height !");
+      cheight.select();
+      return;
+    }
+    if(cheight.value != ''){
+		elmSelectedTable.rows(parseInt(CformRows.value)).cells(parseInt(formCells.value)).style.height=cheight.value + 'px';
+    }
+    if(cwidth.value != ''){
+		elmSelectedTable.rows(parseInt(CformRows.value)).cells(parseInt(formCells.value)).style.width=cwidth.value ;
+		elmSelectedTable.rows(parseInt(CformRows.value)).cells(parseInt(formCells.value)).width='' ;
+    }
+    if(CellbgrColor.value != ''){
+		elmSelectedTable.rows(parseInt(CformRows.value)).cells(parseInt(formCells.value)).style.backgroundColor=CellbgrColor.value;
+    }else{
+		elmSelectedTable.rows(parseInt(CformRows.value)).cells(parseInt(formCells.value)).style.backgroundColor='';
+    }
+    button3.disabled = true;
+    formCells.selectedIndex = 0;
+	cheight.value = '' ;
+	cwidth.value = '' ;
+	CellbgrColor.value = '' ;
+	document.all.imgCellbgrColor.style.backgroundColor = "#000000" ;
+}
+function setCol(){
+	
+    if(txtColWidth.value != ''){
+		for(i=0 ; i<qrows; i++ )
+		{
+			if(elmSelectedTable.rows(i).cells(parseInt(formCols.value)))
+			{elmSelectedTable.rows(i).cells(parseInt(formCols.value)).style.width=txtColWidth.value;}
+		} 
+    }
+    if(ColbgrColor.value != ''){
+		for(i=0 ; i<qrows; i++ )
+		{
+			if(elmSelectedTable.rows(i).cells(parseInt(formCols.value)))
+			{elmSelectedTable.rows(i).cells(parseInt(formCols.value)).style.backgroundColor=ColbgrColor.value;}
+		}	
+    }else{
+		for(i=0 ; i<qrows; i++ )
+		{
+			if(elmSelectedTable.rows(i).cells(parseInt(formCols.value)))
+			{elmSelectedTable.rows(i).cells(parseInt(formCols.value)).style.backgroundColor='';}
+		}
+    }
+    button8.disabled = true;
+    formCols.selectedIndex = 0;
+    txtColWidth.value = '' ;
+	ColbgrColor.value = '' ;
+	document.all.imgColbgrColor.style.backgroundColor = "#000000" ;
+}
+</SCRIPT>
+</HEAD>
+<BODY id=bdy onload="Init()" style="background: threedface; color: windowtext; margin: 10px; BORDER-STYLE: none" scroll=no>
+<table id=tbl1 border=0 cellspacing=0 cellpadding=1 style="margin: 0 0 8 0">
+ <tr id=tr1>
+	<td><BUTTON style="width: 70px; height: 22px;" type=submit onClick="faddrow();" id=butaddrow name=butaddrow tabindex=2>Add row</BUTTON></td>
+	<td width=20>&nbsp;</td>
+	<td><BUTTON style="width: 70px; height: 22px;" type=submit onClick="fdelrow();" id=butdelrow name=butdelrow tabindex=3>Delete row</BUTTON></td>
+	<td width=10>&nbsp;</td>
+	<td>Select a row for delete:&nbsp;</td>
+	<td>
+		<select name="delRows" id="delRows">
+		</select>
+	</td>
+ </tr>
+</table>
+
+<FIELDSET style="width: 334px; text-align: left;left: 12px; top: 50px; position: absolute">
+<LEGEND>Rows format</LEGEND>
+<table border=0 cellspacing=6 cellpadding=0>
+ <tr>
+	<td width=90>Row number:</td>
+	<td>
+		<select name="formRows" id="formRows" onclick="sel1click();">
+		</select>
+	</td> 
+	<td  width=70>Row Height:</td>
+	<td>
+		<input type="text" name="txtRowHeight" value="" style="width: 45px" maxlength=4>
+	 px
+	</td>
+ </tr>
+ <tr>
+	<td width=90>Background Color:</td>
+	<td>
+		<input type="text" name="RowbgrColor" value="" size=7 style="width: 55px; height: 22px;">&nbsp;<BUTTON style="width: 22px; height: 22px; border: 1px none;"  unselectable="on" onclick="setBgrColor();" id=button4 name=button4><img id=imgRowbgrColor style="background-color:#000000;" src="../images/selcolor.gif" border=0></BUTTON> 
+	</td> 
+	<td colspan=2 align=right style="PADDING-RIGHT:14px"><BUTTON style="width: 70px; height: 22px;" onClick="setRow()" id=button2 name=button2 disabled tabindex=4>Apply</BUTTON></td>
+ </tr>
+</table>
+</FIELDSET>
+
+<FIELDSET style="width: 334px; text-align: left;left: 12px; top: 145px; position: absolute">
+<LEGEND>Columns format</LEGEND>
+<table border=0 cellspacing=6 cellpadding=0>
+ <tr>
+	<td width=90>Column number:</td>
+	<td>
+		<select name="formCols" id="formCols" onclick="sel4click();">
+		</select>
+	</td> 
+	<td  width=70>Column Width:</td>
+	<td>
+		<input type="text" name="txtColWidth" value="" style="width: 45px" maxlength=4>
+	</td>
+ </tr>
+ <tr>
+	<td width=90>Background Color:</td>
+	<td>
+		<input type="text" name="ColbgrColor" value="" size=7 style="width: 55px; height: 22px;">&nbsp;<BUTTON style="width: 22px; height: 22px; border: 1px none;"  unselectable="on" onclick="setColColor();" id=button7 name=button7><img id=imgColbgrColor style="background-color:#000000;" src="../images/selcolor.gif" border=0></BUTTON> 
+	</td> 
+	<td colspan=2 align=right style="PADDING-RIGHT:14px"><BUTTON style="width: 70px; height: 22px;" onClick="setCol()" id=button8 name=button8 disabled tabindex=5>Apply</BUTTON></td>
+ </tr>
+</table>
+</FIELDSET>
+
+<FIELDSET style="width: 334px; text-align: left;left: 12px; top: 240px; position: absolute">
+<LEGEND>Cells format</LEGEND>
+<table border=0 cellspacing=6 cellpadding=0>
+ <tr>
+	<td width=90>Row number:</td>
+	<td>
+		<select name="CformRows" id="CformRows" onclick="sel2click();">
+		</select>
+	</td> 
+	<td  width=70>Cell number:</td>
+	<td>
+		<select name="formCells" id="formCells" onclick="sel3click();" disabled>
+		</select>
+	</td>
+ </tr>
+ <tr>
+	<td>Cell Height:</td>
+	<td>
+	 <input type="text" name="cheight" value="" style="width: 45px" maxlength=4>
+	 px
+	</td> 
+	<td>Cell Width:</td>
+	<td>
+	 <input type="text" name="cwidth" value="" style="width: 45px" maxlength=4>
+	</td>
+ </tr>
+ <tr>
+	<td width=90>Background Color:</td>
+	<td>
+		<input type="text" name="CellbgrColor" value="" size=7 style="width: 55px; height: 22px;">&nbsp;<BUTTON style="width: 22px; height: 22px; border: 1px none;"  unselectable="on" onclick="setCellColor();" id=button6 name=button6><img id=imgCellbgrColor style="background-color:#000000;" src="../images/selcolor.gif" border=0></BUTTON> 
+	</td> 
+	<td colspan=2 align=right><BUTTON style="width: 70px; height: 22px;" onClick="setCell()" id=button3 name=button3 disabled tabindex=6>Apply</BUTTON></td>
+ </tr>
+</table>
+</FIELDSET>
+
+
+
+<BUTTON style="left: 275px; top: 356px; position: absolute; width: 70px; height: 22px;" id=button1 type=reset onClick="window.close();" tabindex=1>Close</BUTTON>
+</BODY>
+</HTML>

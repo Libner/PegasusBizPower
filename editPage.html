@@ -1,0 +1,300 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<HEAD>
+		<title>BizPower</title>
+		<meta charset="windows-1255">
+		<LINK href="../../IE4.css" type="text/css" rel="STYLESHEET">
+		<meta content="Microsoft Visual Studio.NET 7.0" name="GENERATOR">
+		<meta content="Visual Basic 7.0" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<script language="javascript">
+		<!-- // load htmlarea
+		_editor_url = "../../../htmlarea/";                     // URL to htmlarea files
+		_view_form = false;
+		license = getCookie("ORGLISENCE");
+		license = new String(license);
+		if(license.search("3") > 0)
+			_view_form = true;
+		//window.alert(_view_form);
+		
+		var win_ie_ver = parseFloat(navigator.appVersion.split("MSIE")[1]);
+		if (navigator.userAgent.indexOf('Mac')        >= 0) { win_ie_ver = 0; }
+		if (navigator.userAgent.indexOf('Windows CE') >= 0) { win_ie_ver = 0; }
+		if (navigator.userAgent.indexOf('Opera')      >= 0) { win_ie_ver = 0; }
+		if (win_ie_ver >= 5.5) {
+		document.write('<scr' + 'ipt src="' +_editor_url+ 'editor.js"');
+		document.write(' language="javascript"></scr' + 'ipt>');  
+		} else { document.write('<scr'+'ipt>function editor_generate() { return false; }</scr'+'ipt>'); }
+		
+		function CheckFields(){
+			if (document.Form1.title1.value=='')
+			{
+				alert('חובה למלא את השדה טקסט');
+				return false;
+			}else{
+				return true;
+			}	
+		}
+		function openPreview(pageId)
+		{
+			page = window.open("result.asp?pageId="+pageId,"Page","toolbar=0, menubar=0, resizable=1, scrollbars=1, fullscreen = 0, width=780, height=540, left=2, top=2");	
+		}
+	    function getCookie(name)
+	    {
+			var prefix = name + "="
+			var cookieStartIndex = document.cookie.indexOf(prefix)
+			if (cookieStartIndex == -1)
+				return null
+			var cookieEndIndex = document.cookie.indexOf("&", cookieStartIndex +
+				prefix.length)
+			if (cookieEndIndex == -1)
+				cookieEndIndex = document.cookie.length
+			return unescape(document.cookie.substring(cookieStartIndex +
+				prefix.length, cookieEndIndex))
+        }
+        
+        function openTemplate()
+        {
+			if (window.confirm("! שים לב\n\n.בחירת תבנית תמחוק את התוכן הקיים בדף\n\n? האם ברצונך להמשיך"))
+			{
+				window.open('templates_list.asp?template_id='+document.all('template_id').value,'','menubar=0,toolbar=0,width=550,height=450,scrollbars=1,left=50,top=10,resizable=1');
+			}
+			return false;
+        }
+
+		// -->
+		</script>
+	</HEAD>
+	<body style="MARGIN: 0px">
+		<table border="0" width="100%" height="83" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="bottom">
+    <a href="" target=_self>
+    <img  border="0" src="../../images/top_logo.gif" width="223" height="62" border="0"></a></td>
+    <td align="right"><div align="right"><table border="0" width="321" height="87"
+    cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="100%" valign="bottom" height="25"><table border="0" cellspacing="0"
+        cellpadding="0">
+          <tr>
+            <td width="27"><a href="" onclick="return false" class="home_link"><img border="0"  src="../../images/top_link4.gif" width="27" height="19" border="0" name="toplink4" id="toplink4"></td><!-- onMouseOver="changeImage(this,'../images/top_link4_a.gif');" onMouseOut="changeImage(this,'../images/top_link4.gif')"></a></td-->
+            <td width="7"><img border="0"  src="../../images/top_link_bul.gif" width="7" height="19"></td>
+            <td width="47"><a href="contact_us/default.asp" onclick="return false"><img border="0"  src="../../images/top_link3.gif" width="47" height="19" border="0" name="toplink3" id="toplink3"></td><!-- onMouseOver="changeImage(this,'../images/top_link3_a.gif');" onMouseOut="changeImage(this,'../images/top_link3.gif')"></a></td-->
+            <td width="7"><img border="0"  src="../../images/top_link_bul.gif" width="7" height="19"></td>
+            <td width="73"><a href="" onclick="return false" ><img border="0"  src="../../images/top_link2.gif" width="73" height="19" border="0" name="toplink2" id="toplink2"></td><!--onMouseOver="changeImage(this,'../images/top_link2_a.gif');" onMouseOut="changeImage(this,'../images/top_link2.gif')"></a></td-->
+            <td width="7"><img border="0"  src="../../images/top_link_bul.gif" width="7" height="19"></td>
+            <td width="45"><a href="" onclick="return false" class="home_link"><img border="0"  src="../../images/top_link1.gif" width="45" height="19" border="0" name="toplink1" id="toplink1"></td><!-- onMouseOver="changeImage(this,'../images/top_link1_a.gif');" onMouseOut="changeImage(this,'../images/top_link1.gif')"></a></td-->
+          </tr>
+        </table>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%" align="right" bgcolor="#FFD012" height="1"></td>
+      </tr>
+      <tr>
+        <td width="100%" valign="bottom" height="57"><img  border="0" src="../../images/home_slogan.gif" width="261"
+        height="37"></td>
+      </tr>
+    </table>
+    </div></td>
+  </tr>
+</table>
+<table cellpadding=0 cellspacing=0 width=100% bgcolor="#060165">
+<!--tr><td align=right>
+<table border="0" width="100%" height="48" cellspacing="0" cellpadding="0" bgcolor=white align=right>
+  <tr>
+    <td width="100%" height="2"></td>
+  </tr>
+  <tr>
+    <td width="100%" height="42">
+    <table border="0" width="98%" height="42" cellspacing="0"  cellpadding="0" bgcolor="#B1B0CF" ID="Table2">
+      <tr>
+        <td align="right" width="20%"><div align="right"><table border="0" cellspacing="0"
+        cellpadding="0" ID="Table3">
+          <tr>
+            <td align="right"><font color="#3C3C3C"><strong><span
+            style="font-family: Arial; font-size: 8pt">incert txt</span></strong></font></td>
+          </tr>
+          <tr>
+            <td align="right"><a class="top_link" href="#" target=_self>incert txt</a></td>
+          </tr>
+        </table>
+        </div></td>
+        <td><img src="../../images/5.gif" width="41" height="42" border="0"></td>
+        <td align="right" width="20%"><div align="right"><table border="0" cellspacing="0"
+        cellpadding="0" ID="Table4">
+          <tr>
+            <td align="right"><font color="#3C3C3C"><strong><span
+            style="font-family: Arial; font-size: 8pt">incert txt</span></strong></font></td>
+          </tr>
+          <tr>
+            <td align="right"><a class="top_link" href="#" target=_self>incert txt</a></td>
+          </tr>
+        </table>
+        </div></td>
+        <td><img src="../../images/4.gif" width="41" height="42" border="0"></td>
+        <td align="right" width="20%"><div align="right"><table border="0" cellspacing="0"
+        cellpadding="0" ID="Table5">
+          <tr>
+            <td align="right"><font color="#3C3C3C"><strong><span
+            style="font-family: Arial; font-size: 8pt">incert txt</span></strong></font></td>
+          </tr>
+          <tr>
+            <td align="right"><a class="top_link" href="#" target=_self>incert txt</a></td>
+          </tr>
+        </table>
+        </div></td>
+        <td><img src="../../images/3.gif" width="41" height="42" border="0"></td>
+        <td align="right" width="20%"><div align="right"><table border="0" cellspacing="0"
+        cellpadding="0" ID="Table6">
+          <tr>
+            <td align="right"><font color="#3C3C3C"><strong><span
+            style="font-family: Arial; font-size: 8pt">incert txt</span></strong></font></td>
+          </tr>
+          <tr>
+            <td align="right"><a class="top_link" href="#" target=_self>incert txt</a></td>
+          </tr>
+        </table>
+        </div></td>
+        <td><img src="../../images/2.gif" width="41" height="42" border="0"></td>
+        <td align="right" width="20%"><div align="right"><table border="0" cellspacing="0"
+        cellpadding="0" ID="Table7">
+          <tr>
+            <td align="right"><font color="#3C3C3C"><strong><span
+            style="font-family: Arial; font-size: 8pt">incert txt</span></strong></font></td>
+          </tr>
+          <tr>
+            <td align="right"><a class="top_link" href="#" target=_self>incert txt</span></a></td>
+          </tr>
+        </table>
+        </div></td>
+        <td><img src="../../images/1.gif" width="41" height="42" border="0"></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" height="4"></td>
+  </tr>
+</table>
+</td></tr-->
+
+<tr><td align=right>
+<table border="0" bgcolor="#060165" cellspacing="1" cellpadding="1" align="right" dir=rtl>
+	<tr>			   
+		
+		<td nowrap dir=rtl><A  class='menu_main'  href='../companies/companies.asp'  target="_self">1. לקוחות</A></td>
+		<td nowrap valign="middle"><img src="../../images/ar_topmenu.gif" border="0" align="absmiddle"></td>    		
+		
+		<td nowrap dir=rtl><A  class='menu_main'  href='../companies/contacts.asp'  target="_self">2. אנשי קשר</A></td>
+		<td nowrap valign="middle"><img src="../../images/ar_topmenu.gif" border="0" align="absmiddle"></td>    		
+		
+		<td nowrap dir=rtl><A  class='menu_main'  href='../groups_clients/default.asp'  target="_self">3. קבוצות דיוור</A></td>	
+		<td nowrap valign="middle"><img src="../../images/ar_topmenu.gif" border="0" align="absmiddle"></td>    		
+		
+		<td nowrap><A  class='menu_main'  href='../tasks/' target="_self" dir=rtl>4. משימות</A></td>			
+		<td nowrap valign="middle"><img src="../../images/ar_topmenu.gif" border="0" align="absmiddle"></td>    
+		
+		<td nowrap dir=rtl><A   class="menu_main_over"  href='../pages/default.asp' target="_self" dir=rtl>5. דפים מעוצבים</A></td>				
+		<td nowrap valign="middle"><img src="../../images/ar_topmenu.gif" border="0" align="absmiddle"></td>    
+		
+		<td nowrap dir=rtl><A  class='menu_main'  href='../products/questions.asp' target="_self" dir=rtl>6. טפסי משוב</A></td>							
+		<td nowrap valign="middle"><img src="../../images/ar_topmenu.gif" border="0" align="absmiddle"></td>    
+		
+		<td nowrap><A  class='menu_main'  href='../products/products.asp'  target="_self" dir=rtl>7. הפצה</A></td>						
+		<td nowrap valign="middle"><img src="../../images/ar_topmenu.gif" border="0" align="absmiddle"></td>    
+		
+		<td nowrap><A  class='menu_main'  href='../reports/reports.asp' target="_self" dir=rtl>8. דוחות</A></td>								
+		
+		
+		
+</tr>
+</table>
+</td></tr></table>
+
+		<table cellSpacing="0" cellPadding="0" width="100%">
+			<tr>
+				<td class="page_title" width="100%">
+					
+					בניית דף מעוצב&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="100%" background="../../images/Line_3D.gif" height="2"></td>
+			</tr>
+			<tr>
+				<td noWrap width="100%" height="10"></td>
+			</tr>
+			<tr>
+				<td width="100%">
+				<form name="Form1" method="post" action="editPage.aspx" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMTM4NTczOTcyMTs7PolVZpbcZBQosAQRJCUMN9hh3mrh" />
+		
+					<table cellpadding="0" cellspacing="0" width="100%" border="0">
+						<tr>
+							<td width="60%" nowrap>															
+									<table cellSpacing="0" cellPadding="0" align="left" border="1">
+										<tr>
+											<td width="100%" align="right">
+											<input name="template_id" id="template_id" type="hidden" />
+												<input name="pageTitle1" id="pageTitle1" type="text" class="texts" dir="rtl" style="WIDTH: 350px" maxlength="150" /></td>
+											<td width="100" nowrap align="center">&nbsp;<b>שם הדף</b>&nbsp;</td>
+										</tr>
+										<tr>
+											<td colSpan="2" height="10"></td>
+										</tr>
+										<tr>
+											<td align="center" colSpan="2">
+												<textarea name="title1" id="title1" wrap="hard" style="WIDTH: 645px; HEIGHT: 360px;margin-left: 0px;padding: 0px"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td colSpan="2" height="10"></td>
+										</tr>
+										<tr>
+											<td dir="rtl" align="center" colSpan="2" height="10"><input type="submit" name="Button1" value="  אישור  " id="Button1" style="color:White;background-color:#060165;font-family:Arial;font-size:12px;font-weight:bold;" />
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input type="submit" name="Button2" value="  ביטול  " id="Button2" style="color:White;background-color:#060165;font-family:Arial;font-size:12px;font-weight:bold;" />
+												<input name="pageId1" id="pageId1" type="hidden" value="<%=pageId%>" />
+												<input type="hidden" name="homePage" value="0">
+											</td>
+										</tr>
+										<tr>
+											<td height="10" colspan="2"></td>
+										</tr>
+										<script language="javascript">
+							var page_id = '';
+							editor_generate('title1');
+										</script>
+										<tr><td></td></tr>
+									</table>								
+							</td>
+							<td width="40%" nowrap align="right" valign="top" bgcolor="#d3d3d3">
+								<table cellpadding="1" cellspacing="1" width="100%" ID="Table1">
+									<tr>
+										<td align="right" colspan="2" class="title_search">תפריט</td>
+									</tr>
+									<tr>
+										<td align="right" colspan="2" height="10" nowrap></td>
+									</tr>
+									<tr>
+										<td nowrap colspan="2" align="center">שם התבנית</td>
+									</tr>
+									<tr>
+										<td nowrap colspan="2" align="center"><input name="template_title" id="template_title" type="text" value="ללא תבנית" dir="rtl" style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px" readonly="" class="texts" /></td>
+									</tr>
+									<tr>
+										<td nowrap colspan="2" align="center"><a class="button_edit_1" style="WIDTH:100px" href='#' onclick="return openTemplate();">בחר 
+												תבנית</a></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</body>
+</HTML>

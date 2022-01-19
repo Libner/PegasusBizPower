@@ -1,0 +1,340 @@
+
+/*
+.biz_nav_section {
+  direction: rtl;
+  margin-top:10px
+}
+
+.bizpower_top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 2%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.biz_pegasus_login {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.biz_login_name {
+  margin-left: 5px;
+  font-weight: 700;
+}
+.biz_logo_group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  direction: ltr;
+  color: #6b69a5;
+  font-size: 25px;
+  line-height: 28px;
+  font-style: italic;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+
+.biz_logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 120px;
+  margin-right: 8px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.biz_logo_line {
+  margin-right: 8px;
+  margin-bottom: 2px;
+}
+*/
+
+.biz_nav_section {
+  direction: rtl;
+}
+
+.bizpower_top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 2%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.biz_pegasus_login {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.biz_logo_group {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  direction: ltr;
+  color: #6b69a5;
+  font-size: 24px;
+  line-height: 20px;
+  font-style: italic;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.biz_login_name {
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.biz_logo {
+  width: 120px;
+  margin-right: 8px;
+  float: left;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.biz_logo_line {
+  margin-right: 8px;
+  float: right;
+}
+
+
+.biz_logo_txt {
+  margin-top: 0px;
+  float: right;
+}
+
+.biz_exit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+  padding: 3px 14px 4px 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #dedff7;
+  color: #060165;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.biz_exit:hover {
+  background-color: #6b69a5;
+  color: #dedff7;
+}
+
+.biz_buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.bizlink_level_1 
+{
+	font-family: Assistant, sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding: 4px 11px 4px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #060165;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.bizlink_level_1:hover {
+  background-color: #6b69a5;
+}
+
+.bizlink_level_1.current {
+  background-color: #ffce10;
+  color: #060165;
+}
+
+.biz_links {
+	font-family: Assistant, sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom:10px;
+  margin-top: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 20px
+}
+
+.bizlink_level_2 {
+	font-family: Assistant, sans-serif;
+  padding: 2px 11px 4px;
+  /*border-left: 1px solid #6b69a5;*/
+  color: #000;
+  line-height: 18px;
+  text-decoration: none;
+    background-color: #d3d3d3;
+    margin: 2px;
+    font-weight: 600;
+}
+
+.bizlink_level_2:hover {
+ /* text-decoration: underline;*/
+ 
+    background-color: #e3e3e3;
+}
+
+.bizlink_level_2.current {
+  background-color: #ffce10;
+  color: #000000;
+}
+
+.bizlink_level_2.current:hover {
+  text-decoration: none;
+}
+
+.biz_h_section {
+	font-family: Assistant, sans-serif;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .bizpower_top {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .biz_pegasus_login {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .biz_logo_group {
+    font-size: 24px;
+  }
+  .biz_logo {
+    width: 100px;
+    margin-right: 4px;
+  }
+  .biz_logo_line {
+    margin-right: 4px;
+    font-size: 22px;
+  }
+  .biz_exit {
+    margin-right: 25px;
+    padding: 2px 12px 3px 14px;
+  }
+  .bizlink_level_1 {
+    margin-bottom: 4px;
+    margin-left: 4px;
+    padding: 6px 2.5% 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+  }
+  .biz_links {
+    margin-top: 1%;
+    padding-top: 0.8%;
+    padding-bottom: 0.5%;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .bizlink_level_2 {
+    margin-bottom: 4px;
+    padding: 0px 2% 2px;
+  }
+}
+

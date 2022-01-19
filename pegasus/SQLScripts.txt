@@ -1,0 +1,104 @@
+select appeal_date,APPEAL_ID,Department_Id, datediff(d,APPEAL_Date,convert(smalldatetime, '31/08/2017',103))  from appeals where questions_id=16735
+and Department_Id is not null 
+and datediff(d,APPEAL_Date,convert(smalldatetime, '31/08/2017',103)) >=0
+order by appeal_date desc,Department_Id
+select * from appeals  where datediff(d,APPEAL_Date,convert(smalldatetime, '31/08/2017',103)) >=0 and Department_Id is not null and  questions_id=16735
+
+
+ update appeals set Department_Id=null where datediff(d,APPEAL_Date,convert(smalldatetime, '31/08/2017',103)) >=0 and Department_Id is not null and  questions_id=16735
+
+
+
+SELECT        Id, departmentId, Id_DimDate, DateKey, P16735, P16735_Bitulim
+FROM            Departments_Data
+WHERE        (DATEDIFF(d, DateKey, CONVERT(smalldatetime, '31/08/2017', 103)) >= 0) AND (P16735 > 0)
+ORDER BY DateKey DESC
+
+select  *   from  Departments_Data WHERE        DATEDIFF(d, DateKey, CONVERT(smalldatetime, '31/08/2017', 103)) >= 0 AND  P16735 > 0 
+
+
+update  Departments_Data set P16735=0  WHERE        (DATEDIFF(d, DateKey, CONVERT(smalldatetime, '31/08/2017', 103)) >= 0) AND (P16735 > 0)
+
+
+tasks
+1.pegasusUpdateSalesData.vbs every day in 3:00
+update form 16735 
+
+all data from 1.09.2017 
+
+
+
+
+
+SELECT        TOP (200) Id, DateKey, CalendarYear, CalendarQuarter, CalendarQuarterName, CalendarMonth, CalendarMonthName, CalendarDay, WeekdayNumber, WeekdayName, WeekdayNameHeb, DayTypeName, 
+                         DayTypeId, DayTypeColor, DayFontColor, FinancialYear, FinancialQuarter, FinancialQuarterName, IsHoliday, HolidayName, NN, call_Service, call_Sales, P16719Kishurit_Sales, P16719Kishurit_Service, 
+                         P16724ContactUs_Sales, P16724ContactUs_Service, P17012ContactUs_Sales, P17012ContactUs_Service, P16504
+FROM            DimDate
+WHERE        (IsHoliday = 1) AND (HolidayName like '%ערב סוכות ב%')
+
+update DimDate set DayTypeName='חצי יום עבודה' , DayTypeId='0.5' , DayTypeColor='#FFC0CB' , DayFontColor='#000000'
+ WHERE        (IsHoliday = 1) AND (HolidayName like '%ערב סוכות ב%')
+ 
+ UPDATE [HOLIDAYS]
+  SET [DayTypeName]='חצי יום עבודה'
+ DayTypeColor='#FFCE42'
+  WHERE       (daynAME like '%ערב סוכות ב%')
+  
+  
+  SELECT        TOP (200) Id, DayName, Date, Year, DayTypeColor, DayTypeName, DayAction, DayOrder
+FROM            HOLIDAYS
+where DayTypeName='אי עבודה'
+
+update HOLIDAYS set DayTypeName='אין עבודה'
+where DayTypeName like'אי עבודה'
+
+select * from DimDate where DayTypeName like 'אי עבודה'
+ update DimDate set  DayTypeName='אין עבודה'
+where DayTypeName like'אי עבודה'
+
+
+SELECT        TOP (200) Id, DateKey, CalendarYear, CalendarQuarter, CalendarQuarterName, CalendarMonth, CalendarMonthName, CalendarDay, WeekdayNumber, WeekdayName, WeekdayNameHeb, DayTypeName, 
+                         DayTypeId, DayTypeColor, DayFontColor, FinancialYear, FinancialQuarter, FinancialQuarterName, IsHoliday, HolidayName, NN, call_Service, call_Sales, P16719Kishurit_Sales, P16719Kishurit_Service, 
+                         P16724ContactUs_Sales, P16724ContactUs_Service, P17012ContactUs_Sales, P17012ContactUs_Service, P16504
+FROM            DimDate
+WHERE        (WeekdayNameHeb LIKE 'ו') AND (DayTypeId = '1')
+
+
+
+SELECT        TOP (200) Id, DateKey, CalendarYear, CalendarQuarter, CalendarQuarterName, CalendarMonth, CalendarMonthName, CalendarDay, WeekdayNumber, WeekdayName, WeekdayNameHeb, DayTypeName, 
+                         DayTypeId, DayTypeColor, DayFontColor, FinancialYear, FinancialQuarter, FinancialQuarterName, IsHoliday, HolidayName, NN, call_Service, call_Sales, P16719Kishurit_Sales, P16719Kishurit_Service, 
+                         P16724ContactUs_Sales, P16724ContactUs_Service, P17012ContactUs_Sales, P17012ContactUs_Service, P16504
+FROM            DimDate
+WHERE        (WeekdayNameHeb LIKE 'ו') AND (DayTypeId = '1')
+
+
+update DimDate set  DayTypeId='0.5' , DayTypeName='חצי יום עבודה'
+WHERE        (WeekdayNameHeb LIKE 'ו') AND (DayTypeId = '1')
+DayTypeId
+
+ update   DimDate set DayTypeColor='#FFC0CB',DayFontColor='#000000'
+WHERE        (DayTypeId LIKE '0.5') AND (WeekdayName LIKE 'friday') AND (IsHoliday = 1)
+
+DayTypeColor, DayFontColor
+#FFC0CB #000000
+
+
+update HOLIDAYS set DayTypeName='אין עבודה'
+WHERE        (DayName LIKE 'פסח חג שני')
+
+SELECT        Id, DayName, Date, Year, DayTypeColor, DayTypeName, DayAction, DayOrder
+FROM            HOLIDAYS
+WHERE        (DayTypeName = 'אין עבודה') AND (DayTypeColor <> '#F16529')
+
+
+update HOLIDAYS set DayTypeColor='#F16529' 
+WHERE        (DayTypeName = 'אין עבודה') AND (DayTypeColor <> '#F16529')
+
+
+
+ update DimDate set DayTypeName='אין עבודה',DayTypeId=0
+ where (IsHoliday = 1) AND (HolidayName like 'פסח חג שני')
+ and DayTypeId='0.5'
+
+
+ 

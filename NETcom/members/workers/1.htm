@@ -1,0 +1,80 @@
+<table><tr>
+	<td align="right" width=12% class="title_sort">
+	<select dir="<%=dir_obj_var%>" name="JOB_ID" class="norm" style="width:150px" ID="JOB_ID">
+	<option value="0" ><%=arrTitles(15)%></option>
+<%	sqlstr = "SELECT job_id,job_name FROM jobs WHERE (ORGANIZATION_ID = " & OrgID & ") ORDER BY job_id"
+		set rs_jobs = con.getRecordSet(sqlstr)
+		while not rs_jobs.eof	%>
+	<option value="<%=trim(rs_jobs(0))%>" <%If trim(job_id) = trim(rs_jobs(0)) Then%> selected <%End If%>><%=rs_jobs(1)%></option>
+<%	rs_jobs.moveNext
+		wend
+		set rs_jobs = nothing %>
+	</select>
+	</td>
+	<td align=right class="title_sort" width=12%>&nbsp;<!--עיסוק--><%=arrTitles(7)%>&nbsp;<span style="color:#FF0000">*</span></td>
+	<td align="right"  width=12% class="title_sort">
+	<select dir="<%=dir_obj_var%>" name="Dep_ID" class="norm" style="width:150px" ID="Dep_ID">
+	<option value="0">שיוך למחלקה</option>
+<%	sqlstr = "SELECT departmentId,departmentName FROM Departments ORDER BY PriorityLevel desc"
+		set rs_dep = con.getRecordSet(sqlstr)
+		while not rs_dep.eof	%>
+	<option value="<%=trim(rs_dep(0))%>" <%If trim(dep_id) = trim(rs_dep(0)) Then%> selected <%End If%>><%=rs_dep(1)%></option>
+<%	rs_dep.moveNext
+		wend
+		set rs_dep = nothing %>
+	</select>
+	</td>
+	<td align="right"  class="title_sort" width=12% >&nbsp;שיוך למחלקה&nbsp;</td>
+	<td align="right" class="title_sort" width=12%><input type=text dir="ltr" name="Month_Min_Order" value="<%=vfix(Month_Min_Order)%>" size="3" maxlength="3" style="font-family:arial" onkeypress="GetNumbers();" ID="Text1"></td>
+	<td align="right"  width=12%  class="title_sort" >&nbsp;יעד הזמנות מינימלי&nbsp;</td>
+
+	<td align="right" class="title_sort" width=12%><input type="text" size="3" maxlength="3" dir="ltr" style="font-family:arial" name="Order_Price" value="<%=nFix(Order_Price)%>" ID="Order_Price"></td>
+	<td align="right"  width=12%  class="title_sort" dir=rtl>&nbsp;שווי כספי של הזמנה&nbsp;&nbsp;</td>
+</tr>
+<tr>
+		<td align="right"  width=12% class="title_sort"><input type=text dir="ltr>" name="LASTNAME_ENG" value="<%=vFix(LASTNAME_ENG)%>"  style="width:150" maxlength=20 style="font-family:arial" ID="Text2"></td>
+	<td align=right  class="title_sort" width=12%>&nbsp;שם משפחה באנגלית<%'=arrTitles(4)%>&nbsp;<span style="color:#FF0000">*</span></td>
+
+	<td align="right" class="title_sort"><input type=text dir="ltr" name="mobile" value="<%=vfix(mobile)%>"  style="width:150" maxlength=20 style="font-family:arial" ID="Text6"></td>
+	<td align=right   class="title_sort"><!--נייד-->נייד עבודה<%'=arrTitles(9)%>&nbsp;</td>
+<td align="right" class="title_sort"><input type=text dir="ltr" name="LOGINNAME" value="<%=vFix(LOGINNAME)%>"  style="width:150" maxlength=20 style="font-family:arial" ID="LOGINNAME"></td>
+	<td align=right  class="title_sort">&nbsp;<!--שם משתמש--><%=arrTitles(5)%>&nbsp;<span style="color:#FF0000">*</span></td>
+	<td align="right" class="title_sort"><input type=text dir="<%=dir_obj_var%>" name="FIRSTNAME" value="<%=vFix(FIRSTNAME)%>"  style="width:150" maxlength=20 style="font-family:arial" ID="Text5"></td>
+	<td align=right class="title_sort">&nbsp;<!--שם פרטי--><%=arrTitles(3)%>&nbsp;<span style="color:#FF0000">*</span></td>
+
+</tr>
+
+<tr>
+
+<td align="right"  width=12% class="title_sort"><input type=text dir="ltr" name="FIRSTNAME_ENG" value="<%=vFix(FIRSTNAME_ENG)%>"  style="width:150" maxlength=20 style="font-family:arial" ID="Text4"></td>
+	<td align=right  class="title_sort" width=12%>&nbsp; שם פרטי באנגלית<%'=arrTitles(3)%>&nbsp;<span style="color:#FF0000">*</span></td>
+
+	<td align="right" class="title_sort"><input type=text dir="ltr" name="phone" value="<%=vfix(phone)%>"  style="width:150" maxlength=20 style="font-family:arial" ID="phone"></td>
+	<td align=right  class="title_sort">&nbsp;<!--טלפון--><%=arrTitles(8)%>&nbsp;</td>
+
+
+	<td align="right" class="title_sort"><input type=text dir="ltr" name="PASSWORD" value="<%=vFix(PASSWORD_U)%>"  style="width:150" maxlength=20 style="font-family:arial" ID="PASSWORD"></td>
+	<td align=right  class="title_sort">&nbsp;<!--סיסמה--><%=arrTitles(6)%>&nbsp;<span style="color:#FF0000">*</span></td>
+
+	<td align="right" class="title_sort"><input type=text dir="<%=dir_obj_var%>" name="LASTNAME" value="<%=vFix(LASTNAME)%>"  style="width:150" maxlength=20 style="font-family:arial" ID="Text3"></td>
+	<td align=right  class="title_sort">&nbsp;<!--שם משפחה--><%=arrTitles(4)%>&nbsp;<span style="color:#FF0000">*</span></td>
+
+
+	
+</tr>
+<tr>
+
+	<td align="right" class="title_sort"><input type=text dir="ltr" name="emailPrivate" value="<%=vfix(emailPrivate)%>"  style="width:150" maxlength=100 style="font-family:arial" ID="emailPrivate"></td>
+	<td align=right  class="title_sort">&nbsp;דואר אלקטרוני פרטי<%'=arrTitles(11)%>&nbsp;</td>
+
+	<td align="right" class="title_sort"><input type=text dir="ltr" name="email" value="<%=vfix(email)%>"  style="width:150" maxlength=100 style="font-family:arial" ID="Text9"></td>
+	<td align="right" class="title_sort">&nbsp;<!--דואר אלקטרוני-->דואר אלקטרוני עבודה<%'=arrTitles(11)%>&nbsp;<span style="color:#FF0000">*</span></td>
+
+	<td align="right" class="title_sort"><input type=text dir="ltr" name="fax" value="<%=vfix(fax)%>"  style="width:150" maxlength=20 style="font-family:arial" ID="Text8"></td>
+	<td align=right  class="title_sort">&nbsp;<!--פקס--><%=arrTitles(10)%>&nbsp;</td>
+
+	<td align="right" class="title_sort"><input type=text dir="ltr" name="mobilePrivate" value="<%=vfix(mobilePrivate)%>"  style="width:150" maxlength=20 style="font-family:arial" ID="mobilePrivate"></td>
+	<td align=right  class="title_sort"><!--נייד-->נייד פרטי<%'=arrTitles(9)%>&nbsp;</td>
+
+</tr>
+</table>

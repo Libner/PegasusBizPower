@@ -1,0 +1,267 @@
+<html STYLE="width: 364px; height: 349px; ">
+<head><title>Insert Flash</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1255">
+<head>
+<style>
+  html, body, button, div, input, select, td, fieldset { font-family: MS Shell Dlg; font-size: 8pt; };
+</style>
+<script>
+
+// if we pass the "window" object as a argument and then set opener to
+// equal that we can refer to dialogWindows and popupWindows the same way
+//opener = window.dialogArguments;
+
+var editdoc = window.dialogArguments;
+var objFlashLoaded = false;
+
+function _CloseOnEsc() {
+  if (event.keyCode == 27) { window.close(); return; }
+}
+
+window.onerror = HandleError
+
+function HandleError(message, url, line) {
+  var str = "An error has occurred in this dialog." + "\n\n"
+  + "Error: " + line + "\n" + message;
+  alert(str);
+//  window.close();
+  return true;
+}
+
+function Init() {
+
+  var elmSelectedFlash;
+  var htmlSelectionControl = "Control";
+  var grngMaster = editdoc.selection.createRange();
+  
+  document.body.onkeypress = _CloseOnEsc;
+  if (editdoc.selection.type == htmlSelectionControl) {
+    if (grngMaster.length == 1) {
+      elmSelectedFlash = grngMaster.item(0);
+      if (elmSelectedFlash.tagName == "EMBED") {
+		objFlashLoaded = true;
+		
+        document.all.txtFileName.value	= elmSelectedFlash.src.replace(/^[^*]*(\*\*\*)/, "$1");
+        document.all.bgrColor.value     = elmSelectedFlash.bgColor;
+        document.all.imgbgrColor.style.backgroundColor = elmSelectedFlash.bgColor;
+        document.all.Mquality.value		= elmSelectedFlash.quality;
+        if(elmSelectedFlash.wmode == 'transparent')
+        {document.all.bgrTransparency.checked = true;}
+        else
+        {document.all.bgrTransparency.checked = false;}
+        if(elmSelectedFlash.menu == 'true')
+        {document.all.showMenu.checked = true;}
+        else
+        {document.all.showMenu.checked = false;}
+        if(elmSelectedFlash.loop == 'true')
+        {document.all.loopMovie.checked = true;}
+        else
+        {document.all.loopMovie.checked = false;}
+        document.all.theight.value		= elmSelectedFlash.height;
+        document.all.twidth.value		= elmSelectedFlash.width;
+      }
+    }
+  }
+  btnOK.onclick = new Function("UploadImage()");
+  document.all.txtFileName.value = document.all.txtFileName.value || 'http://';
+}
+
+function _isValidNumber(txtBox) {
+  var val = parseInt(txtBox);
+  if (isNaN(val) || val < 0 || val > 9999) { return false; }
+  return true;
+}
+function UploadImage() {
+	if(document.form1.UploadFile1.value=='') 
+	{ 
+		btnOKClick(); 
+	}else{
+		document.form1.submit();
+	}	
+}
+function btnOKClick() {
+  var elmSelectedFlash ;
+  var FlashMov = '';
+  var curRange = editdoc.selection.createRange();
+	// error checking
+  var checkList = ['width','height'];
+  for (var idx in checkList) {
+    var fieldname = checkList[idx];
+    if (document.all['t'+fieldname].value == "") {
+      alert("You must specify a value for the '" +fieldname+ "' field!");
+      document.all['t'+fieldname].focus();
+      return;
+    }
+    else if (!_isValidNumber(document.all['t'+fieldname].value)) {
+      alert("You must specify a number between 0 and 9999 for '" +fieldname+ "'!");
+      document.all['t'+fieldname].focus();
+      return;
+    }
+  }
+
+  if (editdoc.selection.type == "Control" || curRange.htmlText) {
+    if (curRange.length == 1) {
+      elmSelectedFlash = curRange.item(0);
+      if (elmSelectedFlash.tagName == "EMBED") {
+		
+		elmSelectedFlash.src		= document.all.txtFileName.value;
+		elmSelectedFlash.src		= elmSelectedFlash.src.replace(/^[^*]*(\*\*\*)/, "$1");
+        elmSelectedFlash.bgColor	= document.all.bgrColor.value ;
+        elmSelectedFlash.quality	= document.all.Mquality.value ;
+        if(document.all.bgrTransparency.checked)
+        {elmSelectedFlash.wmode = 'transparent';}
+        else
+        {elmSelectedFlash.wmode = 'window';}
+        if(document.all.showMenu.checked)
+        { elmSelectedFlash.menu = 'true';}
+        else
+        {elmSelectedFlash.menu = 'false';}
+        if(document.all.loopMovie.checked)
+        {elmSelectedFlash.loop == 'true';}
+        else
+        {elmSelectedFlash.loop == 'false';}
+        elmSelectedFlash.height		= document.all.theight.value ;
+        elmSelectedFlash.width		= document.all.twidth.value ;
+       
+      }
+    }
+  }
+  
+  if( ! objFlashLoaded ) 
+  {
+	// delete selected content (if applicable)
+	if (editdoc.selection.type == "Control" || curRange.htmlText) {
+
+		if (!confirm("Overwrite selected content?")) { return; }
+
+		curRange.execCommand('Delete');
+		curRange = editdoc.selection.createRange();
+	}
+	if (document.all.txtFileName.value && document.all.txtFileName.value != "http://") {
+		FlashMov = document.all.txtFileName.value;
+		FlashMov = FlashMov.replace(/^[^*]*(\*\*\*)/, "$1"); // fix placeholder src values that editor converted to abs paths
+    }
+	// create embed
+	var emenu = '';
+	var eloop = '';
+	var ewmode = '';
+	if(document.all.showMenu.checked)
+	{ emenu="true";}
+	else
+	{ emenu="false";}
+	if(document.all.loopMovie.checked)
+	{ eloop="true";}
+	else
+	{ eloop="false";}
+	if(document.all.bgrTransparency.checked)
+	{ ewmode="transparent";}
+	else
+	{ ewmode="window";}
+	    
+	var Flash = '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH=' + document.all.twidth.value +' height=' + document.all.theight.value +'>'
+			  + '<PARAM NAME=movie VALUE="' +FlashMov+ '">'
+			  + '<PARAM NAME=quality VALUE="' +document.all.Mquality.value+ '">'
+			  + '<PARAM NAME=menu VALUE="' +emenu+ '">'
+			  + '<PARAM NAME=wmode VALUE="' +ewmode+ '">'
+			  +	'<EMBED pluginspage=http://www.macromedia.com/go/getflashplayer'
+	          + ' type=application/x-shockwave-flash'
+	          + ' src="' +FlashMov+ '"'
+			  + ' bgcolor="' +document.all.bgrColor.value+ '"'
+			  + ' quality="' +document.all.Mquality.value+ '"'
+			  + ' wmode="' +ewmode+ '"'
+	          + ' width="' +document.all.twidth.value+ '"'
+	          + ' height="' +document.all.theight.value+ '"'
+	          + ' menu="' +emenu+ '"'
+	          + ' loop="' +eloop+ '"></EMBED></OBJECT>';
+	
+	// insert Flash
+	//opener.editor_insertHTML(objname, Flash); 
+	curRange.pasteHTML(Flash) 
+  }  
+  // close popup window
+  
+  window.close();
+}
+function setBgrColor()
+{
+	var oldcolor = document.all.bgrColor.value;
+    var newcolor = showModalDialog("select_color.html", oldcolor, "resizable: no; help: no; status: no; scroll: no;");
+    if (newcolor != null) { document.all.bgrColor.value = "#"+newcolor; document.all.imgbgrColor.style.backgroundColor = "#"+newcolor;}
+}
+
+</SCRIPT>
+</HEAD>
+<BODY id=bdy onload="Init()" style="background: threedface; color: windowtext; margin: 10px; BORDER-STYLE: none" scroll=no>
+
+<FIELDSET style="width: 334px; text-align: center;left: 12px; top: 10px; position: absolute">
+<LEGEND>Flash Movie</LEGEND>
+<table border=0 cellspacing=6 cellpadding=0>
+ <tr>
+	<td nowrap>Upload movie:&nbsp;</td>
+	<td>
+		<form name="form1" ACTION="Aimgadd.asp?ins=flash" target="hidden_frame" METHOD="post" ENCTYPE="multipart/form-data">
+		<input TYPE="FILE" NAME="UploadFile1" ID="UploadFile1" style="width: 240px; height: 22px;">
+	</td> 
+ </tr>
+ </form>
+ <tr>
+	<td>Movie URL:</td>
+	<td>
+		<input type="text" ID=txtFileName value="" style="width: 240px;" onfocus="select()"> 
+	</td> 
+ </tr>
+</table>
+</FIELDSET>
+
+<FIELDSET style="width: 249px; text-align: left;left: 12px; top: 94px; position: absolute">
+<LEGEND>Properties</LEGEND>
+
+<table border=0 cellspacing=7 cellpadding=0 width=100%>
+<tr>
+	<td>Width: &nbsp;</td>
+	<td style="padding-left:4px">
+	 <input type="text" name="twidth" value="" style="width: 50px" maxlength=4>
+	 pixels
+	</td>
+ </tr>
+ <tr>
+	<td>Height: &nbsp;</td>
+	<td style="padding-left:4px">
+	 <input type="text" name="theight" value="" style="width: 50px" maxlength=4>
+	 pixels
+	 </td>
+ </tr>
+ <tr>
+  <td><nobr>Background color:</nobr></td>
+  <td style="padding-left:4px"><input type="text" name="bgrColor" value="" size=7 style="height: 22px;">&nbsp;<BUTTON style="width: 22px; height: 22px; border: 1px none;"  unselectable="on" onclick="setBgrColor();" id=button3 name=button3><img id=imgbgrColor style="background-color:#000000;" src="../images/selcolor.gif" border=0></BUTTON></td>
+ </tr>
+ <tr>
+  <td><nobr>Transparency:</nobr></td>
+  <td><INPUT type="checkbox" id=bgrTransparency name=bgrTransparency></td>
+ </tr>
+ <tr>
+  <td width=73>Movie quality:&nbsp;</td>
+  <td style="padding-left:4px">
+   <select name="Mquality" id="Mquality" size=1 style="width: 81px">
+   <option value="High">High</option>
+   <option value="Medium">Medium</option>
+   <option value="Low">Low</option>
+   </select>
+  </td>
+ </tr>
+ <tr>
+  <td><nobr>Loop movie:</nobr></td>
+  <td><INPUT type="checkbox" id=loopMovie name=loopMovie checked></td>
+ </tr>
+ <tr>
+  <td><nobr>Menu:</nobr></td>
+  <td><INPUT type="checkbox" id=showMenu name=showMenu checked></td>
+ </tr>
+</table>
+</FIELDSET>
+
+<BUTTON ID=btnOK style="left: 276px; top: 100px; position: absolute; width: 70px; height: 22px;" type=submit>OK</BUTTON>
+<BUTTON style="left: 276px; top: 128px; position: absolute; width: 70px; height: 22px;" type=reset onClick="window.close();">Cancel</BUTTON>
+
+</BODY>
+</HTML>

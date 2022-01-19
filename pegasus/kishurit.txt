@@ -1,0 +1,166 @@
+1.DELETE FROM pegasus_messages;
+
+2.stored procedure: messages_insert_message
+
+IF EXISTS(SELECT MessageCode FROM pegasus_messages WHERE (MessageCode = @MessageCode))
+		DELETE FROM pegasus_messages WHERE (MessageCode = @MessageCode);	
+	
+	INSERT INTO [dbo].[pegasus_messages]   ([MessageCode], [MessageDate], [MessageTime], [for], [fn], [sn], [pn], [cp], [msg], 
+	[a1000],	[fxn], [st], [hn], [cty], [zip], [destrp], [howreach], [emlad1])
+     VALUES  (@MessageCode, @MessageDate, @MessageTime, @for, @fn, @sn, @pn, @cp, @msg, @a1000, @fxn, @st, 
+     @hn, @cty, @zip, @destrp, @howreach, @emlad1);	
+     
+     pn == phone ex: 086651150 
+     fxn == ?phone 2
+     cp== cellulary 
+     
+     
+     
+     
+     3.**************************
+     set ANSI_NULLS ON
+set QUOTED_IDENTIFIER ON
+go
+
+ALTER PROCEDURE [dbo].[messages_insert_appeals]
+/*
+	(
+		@parameter1 datatype = default value,
+		@parameter2 datatype OUTPUT
+	)
+*/
+AS
+	SET NOCOUNT ON	
+	SET DATEFORMAT DMY	
+	SET CONCAT_NULL_YIELDS_NULL OFF
+	
+	DECLARE @MessageCode char(25), @MessageDate char(10),	@MessageTime char(10),	@for varchar(50),	@fn varchar(50),
+	@sn varchar(50),	@pn varchar(50),	@cp varchar(50),	@msg	 varchar(200),	@a1000	varchar(1000	),	@fxn varchar(50),
+	@st varchar(200),  @hn varchar(200),  @cty varchar(200), 	@zip varchar(200), @destrp varchar(200), @howreach varchar(200),
+	@emlad1 varchar(200), @ContactId int, @OrgID int, @AppealId int
+	
+	SET @OrgID = 264;
+	
+	SELECT @MessageCode = MIN(MessageCode) FROM pegasus_messages;
+	    
+	WHILE IsNULL(@MessageCode, '') <> ''
+	BEGIN	
+	
+			SET @MessageDate = '';   SET @MessageTime = '';   SET @for = '';   SET @fn = '';   SET @sn = '';   SET @ContactId = NULL;
+			SET @pn = '';   SET @cp = '';   SET @msg = '';   SET @a1000 = '';   SET @fxn = '';   SET @st = '';   SET @AppealId = NULL;
+			SET @hn = '';   SET @cty = '';   SET @zip = '';   SET @destrp = '';   SET @howreach  = '';   SET @emlad1 = '';
+	
+			SELECT @MessageDate = [MessageDate], @MessageTime = [MessageTime], @for = [for], @fn = [fn], @sn = [sn], 
+			@pn = [pn], @cp = [cp], @msg = [msg], @a1000 = [a1000], @fxn = [fxn], @st = [st], @hn = [hn], @cty = [cty],
+			@zip = [zip], @destrp = [destrp], @howreach = [howreach], @emlad1 = [emlad1] 
+			FROM [dbo].[pegasus_messages] WHERE ([MessageCode] = @MessageCode);
+			
+			--check if already exists from for this message number
+			IF NOT EXISTS(SELECT Appeal_Id FROM FORM_VALUE WHERE (FIELD_ID = 40581) 
+			AND (FIELD_VALUE = @MessageCode)) AND (rtrim(ltrim(@cp)) <> '' OR rtrim(ltrim(@pn)) <> '')
+			BEGIN
+			
+				--PRINT 'not exists'					
+				--find contact by cell phone
+				IF rtrim(ltrim(@cp)) <> '0000000000' AND rtrim(ltrim(@cp)) <> ''
+				BEGIN
+				SELECT TOP 1 @ContactId = C.CONTACT_ID FROM dbo.CONTACTS C WHERE (C.ORGANIZATION_ID  = @OrgID) 
+				AND (C.cellular = @cp) ORDER BY date_update DESC;
+				END
+				ELSE --אסור להכניס יותר מאיש קשר אחד עם סלולרי 0000000000 - זה איש קשר אחד דנה עבור אלו שלא השאירו פרטים
+					SET @cp = '';
+				--PRINT '1 @ContactId=' + sTr(@ContactId)					
+				
+				IF rtrim(ltrim(@pn)) <> '000000000' AND rtrim(ltrim(@pn)) <> ''
+				BEGIN
+					If  @ContactId IS NULL --find contact by  phone
+					BEGIN
+						SELECT TOP 1 @ContactId = C.CONTACT_ID FROM dbo.CONTACTS C 
+						WHERE (C.ORGANIZATION_ID  = @OrgID) AND (C.phone = @pn) ORDER BY date_update DESC;					
+					END
+				END
+				ELSE
+					SET @pn = '';
+				
+				If  @ContactId IS NULL --insert new contact
+				BEGIN
+					DECLARE @CompanyId int
+					SELECT @CompanyId = company_id FROM dbo.companies WHERE (Organization_ID = @OrgID) 
+					AND (private_flag = 1);
+					
+					SET NOCOUNT ON;
+					INSERT INTO CONTACTS (company_id, contact_name, email, phone, cellular, date_update, Organization_ID)				  
+					VALUES (@CompanyId, Left(rtrim(ltrim(@fn + ' ' + @sn)), 50), Left(rtrim(ltrim(@emlad1)), 50), 
+					Left(rtrim(ltrim(@pn)), 20), Left(rtrim(ltrim(@cp)), 20), getDate(), @OrgID); 
+					SELECT @ContactId = @@IDENTITY;
+					
+					--PRINT '3 @ContactId=' + sTr(@ContactId)
+				END
+				
+				If  @ContactId IS NOT NULL
+				BEGIN
+				SET NOCOUNT ON;
+				INSERT INTO APPEALS (APPEAL_DATE, [USER_ID], CONTACT_ID, COMPANY_ID, PROJECT_ID, MECHANISM_ID, 
+				QUESTIONS_ID, appeal_status, appeal_deleted, type_id, ORGANIZATION_ID) 
+				SELECT getDate(), NULL, Contact_Id, Company_Id, NULL, NULL, 
+				16719,  1, 0, 2, @OrgID FROM dbo.Contacts WHERE (Contact_Id = @ContactId);
+				SELECT @AppealId = @@IDENTITY;	
+				
+				IF @AppealId IS NOT NULL
+				BEGIN
+				
+				--מספר הודעה
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40581,@MessageCode);				
+				--תאריך הודעה
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40579,@MessageDate);
+				--שעת הודעה
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40580,@MessageTime);
+				--עבור
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40569,@for);
+				--שם פרטי
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40571,@fn);
+				--שם משפחה
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40573,@sn);
+				--טלפון
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40574,@pn);
+				--טלפון נייד
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40576,@cp);
+				--הודעה
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40577,@msg);
+				--הודעה.
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40578,@a1000);
+				--מספר פקס
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40583,@fxn);
+				--רחוב
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40584,@st);
+				--מספר בית 
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40592,@hn);
+				--ישוב
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40593,@cty);
+				--מיקוד
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40594,@zip);
+				--יעד נסיעה
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40595,@destrp);
+				--איך הגעת אלינו
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40596,@howreach);
+				--כתובת email
+				INSERT INTO FORM_VALUE (Appeal_Id,Field_Id,Field_Value) VALUES (@AppealId,40599,@emlad1);
+				END
+				END
+			END
+	
+			SELECT @MessageCode = MIN(MessageCode) FROM pegasus_messages Where MessageCode > @MessageCode;
+	  END	   
+	  
+	  --DELETE FROM pegasus_messages;
+	
+	RETURN
+
+
+messages_insert_appeals
+
+SELECT * FROM FORM_VALUE WHERE (FIELD_ID = 40581) 
+			AND (FIELD_VALUE = '4383120642335')
+
+delete from Appeals where Appeal_Id=371317
+select * from  FORM_VALUE where Appeal_Id=371317

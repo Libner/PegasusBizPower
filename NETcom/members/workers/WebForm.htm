@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+
+<html >
+<head><title>
+	GridViewScroll with jQuery
+</title>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.js"></script>
+ <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+ <script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.min.js"></script>
+    <Style>
+div.cost_center{
+  width:320px;
+  font-size:75%;
+  margin-left:5px;
+  margin-top:5px;
+  margin-bottom: 2px;
+  float: right;
+  display: inline-block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height:300px;  
+}
+
+div.cost_center label { 
+  float:none;
+  font-size:14px;
+}
+
+div.cost_center table{
+  width:300px;
+  border-collapse: collapse; 
+  float:right;
+  table-layout:fixed;
+}
+
+div.cost_center table tr{
+  height:16px;
+}
+div.cost_center th{
+  font-weight:normal;
+}
+
+div.cost_center table tbody{
+  display: block;
+  overflow: auto;
+  max-height:240px;
+}
+
+div.cost_center table thead{
+  display:block;
+}
+
+div.cost_center table tfoot{
+  display:block;
+}
+div.cost_center table tfoot td{
+  width:280px;
+}
+div.cost_center .cc{
+  width:60px;
+  text-align: center; 
+  border: 1px solid #999;
+}
+
+div.cost_center .nombre{
+  width:150px;
+}
+div.cost_center tbody .nombre{
+  border: 1px solid #999;
+}
+
+div.cost_center table tfoot td{
+ text-align:center;  
+ border: 1px solid #999; 
+} 
+
+div.cost_center table th, 
+div.cost_center table td { 
+  padding: 2px;
+  vertical-align: middle; 
+}
+
+div.cost_center table tbody td {
+  white-space: normal;
+  font:  .8em/1.4em Verdana, sans-serif;
+  color: #000;
+  background-color: white;
+}
+div.cost_center table th.cabecera { 
+  font:  0.8em/1.4em Verdana, sans-serif;
+  color: #000;
+  background-color: #FFEAB5;
+}
+</Style>
+<script>
+$('#example').DataTable( {
+    fixedColumns: {
+        leftColumns: 2
+    }
+} );
+</script>
+</head>
+<body>
+<table>
+ <thead>
+    <tr>
+      <th class="nombre"><%= f.label :cost_center %></th>
+      <th class="cabecera cc">Personal</th>
+      <th class="cabecera cc">Dpto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @cost_centers.each do |cc| %>
+    <tr>
+      <td class="nombre"><%= cc.nombre_corto %></td>
+      <td class="cc"><%= cc.cacentrocoste %></td>
+      <td class="cc"><%= cc.cacentrocoste_dpto %></td>
+    </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3"><a href="#">Mostrar mas usuarios</a></td>
+    </tr>
+  </tfoot>
+</table>
+</body>
+</html>

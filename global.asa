@@ -1,0 +1,42 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+Sub Application_OnStart
+' code here
+	Application("ConnectionString") = "Provider=SQLOLEDB.1;Password=cyber;Persist Security Info=True;" &_
+	"User ID=bizpower_pegasus_user;Initial Catalog=bizpower_pegasus_test;Data Source=192.168.0.40"
+	
+	
+	Application("VirDir") = "/bizpower_pegasus"
+
+	Application("VirDir") = "/bizpower_pegasus"
+	Application("SiteUrl") ="http://192.168.0.92/pegasusnew_mila" ' "http://bluto/pegasus2011"  'http://clients.cyberserve.co.il/pegasus
+	Application("PegasusServicesUrl")="http://pegasusservicesfaina.bizpower.co.il"
+	
+	'added by Mila 16/07/2017 - DB names for using in joined queries between two databases	Application("VirDir") = "/bizpower_pegasus"
+
+	Application("VirDir") = ""
+	'Application("SiteUrl") ="http://192.168.0.41/" ' "http://bluto/pegasus2011"  'http://clients.cyberserve.co.il/pegasus
+
+	'!!!!Change in PRODUCTION!!!!!!!!!!!!!!!
+	Application("pegasusDBName")="pegasus_test"
+	Application("bizpowerDBName")="bizpower_pegasus_test"
+	Application("smtpserver") ="relay.cyberserve.co.il"
+   ' Application("bizpowerDBName")="bizpower_pegasus"
+End Sub
+
+Sub Application_OnEnd
+'code here  
+End Sub
+ 
+Sub Session_OnStart	
+
+Session.Timeout = 1200 '600
+  
+End Sub
+
+Sub Session_OnEnd
+
+End Sub
+
+set con = Nothing
+</SCRIPT> 
+

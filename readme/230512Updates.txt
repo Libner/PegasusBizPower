@@ -1,0 +1,53 @@
+1. for update dockets upload file pegasus.dll from pegasus 
+
+2.Add status to reports in Bizpower.pegasus:
+  -- add function get_StatusName
+  -- change stored procedure [get_appeals_report]
+  -- update file : \\bluto\wwwroot\bizpower_pegasus\NETcom\members\reports\report_forms.asp
+
+  -- update file \\bluto\wwwroot\bizpower_pegasus\NETcom\members\companies\contact.asp  ------  change width dynamic files
+
+
+-- update file http://bluto/bizpower_pegasus/netcom/members/workers/default.asp
+-- update stored procedure:[users_site_list]
+
+הוספה קבוצה חדשה להפצת מיילים
+----------------------------------------
+
+INSERT INTO PEOPLES (PEOPLE_PHONE, PEOPLE_FAX, PEOPLE_CELL, PEOPLE_EMAIL, PEOPLE_OFFICE,
+			PEOPLE_NAME, PEOPLE_COMPANY, GROUPID, ORGANIZATION_ID, CONTACT_ID, COMPANY_ID)	
+SELECT  CON.phone, CON.fax, CON.cellular, CON.email, CON.messanger_name,
+			CON.CONTACT_NAME, COM.COMPANY_NAME, 4269, 264, CON.CONTACT_ID,
+			CON.COMPANY_ID FROM dbo.CONTACTS CON LEFT OUTER JOIN dbo.COMPANIES COM 
+			ON CON.COMPANY_ID = COM.COMPANY_ID WHERE 
+	CON.CONTACT_ID IN (SELECT MIN(c.CONTACT_ID) FROM CONTACTS c 					
+			GROUP BY isNULL(c.email, '')	HAVING Count(c.CONTACT_ID) >= 1)
+			
+			
+			--------------------------------
+			DECLARE  @Result Table(
+SPID int, Status varchar(50), Login varchar(50),
+  HostName varchar(50), BlkBy varchar(50), DBName sysname NULL, Command varchar(max), CPUTIME int, DiskIO int,
+    LastBatch varchar(255), ProgramName varchar(255), SPID2 int, REQUESTID int);
+Insert Into @Result Exec sp_who2;
+SELECT * FROM @Result WHERE dbname = 'bizpower_pegasus' and login='bizpower_pegasus_user'
+
+----index not in use---
+
+SELECT distinct DB_NAME(database_id),
+  OBJECT_NAME([object_id])
+FROM sys.dm_db_index_usage_stats
+
+where DB_NAME(database_id)='bizpower_pegasus'
+and  user_seeks=0 and user_scans=0 and user_lookups=0
+and system_seeks=0 and system_scans=0 and system_lookups=0
+
+------------------------------------------
+
+
+SELECT OBJECT_NAME(i.OBJECT_ID) AS TableName,*
+from sys.dm_db_index_usage_stats indexstats
+INNER JOIN sys.indexes i ON i.OBJECT_ID = indexstats.OBJECT_ID 
+where DB_NAME(database_id)='bizpower_pegasus'
+
+	

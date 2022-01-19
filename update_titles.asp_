@@ -1,0 +1,86 @@
+<!--#include file="netcom/connect.asp" -->
+<!--#include file="netcom/reverse.asp" -->
+<%
+	con.executeQuery("DELETE FROM bar_organizations")
+	con.executeQuery("DELETE FROM bar_users")
+	
+	sqlstr = "Select ORGANIZATION_ID,LANG_ID, WORK_PRICING, SURVEYS, EMAILS, COMPANIES, TASKS, CASH_FLOW FROM ORGANIZATIONS Order BY ORGANIZATION_ID"
+	set rs_org = con.getRecordSet(sqlstr)
+	while not rs_org.eof
+		orgID = trim(rs_org(0))
+		langID = trim(rs_org(1))
+		If trim(langID) =  "2" Then
+			lang_ = "_eng"
+		Else
+			lang_ = ""
+		End If	
+		sqlstr = "Select DISTINCT bar_id, bar_title" & lang_ & " FROM bars Order BY bar_id"
+		set rs_bars = con.getRecordSet(sqlstr)
+		while not rs_bars.eof
+			barID = rs_bars(0)
+			barTitle = rs_bars(1)
+			If barID = "1" Or barID = "8" Or barID = "9" Or barID = "10" Or barID = "11" Or barID = "12" Or barID = "13"  Then	
+				 barVisible	= trim(rs_org("COMPANIES"))
+			ElseIf barID = "2" Or barID = "14" Or barID = "15" Or barID = "16" Or barID = "17" Then	
+				 barVisible = trim(rs_org("SURVEYS"))
+			ElseIf barID = "3" Or barID = "18" Or barID = "19" Or barID = "20" Or barID = "21" Or barID = "22" Then	
+				 barVisible = trim(rs_org("EMAILS"))	
+			ElseIf barID = "4" Or barID = "23" Or barID = "24" Or barID = "25" Or barID = "26" Or barID = "27" Or barID = "28" Or barID = "29" Or barID = "30"  Then	
+				barVisible = trim(rs_org("WORK_PRICING"))
+			ElseIf barID = "5" Or barID = "8" Or barID = "31" Or barID = "32" Or barID = "33" Or barID = "34" Or barID = "35"  Or barID = "36"  Or barID = "37"  Or barID = "38"  Then	
+				barVisible = trim(rs_org("CASH_FLOW"))
+			ElseIf barID = "6" Or barID = "39" Or barID = "40" Then		
+				barVisible = trim(rs_org("TASKS"))		
+			ElseIf barID = "29" Or barID = "41" Then		
+				barVisible = 1					
+			Else
+				barVisible = 1 	
+			End If			
+			sqlstr = "Insert Into bar_organizations values (" & barID & "," & orgID & ",'" & sFix(barTitle) & "','" & barVisible & "')"
+			'Response.Write sqlstr
+			'Response.End
+			con.executeQuery(sqlstr)
+			rs_bars.moveNext
+			Wend
+			set rs_bars = nothing
+			
+			sqlstr = "Select User_ID , WORK_PRICING, SURVEYS, EMAILS, COMPANIES, TASKS, CASH_FLOW FROM USERS WHERE ORGANIZATION_ID = " & OrgID
+			set rs_users = con.getRecordSet(sqlstr)
+			while not rs_users.eof
+			    userID = trim(rs_users(0))			  				
+				sqlstr = "Select bar_id FROM bar_organizations WHERE organization_id = " & OrgID & " Order BY bar_id"
+				set rs_bars = con.getRecordSet(sqlstr)
+				while not rs_bars.eof
+					barID = rs_bars(0)
+					If barID = "1" Or barID = "8" Or barID = "9" Or barID = "10" Or barID = "11" Or barID = "12" Or barID = "13"  Then	
+						barVisible	= trim(rs_users("COMPANIES"))	
+					ElseIf barID = "2" Or barID = "14" Or barID = "15" Or barID = "16" Or barID = "17" Then	
+						barVisible = trim(rs_users("SURVEYS"))		
+					ElseIf barID = "3" Or barID = "18" Or barID = "19" Or barID = "20" Or barID = "21" Or barID = "22" Then	
+						barVisible = trim(rs_users("EMAILS"))
+					ElseIf barID = "4" Or barID = "23" Or barID = "24" Or barID = "25" Or barID = "26" Or barID = "27" Or barID = "28" Or barID = "29" Or barID = "30"  Then	
+						barVisible = trim(rs_users("WORK_PRICING"))	
+					ElseIf barID = "5" Or barID = "8" Or barID = "31" Or barID = "32" Or barID = "33" Or barID = "34" Or barID = "35"  Or barID = "36"  Or barID = "37"  Or barID = "38"  Then	
+						barVisible = trim(rs_users("CASH_FLOW"))		
+					ElseIf barID = "6" Or barID = "39" Or barID = "40" Then		
+						barVisible = trim(rs_users("TASKS"))		
+					ElseIf barID = "29" Or barID = "41" Then		
+						barVisible = 1			
+					Else
+						barVisible = 1 	
+					End If					
+					
+					sqlstr = "Insert Into bar_users values (" & barID & "," & orgID & "," & userID & ",'" & barVisible & "')"
+					con.executeQuery(sqlstr)
+					rs_bars.moveNext
+				Wend
+				set rs_bars = nothing			    	
+			    						
+				rs_users.moveNext
+			wend
+			set rs_users = nothing
+
+	rs_org.moveNext
+	Wend
+	set rs_org = Nothing
+%>

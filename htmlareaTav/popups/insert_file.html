@@ -1,0 +1,176 @@
+<!-- based on insimage.dlg -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD W3 HTML 3.2//EN">
+<HTML  id=dlgFile STYLE="width: 432px; height: 220px; ">
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1255">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<TITLE>Insert File</TITLE>
+<style>
+  html, body, button, div, input, select, fieldset { font-family: MS Shell Dlg; font-size: 8pt; position: absolute; };
+</style>
+<SCRIPT>
+
+function _CloseOnEsc() {
+  if (event.keyCode == 27) { window.close(); return; }
+}
+
+function _getTextRange(elm) {
+  var r = elm.parentTextEdit.createTextRange();
+  r.moveToElementText(elm);
+  return r;
+}
+
+window.onerror = HandleError
+
+function HandleError(message, url, line) {
+  var str = "An error has occurred in this dialog." + "\n\n"
+  + "Error: " + line + "\n" + message;
+  alert(str);
+  window.close();
+  return true;
+}
+var FileLoaded = false;
+var imgIconName = '';
+function Init() {
+	var isA = null;
+	document.body.onkeypress = _CloseOnEsc;
+	var globalDoc = window.dialogArguments;      
+	var grngMaster = globalDoc.selection.createRange();
+	if (globalDoc.selection.type == "Text")       
+	{	
+		var	RangeText = grngMaster.text; 
+		if (RangeText == null) { RangeText = ''; } 
+		if (RangeText != '') {txtAltText.value = RangeText ;}
+    	if (grngMaster.parentElement())
+		{ 
+			isA = getEl("A",globalDoc.selection.createRange().parentElement());
+		}
+	}else if (globalDoc.selection.type == "Control"){
+		if (grngMaster.length == 1) {
+			var elmSelectedImage = grngMaster.item(0);
+			isA = getEl("A",elmSelectedImage.parentElement);
+		}	
+	}
+	
+	btnOK.onclick = new Function("UploadImage()");
+
+	txtFileName.value = isA ? isA.href : "http:\/\/" ;
+	selTarget.value = isA ? isA.target : "" ;
+	
+	document.form1.UploadFile1.focus();
+}
+function getEl(sTag,start) 
+{ 
+	while ((start!=null) && (start.tagName!=sTag)) 
+	start = start.parentElement; 
+	return start; 
+} 
+function UploadImage() {
+	if(document.form1.UploadFile1.value=='') 
+	{ 
+		btnOKClick(); 
+	}else{
+		document.form1.submit();
+	}	
+}
+function RadioClick(oiconpath){
+	imgIconName = oiconpath;
+}
+function btnOKClick() {
+	var RangeText = '';
+	var globalDoc = window.dialogArguments;
+	var grngMaster = globalDoc.selection.createRange();
+	if (globalDoc.selection.type == "Text")
+	{ RangeText = grngMaster.text }
+    if (RangeText == null) { RangeText = ''; } 
+    var txtTitleText = txtAltText.value;
+    
+	if (!txtFileName.value || txtFileName.value == "http://") { 
+		alert("File URL must be specified.");
+		document.form1.UploadFile1.focus();
+		return;
+	}
+	if (txtTitleText != ''){
+		RangeText = txtTitleText
+	}else{
+		RangeText = txtFileName.newFileName
+	}
+  
+  grngMaster.execCommand('Delete');
+  grngMaster = globalDoc.selection.createRange();
+  strLink = "<A href='" + txtFileName.value + "' target=" + selTarget.value + " title='" + txtTitleText + "'>" + imgIconName + RangeText + "</A>"
+  grngMaster.pasteHTML(strLink)
+
+  window.close();
+}
+</SCRIPT>
+</HEAD>
+<BODY id=bdy onload="Init()" style="background: threedface; color: windowtext;" scroll=no>
+<DIV id=divUploadFile1 style="left: 0.98em; top: 1.2168em; width: 7em; height: 1.2168em; ">Upload File:</DIV>
+<form name="form1" ACTION="Aimgadd.asp?ins=file" target="hidden_frame" METHOD="post" ENCTYPE="multipart/form-data">
+<input TYPE="FILE" NAME="UploadFile1" ID="UploadFile1" style="left: 8.54em; top: 1.0647em; width: 29.8em;height: 2.1294em; " tabIndex=5>
+</form>
+<DIV id=divFileName style="left: 0.98em; top: 3.9168em; width: 7em; height: 1.2168em; ">File URL:</DIV>
+<INPUT ID=txtFileName type=text tabIndex=15 style="left: 8.54em; top: 3.8025em; width: 29.8em; height: 2.1294em; " onfocus="select()">
+
+<DIV id=divAltText style="left: 0.98em; top: 6.8067em; width: 9.28em; height: 1.2168em; ">Title:</DIV>
+<INPUT type=text ID=txtAltText tabIndex=15 style="left: 8.54em; top: 6.5025em; width: 29.8em; height: 2.1294em; " onfocus="select()">
+
+<DIV id=divAlign style="left: 0.98em; top: 9.71em; width: 4.76em; height: 1.2168em; ">Target:</DIV>
+<SELECT size=1 ID=selTarget tabIndex=20 style="left: 8.54em; top: 9.3218em; width: 10.72em; height: 2.1294em; ">
+<OPTION id=optNotSet value=""> Not set </OPTION>
+<OPTION id=optLeft value="_blank"> New Window </OPTION>
+<OPTION id=optRight value="_parent"> Parent Window </OPTION>
+<OPTION id=optTexttop value="_self" selected> Same Window </OPTION>
+<OPTION id=optabsMiddle value="_top"> Topmost Window </OPTION>
+</SELECT>
+
+<BUTTON ID=btnOK style="left: 31.36em; top: 9.4218em; width: 7em; height: 2.2em; " type=submit tabIndex=40 >OK</BUTTON>
+<BUTTON ID=btnCancel style="left: 31.36em; top: 12.1em; width: 7em; height: 2.2em; " type=reset tabIndex=45 onClick="window.close();">Cancel</BUTTON>
+
+<DIV id=divSelectIcon style="left: 0.98em; top: 12.61em; width: 4.76em; height: 1.2168em; ">Icon:</DIV>
+
+<DIV id=divIcons style="left: 7.54em; top: 12.0em; width: 200px; height: 70px; ">
+<TABLE cellSpacing=4 cellPadding=2 border=0 align=left>
+	<TR>
+		<TD noWrap width="20"  align=left valign=top><INPUT type=radio value="" name=selIcon checked></TD>
+		<TD noWrap width="30"  align=left style="font-family: MS Shell Dlg; font-size: 8pt;">
+			None
+		</TD>
+		<TD noWrap width="20" align=left valign=top><INPUT type=radio value="<IMG src='../../icons/icon_word.gif' align=absMiddle border=0 hspace=5>" name=selIcon onclick="RadioClick(this.value)"></TD>
+		<TD noWrap width="30" align=left>
+			<IMG src="../../icons/icon_word.gif" border=0 align=absMiddle>
+		</TD>
+		<TD noWrap width="20" align=left valign=top><INPUT type=radio value="<IMG src='../../icons/icon_excel.gif' align=absMiddle border=0 hspace=5>" name=selIcon onclick="RadioClick(this.value)"></TD>
+		<TD noWrap width="30" align=left>
+			<IMG src="../../icons/icon_excel.gif" border=0 align=absMiddle>
+		</TD>
+		<TD noWrap width="20" align=left valign=top><INPUT type=radio value="<IMG src='../../icons/icon_html.gif' align=absMiddle border=0 hspace=5>" name=selIcon onclick="RadioClick(this.value)"></TD>
+		<TD noWrap width="30" align=left>
+			<IMG src="../../icons/icon_html.gif" border=0 align=absMiddle>
+		</TD>
+	</TR>
+	<TR>
+		<TD noWrap valign=top><INPUT type=radio value="<IMG src='../../icons/icon_ppoint.gif' align=absMiddle border=0 hspace=5>" name=selIcon onclick="RadioClick(this.value)"></TD>
+		<TD noWrap>
+			<IMG src="../../icons/icon_ppoint.gif" border=0 align=absMiddle>
+		</TD>
+		<TD noWrap valign=top><INPUT type=radio value="<IMG src='../../icons/icon_acrobat.gif' align=absMiddle border=0 hspace=5>" name=selIcon onclick="RadioClick(this.value)"></TD>
+		<TD noWrap>
+			<IMG src="../../icons/icon_acrobat.gif" border=0 align=absMiddle>
+		</TD>
+		<TD noWrap valign=top><INPUT type=radio value="<IMG src='../../icons/icon_zip.gif' align=absMiddle border=0 hspace=5>" name=selIcon onclick="RadioClick(this.value)"></TD>
+		<TD noWrap>
+			<IMG src="../../icons/icon_zip.gif" border=0 align=absMiddle>
+		</TD>
+		<TD noWrap valign=top><INPUT type=radio value="<IMG src='../../icons/icon_disk.gif' align=absMiddle border=0 hspace=5>" name=selIcon onclick="RadioClick(this.value)"></TD>
+		<TD noWrap>
+			<IMG src="../../icons/icon_disk.gif" border=0 align=absMiddle>
+		</TD>
+	</TR>
+</TABLE>	
+</DIV>
+
+</BODY>
+</HTML>

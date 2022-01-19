@@ -1,0 +1,6 @@
+SELECT COUNT(LoginID) AS countID, DATEDIFF(mi,LoginTime,GETDATE ( )) AS TimeElapsed
+FROM FailedLogins
+WHERE (LoginUN = '#username#' OR LoginSessionID = '#SESSION.sessionid#' OR LoginIP = '#REMOTE_ADDR#')
+    AND DATEDIFF(mi,LoginTime,GETDATE ( )) <= 60
+GROUP BY LoginID, LoginTime
+HAVING COUNT(LoginID) >= 5;

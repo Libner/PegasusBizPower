@@ -1,0 +1,17 @@
+.coolButton
+{
+    BORDER-RIGHT: buttonface 1px solid;
+    PADDING-RIGHT: 1px;
+    BORDER-TOP: buttonface 1px solid;
+    PADDING-LEFT: 1px;
+    PADDING-BOTTOM: 1px;
+    BORDER-LEFT: buttonface 1px solid;
+    CURSOR: default;
+    PADDING-TOP: 1px;
+    BORDER-BOTTOM: buttonface 1px solid;
+/*    TEXT-ALIGN: center */
+}
+.coolButton IMG
+{
+    FILTER: gray()
+}

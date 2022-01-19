@@ -1,0 +1,135 @@
+<!-- based on insimage.dlg -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD W3 HTML 3.2//EN">
+<HTML  id=dlgFile STYLE="width: 432px; height: 155px; ">
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1255">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<TITLE>Hyperlink</TITLE>
+<style>
+  html, body, button, div, input, select, td, fieldset { font-family: MS Shell Dlg; font-size: 8pt; };
+</style>
+<SCRIPT>
+
+function _CloseOnEsc() {
+  if (event.keyCode == 27) { window.close(); return; }
+}
+
+function _getTextRange(elm) {
+  var r = elm.parentTextEdit.createTextRange();
+  r.moveToElementText(elm);
+  return r;
+}
+
+//window.onerror = HandleError
+
+function HandleError(message, url, line) {
+  var str = "An error has occurred in this dialog." + "\n\n"
+  + "Error: " + line + "\n" + message;
+  alert(str);
+  window.close();
+  return true;
+}
+var FileLoaded = false;
+function Init() {
+	var isA = null;
+	document.body.onkeypress = _CloseOnEsc;
+	var globalDoc = window.dialogArguments;      
+	var grngMaster = globalDoc.selection.createRange();
+	if (globalDoc.selection.type == "Text")       
+	{	if (grngMaster.parentElement())
+		{ 
+			isA = getEl("A",globalDoc.selection.createRange().parentElement());		
+		}
+	}else if (globalDoc.selection.type == "Control"){
+		if (grngMaster.length == 1) {
+			elmSelectedImage = grngMaster.item(0);
+			isA = getEl("A",elmSelectedImage.parentElement);
+		}	
+	}	
+	txtURLlink.value = isA ? isA.href : "http:\/\/" ;
+	selTarget.value = isA ? isA.target : "" ;
+	txtURLlink.focus();
+}
+function getEl(sTag,start) 
+{ 
+	while ((start!=null) && (start.tagName!=sTag)) 
+	start = start.parentElement; 
+	return start; 
+} 
+
+function btnOKClick() {
+	var elmImage;      
+	var idstr;      
+	var RangeText = '';
+	var globalDoc = window.dialogArguments;      
+	var grngMaster = globalDoc.selection.createRange(); 
+	     
+	if (globalDoc.selection.type == "Text")
+	{ RangeText = grngMaster.text }
+	if (!txtURLlink.value || txtURLlink.value == "http://") { 
+		alert("Link URL must be specified.");
+		txtURLlink.focus();
+		return;
+	} 
+	if (RangeText == '' && globalDoc.selection.type == "None")
+	{ grngMaster.text = txtURLlink.value } 
+	  //set text to your link text      
+	idstr = "556e697175657e537472696e67"; // new link creation ID, set HREF to this      
+	grngMaster.execCommand("Unlink");
+	grngMaster.execCommand("CreateLink", 0, idstr);      
+	var oAnchors = globalDoc.all.tags("A");       
+	  if (oAnchors != null) { 
+		for (var i = oAnchors.length - 1; i >= 0; i--) 
+		{        
+			if (oAnchors[i].href == idstr) 
+			{         
+			   elmImage = oAnchors[i];        
+			   break;
+	  		}       
+	    }      
+	  }      
+	elmImage.removeAttribute("id");      
+	elmImage.removeAttribute("href");      
+	elmImage.href = txtURLlink.value ;
+	elmImage.target = selTarget.value ;
+	
+	//if (RangeText == '' && globalDoc.selection.type == "None")
+	//{ RangeText = txtURLlink.value }
+	//strLink = "<A href='" + txtURLlink.value + "' target=" + selTarget.value + " >" + RangeText + "</A>"
+	//alert(strLink)
+	//grngMaster.pasteHTML(strLink)
+    window.close();
+}
+</SCRIPT>
+</HEAD>
+<BODY id=bdy onload="Init()" style="background: threedface; color: windowtext;" scroll=no>
+<FIELDSET style="width: 402px; text-align: left;left: 12px; top: 10px; position: absolute">
+<LEGEND>Hyperlink Information</LEGEND>
+<table border=0 cellspacing=6 cellpadding=0>
+ <tr>
+	<td width=50>Target:</td>
+	<td>
+		<SELECT size=1 ID=selTarget>
+		<OPTION id=optNotSet value=""> Not set </OPTION>
+		<OPTION id=optLeft value="_blank"> New Window </OPTION>
+		<OPTION id=optRight value="_parent"> Parent Window </OPTION>
+		<OPTION id=optTexttop value="_self" selected> Same Window </OPTION>
+		<OPTION id=optAbsMiddle value="_top"> Topmost Window </OPTION>
+		</SELECT>
+	</td> 
+ </tr>
+ <tr>
+	<td>URL:</td>
+	<td>
+		<input type="text" ID=txtURLlink value="" style="width: 325px;" onfocus="select()"> 
+	</td> 
+ </tr>
+</table>
+</FIELDSET>
+
+<BUTTON ID=btnOK style="left: 265px; top: 95px; position: absolute; width: 70px; height: 22px;" type=submit onClick="btnOKClick();">OK</BUTTON>
+<BUTTON style="left: 344px; top: 95px; position: absolute; width: 70px; height: 22px;" type=reset onClick="window.close();" id=button1 name=button1>Cancel</BUTTON>
+
+</BODY>
+</HTML>

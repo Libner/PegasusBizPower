@@ -1,0 +1,135 @@
+﻿body {
+    height: auto;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    line-height: 16px;
+}
+p {
+  margin-top: 2px;
+  margin-bottom: 15px;
+  color: #000000;
+  line-height: 20px;/*18px*/
+  text-align: right;
+}
+h1 {
+  margin-top: 0px;
+  margin-bottom: 3px;
+  float: right;
+  font-family: 'Fbreformaen webfont', sans-serif;
+  font-size: 35px; /*40px;*/
+  line-height: 38px;
+  font-weight: 400;
+  text-align: right;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  clear: right;
+  direction: rtl;
+  font-family: 'Fbreformaen webfont', sans-serif;
+  font-size: 31px;
+  line-height: 27px;
+  font-weight: 400;
+  text-align: right;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: 'Fbreformaen webfont', sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: right;
+}
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+h6 {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+
+
+p {
+  margin-top: 2px;
+  margin-bottom: 15px;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;/*18px*/
+  text-align: right;
+}
+ul,
+ol {
+ 
+ /* padding-right:20px;*/
+  color:#000000;
+}
+
+ul.bul1
+{
+    list-style-image: url(../tinymce/plugins/emoticons/img/list_bullet_1.png);
+}
+ul.bul1_right
+{
+    list-style-image: url(../tinymce/plugins/emoticons/img/list_bullet_1.png);
+    margin:0px;
+    padding-right:27px;
+}
+ul.bul2
+{
+    list-style-image: url(../tinymce/plugins/emoticons/img/list_bullet_2.png);
+}
+ul.bul2_right
+{
+    list-style-image: url(../tinymce/plugins/emoticons/img/list_bullet_2.png);
+    margin:0px;
+    padding-right:27px;
+}
+ul.bul3
+{
+    list-style-image: url(../tinymce/plugins/emoticons/img/list_bullet_3.png);
+}
+ul.bul3_right
+{
+    list-style-image: url(../tinymce/plugins/emoticons/img/list_bullet_3.png);
+    margin:0px;
+    padding-right:27px;
+}
+ul.bul4
+{
+    list-style-image: url(../tinymce/plugins/emoticons/img/list_bullet_4.png);
+}
+ul.bul4_right
+{
+    list-style-image: url(../tinymce/plugins/emoticons/img/list_bullet_4.png);
+    margin:0px;
+    padding-right:27px;
+}
+ul.costum1
+{
+    list-style-image: url(../Bullets/smiley-1_3.gif);
+}
+ul.costum1 li a
+{
+	color: #000000;
+}
+ul.costum2
+{
+    list-style-image: url(../Bullets/smiley-2_3.gif);
+}
+ul.costum2 li a
+{
+	color: #000000;
+}

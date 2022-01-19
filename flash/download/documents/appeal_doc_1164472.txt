@@ -1,0 +1,34 @@
+1. for update dockets upload file pegasus.dll from pegasus 
+
+2.Add status to reports in Bizpower.pegasus:
+  -- add function get_StatusName
+  -- change stored procedure [get_appeals_report]
+  -- update file : \\bluto\wwwroot\bizpower_pegasus\NETcom\members\reports\report_forms.asp
+
+  -- update file \\bluto\wwwroot\bizpower_pegasus\NETcom\members\companies\contact.asp  ------  change width dynamic files
+
+
+-- update file http://bluto/bizpower_pegasus/netcom/members/workers/default.asp
+-- update stored procedure:[users_site_list]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30.05.12
+
+
+
+bizpower_pegasus\NETcom\members\appeals\key_fields_t.asp

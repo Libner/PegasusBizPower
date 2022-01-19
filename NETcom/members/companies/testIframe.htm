@@ -1,0 +1,303 @@
+<!-- מסך ראשי של מודול קשרי לקוחות, כולל כפתור הוסף איש קשר, ייבוא אנשי קשר, צרף טופס ו IFRAME חיפוש  -->
+
+<script language="javascript" type="text/javascript">
+<!-- 
+	function SetCookie(sName, sValue)
+	{  
+	document.cookie = sName + "=" + escape(sValue);
+	}
+	SetCookie("ScreenWidth",screen.width);
+// End -->
+</script>
+
+<html>
+<head>
+<title>Bizpower - כלים חזקים אונליין</title>
+<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+<meta http-equiv=Content-Type content="text/html; charset=windows-1255">
+<link href="../../IE4.css" rel="STYLESHEET" type="text/css">
+<script language="javascript" type="text/javascript">
+<!--	
+	function refreshCompany(companyObj)
+	{
+		if ((event.keyCode==13) || (event.keyCode == 9))
+			return false;
+		compName = new String(companyObj.value);
+		if(compName.length > 0)
+		{		
+			window.document.all("frameCustomers").src = "companies.asp?search_company=" + compName;	
+		}
+		else
+		{
+			window.document.all("frameCustomers").src = "companies.asp";
+		}	
+		window.focus();
+		companyObj.focus();	
+		return true;	
+				
+	}
+
+	function refreshContacts(contactObj)
+	{
+		if ((event.keyCode==13) || (event.keyCode == 9))
+			return false;
+		contName = new String(contactObj.value);
+		if(contName.length > 0)
+		{
+			window.document.all("frameCustomers").src = "contacts.asp?" + contactObj.id + "=" + contName;	
+		}
+		else
+		{
+			window.document.all("frameCustomers").src = "contacts.asp";
+		}	
+				
+	}	
+//-->
+</script>
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" ID="Table1">
+<tr><td width="100%" align="right">
+        
+<table border="0" width="100%" cellspacing="0" cellpadding="0" dir="ltr" ID="Table2">
+  
+<tr><td><iframe id=checkMess src="http://pegasus.bizpower.co.il/NETcom/members/messages/checkNewMessagesWindow.aspx" frameborder="0" height="0"></iframe></td></tr>
+    
+    <tr>
+      <td width="100%" valign="bottom" height="79">
+      <table border="0" width="100%" style="height: 66px"  cellspacing="0" cellpadding="0" ID="Table3">
+        <tr>
+          <td valign="top" align="center" width="100%" height="62"></td>
+          <td valign="bottom" align="right"><img src="/bizpower_pegasus/images/topslog.gif" border="0" alt=""></td>
+          <td width="201" valign=bottom>
+          <table bgcolor="#6F6DA6" border="0" width="201" cellspacing="0" cellpadding="0" 
+          style="background-image:URL('/bizpower_pegasus/images/exit.gif'); background-repeat:no-repeat;  background-position:top left;" ID="Table4">
+            <tr>
+              <td width="201" nowrap height="21"><a href="/bizpower_pegasus/exit.asp" target="_self"><img 
+              src="/bizpower_pegasus/images/top_knisa.gif" border="0"></a></td>
+            </tr>
+            <tr>            
+              <td width="100%" height="45">
+              <table border="0" width="201" style="height: 45px" cellspacing="0" cellpadding="0" dir="ltr" ID="Table5">
+                <tr>                                   
+                  <td width=123 nowrap align="right" dir="ltr" style="color:#FFD011;font-weight:600;vertical-align:middle;padding-right:10px">itamar Nir</td>
+                  <td width=74 nowrap align="right" dir="ltr" style="color:#FFFFFF;font-weight:600;vertical-align:middle;padding-right:10px">משתמש</td>
+                </tr>
+                <tr>
+                 <td width=123 nowrap valign=top align="right" dir="ltr" style="color:#FFD011;font-weight:600;vertical-align:middle;padding-right:10px">פגסוס</td>
+                 <td width=74 nowrap align="right" dir="ltr" style="color:#FFFFFF;font-weight:600;vertical-align:middle;padding-right:10px">חברה</td>                                 
+                </tr>
+              </table>
+              </td>
+            </tr>
+          </table>
+          </td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" bgcolor="#060165" style="height: 18px" valign="top" >
+       <table border="0" width="100%" style="height: 18px" cellspacing="0" cellpadding="0" ID="Table6">
+			<tr>
+				<td width="100%" height="1" nowrap></td>
+			</tr>
+			<tr>
+			<td bgcolor="#060165" height="18" dir="rtl">
+		   
+		</td>
+		</tr>
+		<tr>
+		<td width="100%" height="1" nowrap></td>
+		</tr> 
+		</table>
+      </td>      
+    </tr>      
+  </table>
+</td></tr>
+<tr><td width="100%" align="right">
+  <table cellpadding="0" cellspacing="0" width="100%" border="0" ID="Table7">
+<tr><td align="right" bgcolor="#FFFFFF">
+<table border="0" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" align="right" dir=rtl ID="Table8">
+<tr>          
+
+	<td align="center" nowrap valign="top" ><A class="link_top" href="http://bluto:80/bizpower_pegasus//netCom/" target=_self>ראשי</A></td>
+	<td width="5" nowrap></td>	
+    
+	<td  align="center" nowrap valign="top" dir="rtl"><a class="link_top_over" 
+	href='/bizpower_pegasus/netCom/members/companies/default.asp'  target=_self>קשרי לקוחות</a></td>
+	<td width="5" nowrap></td>	
+	    
+	<td  align="center" nowrap valign="top" dir="rtl"><a class="link_top" 
+	href='/bizpower_pegasus/netCom/members/appeals/default.asp'  target=_self>טפסים וסקרים</a></td>
+	<td width="5" nowrap></td>	
+	    
+	<td  align="center" nowrap valign="top" dir="rtl"><a class="link_top" 
+	href='/bizpower_pegasus/netcom/members/pages/default.asp'  target=_self>דיוור וקמפיינים</a></td>
+	<td width="5" nowrap></td>	
+	    
+	<td  align="center" nowrap valign="top" dir="rtl"><a class="link_top" 
+	href='/bizpower_pegasus/netcom/members/companies/company_types.asp'  target=_self>הגדרות</a></td>
+	<td width="5" nowrap></td>	
+	    
+	<td  align="center" nowrap valign="top" dir="rtl"><a class="link_top" 
+	href='/bizpower_pegasus/netcom/members/tasks/default.asp?T=IN'  target=_self>משימות</a></td>
+	<td width="5" nowrap></td>	
+	    
+	<td  align="center" nowrap valign="top" dir="rtl"><a class="link_top" 
+	href='/bizpower_pegasus/netcom/members/sms/groups.asp'  target=_self>SMS</a></td>
+	<td width="5" nowrap></td>	
+	    
+	<td  align="center" nowrap valign="top" dir="rtl"><a class="link_top" 
+	href='/bizpower_pegasus/netcom/members/messages/default.asp?T=IN'  target=_self>הודעות</a></td>
+	<td width="5" nowrap></td>	
+	
+</tr>	
+</table></td></tr>
+<tr>
+      <td width="100%" height="20" nowrap bgcolor="#FFFFFF"></td>
+</tr> 
+<tr>
+	<td width="100%">
+	<TABLE width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" align="right" dir=rtl ID="Table9">
+		<TR>      					
+			<TD bgcolor="#F0C000" nowrap dir=rtl><a href='/bizpower_pegasus/netCom/members/companies/default.asp'  target="_self" class="title_tab_over">לקוחות</a></TD>		
+			<TD width="2" bgcolor="#FFFFFF" nowrap style="border-bottom: solid 1px #6F6D6B;">&nbsp;</TD>
+	    					
+			<TD bgcolor="#F0C000" nowrap dir=rtl><a href='/bizpower_pegasus/netCom/members/projects/default.asp'  target="_self" class="title_tab">פרויקטים</a></TD>		
+			<TD width="2" bgcolor="#FFFFFF" nowrap style="border-bottom: solid 1px #6F6D6B;">&nbsp;</TD>
+	    					
+			<TD bgcolor="#F0C000" nowrap dir=rtl><a href='/bizpower_pegasus/netCom/members/projects/default_action.asp'  target="_self" class="title_tab">פעילויות</a></TD>		
+			<TD width="2" bgcolor="#FFFFFF" nowrap style="border-bottom: solid 1px #6F6D6B;">&nbsp;</TD>
+	    					
+			<TD bgcolor="#F0C000" nowrap dir=rtl><a href='/bizpower_pegasus/netcom/members/companies/reports.asp'  target="_self" class="title_tab">דוחות לקוחות</a></TD>		
+			<TD width="2" bgcolor="#FFFFFF" nowrap style="border-bottom: solid 1px #6F6D6B;">&nbsp;</TD>
+	    					
+			<TD bgcolor="#F0C000" nowrap dir=rtl><a href='/bizpower_pegasus/netCom/members/meetings/default.asp'  target="_self" class="title_tab">פגישות</a></TD>		
+			<TD width="2" bgcolor="#FFFFFF" nowrap style="border-bottom: solid 1px #6F6D6B;">&nbsp;</TD>
+	
+			<TD width="100%" style="border-bottom: solid 1px #6F6D6B;">&nbsp;</TD>						
+		</TR>		
+	</TABLE>
+	</td>
+</tr>
+</table>    
+</td></tr>
+<tr><td class="page_title">&nbsp;<!--אנא הקלד את שם החברה מימין או את שם איש הקשר לאיתור במאגר הלקוחות-->אנא הקלד את שם החברה מימין או את שם איש הקשר לאיתור במאגר הלקוחות</td></tr>
+<tr>    
+    <td width="100%" valign="top" align="center">
+    <table dir="ltr" border="0" cellpadding="0" cellspacing="1" width="100%" ID="Table10">
+    <tr>
+    <td align="left" width="100%" valign=top >   
+    <iframe name="frameCustomers" id="frameCustomers"  src="contacts.asp" 
+   
+	ALLOWTRANSPARENCY=true height=420 width="100%" marginwidth="0" marginheight="0" hspace="0" vspace="0" scrolling="0" frameborder="0"></iframe>
+    </td>
+    <td width=100 nowrap valign=top class="td_menu" style="border: 1px solid #808080" dir="ltr">
+    <table cellpadding=1 cellspacing=0 width="100%" border="0" dir="ltr" ID="Table11">
+    <tr><td align="right" colspan="2" class="title_search">&nbsp;</td></tr>
+    <!--FORM action="default.asp?TypeId=1" method=POST id="form_search_contact" name="form_search_contact" target="_self">   
+    <tr><td colspan="2" align="right" class="right_bar">איש קשר</td></tr>
+    <tr><td align="right" width="15" nowrap><input type="image" onclick="form_search.submit();" src="../../images/search.gif"></td>
+    <td align="right" width="85" nowrap><input type="text" class="search" dir="rtl" style="width:80;" value="" name="search_contact" ID="search_contact"  onKeyUp="refreshContacts(this)" onKeyDown="refreshContacts(this)"></td></tr>
+    </FORM-->
+    <!--FORM action="default.asp?TypeId=1" method=POST id="Form1" name="form_search_cellular" target="_self">   
+    <tr><td colspan="2" align="right" class="right_bar">טלפון נייד</td></tr>
+    <tr><td align="right" width="15" nowrap><input type="image" onclick="form_search.submit();" src="../../images/search.gif" ></td>
+    <td align="right" width="85" nowrap><input type="text" class="search" dir="rtl" style="width:80;" value="" name="search_cellular" ID="search_cellular"  onKeyUp="refreshContacts(this)" onKeyDown="refreshContacts(this)"></td></tr>
+    </FORM-->    
+	<tr><td colspan="2" height=10 nowrap></td></tr>
+	
+	<tr><td colspan="2" align="center"><a class="button_edit_1" style="width:95;" href="javascript:void(0)" onclick="javascript:window.open('newcontact.asp','NewContact','top=50,left=10,resizable=0,width=750,height=500');"><!--הוסף-->הוסף&nbsp;איש קשר</a></td></tr>
+	<tr><td colspan="2" align="center"><a class="button_edit_1" style="width:95;line-height:110%;padding:3px" href="javascript:void(0)" onclick="javascript:window.open('upload.asp','Upload','top=20,left=40,resizable=0,width=600,height=500,scrollbars=1');"><!--ייבוא-->ייבוא&nbsp;אנשי קשר</a></td></tr>
+	
+	<tr><td colspan="2" height=5 nowrap></td></tr>
+	<tr><td align="center" colspan="2"><a class="button_edit_2" href="javascript:void(0)" onclick="tfasimDropDown(this)"><img hspace=0 vspace=0 border=0 src="../../images/back_arrow.gif" >&nbsp;<!--צרף טופס-->צרף טופס</a></td></tr>
+	
+	<tr><td colspan="2" height=10 nowrap></td></tr>
+	</table>
+	</td></tr></table>
+	</td></tr></table>
+<script language=javascript>
+<!--
+    function getRealTop(imgElem)
+	{
+		yPos = eval(imgElem).offsetTop;
+		tempEl = eval(imgElem).offsetParent;
+		while (tempEl != null)
+		{
+			yPos += tempEl.offsetTop;
+			tempEl = tempEl.offsetParent;
+		}
+		//alert(yPos);
+		return yPos;
+	}	
+    function getRealLeft(imgElem)
+	{
+		yPos = eval(imgElem).offsetLeft;
+		tempEl = eval(imgElem).offsetParent;
+		while (tempEl != null)
+		{
+			yPos += tempEl.offsetLeft;
+			tempEl = tempEl.offsetParent;
+		}
+		//alert(yPos);
+		return yPos;
+	}		
+	
+	function tfasimDropDown(obj)
+	{
+		document.all["div_tfasim"].style.zIndex=11; 
+		document.all["div_tfasim"].style.position="absolute";		
+		
+		offTop = getRealTop(obj) - 30; 
+		offLeft = getRealLeft(obj) - 355;
+				
+		document.all["div_tfasim"].style.top=offTop;
+		document.all["div_tfasim"].style.left=offLeft;
+		document.all["div_tfasim"].style.display='inline';
+		document.all["div_tfasim"].style.visibility="visible";
+		return false; 
+	}
+
+	function tfasimClose()
+	{
+		document.all["div_tfasim"].style.display='none';
+		document.all["div_tfasim"].style.visibility="hidden"; 
+		return false;
+	}	
+//-->
+</script>
+
+<div dir="rtl" id=div_tfasim name=div_tfasim style="display:none;visibility:hidden;width:350;height:150;background-color: #E6E6E6; overflow:scroll; overflow-x:hidden;border:1px solid #808080;SCROLLBAR-FACE-COLOR:#E6E6E6;SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF; SCROLLBAR-SHADOW-COLOR: #C0C0C0;SCROLLBAR-3DLIGHT-COLOR: #E6E6E6;SCROLLBAR-ARROW-COLOR: #000000; SCROLLBAR-TRACK-COLOR: #F4F4F4;">
+<table cellpadding=0 cellspacing=0 border=0 width=100% ID="Table12">
+    <tr>
+		<td colspan=2 width="100%" bgcolor="#616161" height="1"></td>
+	</tr>
+	<tr>
+        <td width=22 nowrap align=center class=title_form><INPUT type=image src="../../images/close_icon.gif" border="0" onClick="return tfasimClose();" vspace=0 hspace=0 ID="Image1" NAME="Image1">              
+        <td width=100% nowrap class=title_form align="right">&nbsp;</td>
+        </td>                        
+    </tr>
+    <tr>
+		<td colspan=2 width="100%" bgcolor="#616161" height="1"></td>
+	</tr>	
+   <tr>
+        <td width="100%" class="card" align="right">
+        <table border="0" width="100%" cellspacing="5" cellpadding="0" ID="Table13">
+	
+					<tr><td align="right" dir="rtl" colspan=2><a class="link1" href="../appeals/appeal.asp?quest_id=16504&companyID=&contactID=&projectID=" target=_self>טופס מתעניין בטיול</a></td></tr>
+					<tr><td align="right" dir="rtl" colspan=2><a class="link1" href="../appeals/appeal.asp?quest_id=17001&companyID=&contactID=&projectID=" target=_self>טופס פניות הציבור</a></td></tr>
+					<tr><td align="right" dir="rtl" colspan=2><a class="link1" href="../appeals/appeal.asp?quest_id=16735&companyID=&contactID=&projectID=" target=_self>טופס רישום חתום</a></td></tr>
+					<tr><td align="right" dir="rtl" colspan=2><a class="link1" href="../appeals/appeal.asp?quest_id=17057&companyID=&contactID=&projectID=" target=_self>טופס תלונת לקוח</a></td></tr>
+					<tr><td align="right" dir="rtl" colspan=2><a class="link1" href="../appeals/appeal.asp?quest_id=16734&companyID=&contactID=&projectID=" target=_self>מסמכים / פקסים לתיוק</a></td></tr>
+					<tr><td align="right" dir="rtl" colspan=2><a class="link1" href="../appeals/appeal.asp?quest_id=16795&companyID=&contactID=&projectID=" target=_self>מעקב קבוצה סגורה</a></td></tr>
+					<tr><td align="right" dir="rtl" colspan=2><a class="link1" href="../appeals/appeal.asp?quest_id=16470&companyID=&contactID=&projectID=" target=_self>תיעוד שיחה</a></td></tr>
+	</table>
+	 </td>
+   </tr>
+</table>
+</div>	
+</body>
+</html>

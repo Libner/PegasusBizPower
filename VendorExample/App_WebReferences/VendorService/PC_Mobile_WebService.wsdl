@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://PC_Site_DMZ_WebService.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://ensure.com/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://PC_Site_DMZ_WebService.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://PC_Site_DMZ_WebService.com/">
+      <s:import namespace="http://ensure.com/" />
+      <s:element name="New_Event">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EventType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="PersonalID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Lat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Lon" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CardSerialNumber" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="APP_PartnersID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="New_EventResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="New_EventResult" type="s1:PolicyMobile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Make_Travel_Policy_From_CompanyAgreements">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PayeeId" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="DC_POD_CompanyAgreementsID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="startDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="CountryOfDestination" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Make_Travel_Policy_From_CompanyAgreementsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Make_Travel_Policy_From_CompanyAgreementsResult" type="s1:MakePolicyFromMobileResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Mobile_LeadoMat_App_Handler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EventType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="LeadoMatNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParentPersonalID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DistributorID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FlightDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Comment" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ObjTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="MobileDeviceType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DateStart" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DateEnd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Mobile_LeadoMat_App_HandlerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Mobile_LeadoMat_App_HandlerResult" type="s1:LeadomatMobile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Mobile_LeadoMat_App_Handler_Vendor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EventType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="LeadoMatNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParentPersonalID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DistributorID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FlightDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Comment" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ObjTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="MobileDeviceType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="otherVerification" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Objid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DateStart" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DateEnd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Mobile_LeadoMat_App_Handler_VendorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Mobile_LeadoMat_App_Handler_VendorResult" type="s1:LeadomatMobile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PolicyMobile" nillable="true" type="s1:PolicyMobile" />
+      <s:element name="MakePolicyFromMobileResult" nillable="true" type="s1:MakePolicyFromMobileResult" />
+      <s:element name="LeadomatMobile" nillable="true" type="s1:LeadomatMobile" />
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ensure.com/">
+      <s:complexType name="PolicyMobile">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StartDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ClientType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CaseID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LeadID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DT_DC_POD_CompanyAgreements">
+            <s:complexType>
+              <s:sequence>
+                <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+              </s:sequence>
+            </s:complexType>
+          </s:element>
+          <s:element minOccurs="1" maxOccurs="1" name="payeeID" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MakePolicyFromMobileResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="LeadID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PolicyCreated" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LeadomatMobile">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AgentID" type="s1:ArrayOfLong" />
+          <s:element minOccurs="1" maxOccurs="1" name="LidomatNumber" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="AgentNumberID" type="s1:ArrayOfLong" />
+          <s:element minOccurs="0" maxOccurs="1" name="SaleAgentNumber" type="s1:ArrayOfLong" />
+          <s:element minOccurs="0" maxOccurs="1" name="AgentName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LeadNumber" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="VersionNumber" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dtUserLeads">
+            <s:complexType>
+              <s:sequence>
+                <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+              </s:sequence>
+            </s:complexType>
+          </s:element>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLong">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="long" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="New_EventSoapIn">
+    <wsdl:part name="parameters" element="tns:New_Event" />
+  </wsdl:message>
+  <wsdl:message name="New_EventSoapOut">
+    <wsdl:part name="parameters" element="tns:New_EventResponse" />
+  </wsdl:message>
+  <wsdl:message name="Make_Travel_Policy_From_CompanyAgreementsSoapIn">
+    <wsdl:part name="parameters" element="tns:Make_Travel_Policy_From_CompanyAgreements" />
+  </wsdl:message>
+  <wsdl:message name="Make_Travel_Policy_From_CompanyAgreementsSoapOut">
+    <wsdl:part name="parameters" element="tns:Make_Travel_Policy_From_CompanyAgreementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Mobile_LeadoMat_App_HandlerSoapIn">
+    <wsdl:part name="parameters" element="tns:Mobile_LeadoMat_App_Handler" />
+  </wsdl:message>
+  <wsdl:message name="Mobile_LeadoMat_App_HandlerSoapOut">
+    <wsdl:part name="parameters" element="tns:Mobile_LeadoMat_App_HandlerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Mobile_LeadoMat_App_Handler_VendorSoapIn">
+    <wsdl:part name="parameters" element="tns:Mobile_LeadoMat_App_Handler_Vendor" />
+  </wsdl:message>
+  <wsdl:message name="Mobile_LeadoMat_App_Handler_VendorSoapOut">
+    <wsdl:part name="parameters" element="tns:Mobile_LeadoMat_App_Handler_VendorResponse" />
+  </wsdl:message>
+  <wsdl:message name="New_EventHttpPostIn">
+    <wsdl:part name="EventType" type="s:string" />
+    <wsdl:part name="PersonalID" type="s:string" />
+    <wsdl:part name="PhoneNumber" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="FirstName" type="s:string" />
+    <wsdl:part name="LastName" type="s:string" />
+    <wsdl:part name="Lat" type="s:string" />
+    <wsdl:part name="Lon" type="s:string" />
+    <wsdl:part name="CardSerialNumber" type="s:string" />
+    <wsdl:part name="APP_PartnersID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="New_EventHttpPostOut">
+    <wsdl:part name="Body" element="tns:PolicyMobile" />
+  </wsdl:message>
+  <wsdl:message name="Make_Travel_Policy_From_CompanyAgreementsHttpPostIn">
+    <wsdl:part name="PayeeId" type="s:string" />
+    <wsdl:part name="DC_POD_CompanyAgreementsID" type="s:string" />
+    <wsdl:part name="startDate" type="s:string" />
+    <wsdl:part name="endDate" type="s:string" />
+    <wsdl:part name="CountryOfDestination" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Make_Travel_Policy_From_CompanyAgreementsHttpPostOut">
+    <wsdl:part name="Body" element="tns:MakePolicyFromMobileResult" />
+  </wsdl:message>
+  <wsdl:message name="Mobile_LeadoMat_App_HandlerHttpPostIn">
+    <wsdl:part name="EventType" type="s:string" />
+    <wsdl:part name="LeadoMatNumber" type="s:string" />
+    <wsdl:part name="ParentPersonalID" type="s:string" />
+    <wsdl:part name="DistributorID" type="s:string" />
+    <wsdl:part name="PhoneNumber" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="FirstName" type="s:string" />
+    <wsdl:part name="LastName" type="s:string" />
+    <wsdl:part name="FlightDate" type="s:string" />
+    <wsdl:part name="Comment" type="s:string" />
+    <wsdl:part name="ObjTypeID" type="s:string" />
+    <wsdl:part name="MobileDeviceType" type="s:string" />
+    <wsdl:part name="DateStart" type="s:string" />
+    <wsdl:part name="DateEnd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Mobile_LeadoMat_App_HandlerHttpPostOut">
+    <wsdl:part name="Body" element="tns:LeadomatMobile" />
+  </wsdl:message>
+  <wsdl:message name="Mobile_LeadoMat_App_Handler_VendorHttpPostIn">
+    <wsdl:part name="EventType" type="s:string" />
+    <wsdl:part name="LeadoMatNumber" type="s:string" />
+    <wsdl:part name="ParentPersonalID" type="s:string" />
+    <wsdl:part name="DistributorID" type="s:string" />
+    <wsdl:part name="PhoneNumber" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="FirstName" type="s:string" />
+    <wsdl:part name="LastName" type="s:string" />
+    <wsdl:part name="FlightDate" type="s:string" />
+    <wsdl:part name="Comment" type="s:string" />
+    <wsdl:part name="ObjTypeID" type="s:string" />
+    <wsdl:part name="MobileDeviceType" type="s:string" />
+    <wsdl:part name="otherVerification" type="s:string" />
+    <wsdl:part name="Objid" type="s:string" />
+    <wsdl:part name="DateStart" type="s:string" />
+    <wsdl:part name="DateEnd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Mobile_LeadoMat_App_Handler_VendorHttpPostOut">
+    <wsdl:part name="Body" element="tns:LeadomatMobile" />
+  </wsdl:message>
+  <wsdl:portType name="PC_Mobile_WebServiceSoap">
+    <wsdl:operation name="New_Event">
+      <wsdl:input message="tns:New_EventSoapIn" />
+      <wsdl:output message="tns:New_EventSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Make_Travel_Policy_From_CompanyAgreements">
+      <wsdl:input message="tns:Make_Travel_Policy_From_CompanyAgreementsSoapIn" />
+      <wsdl:output message="tns:Make_Travel_Policy_From_CompanyAgreementsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Mobile_LeadoMat_App_Handler">
+      <wsdl:input message="tns:Mobile_LeadoMat_App_HandlerSoapIn" />
+      <wsdl:output message="tns:Mobile_LeadoMat_App_HandlerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Mobile_LeadoMat_App_Handler_Vendor">
+      <wsdl:input message="tns:Mobile_LeadoMat_App_Handler_VendorSoapIn" />
+      <wsdl:output message="tns:Mobile_LeadoMat_App_Handler_VendorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PC_Mobile_WebServiceHttpPost">
+    <wsdl:operation name="New_Event">
+      <wsdl:input message="tns:New_EventHttpPostIn" />
+      <wsdl:output message="tns:New_EventHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Make_Travel_Policy_From_CompanyAgreements">
+      <wsdl:input message="tns:Make_Travel_Policy_From_CompanyAgreementsHttpPostIn" />
+      <wsdl:output message="tns:Make_Travel_Policy_From_CompanyAgreementsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Mobile_LeadoMat_App_Handler">
+      <wsdl:input message="tns:Mobile_LeadoMat_App_HandlerHttpPostIn" />
+      <wsdl:output message="tns:Mobile_LeadoMat_App_HandlerHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Mobile_LeadoMat_App_Handler_Vendor">
+      <wsdl:input message="tns:Mobile_LeadoMat_App_Handler_VendorHttpPostIn" />
+      <wsdl:output message="tns:Mobile_LeadoMat_App_Handler_VendorHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PC_Mobile_WebServiceSoap" type="tns:PC_Mobile_WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="New_Event">
+      <soap:operation soapAction="http://PC_Site_DMZ_WebService.com/New_Event" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Make_Travel_Policy_From_CompanyAgreements">
+      <soap:operation soapAction="http://PC_Site_DMZ_WebService.com/Make_Travel_Policy_From_CompanyAgreements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Mobile_LeadoMat_App_Handler">
+      <soap:operation soapAction="http://PC_Site_DMZ_WebService.com/Mobile_LeadoMat_App_Handler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Mobile_LeadoMat_App_Handler_Vendor">
+      <soap:operation soapAction="http://PC_Site_DMZ_WebService.com/Mobile_LeadoMat_App_Handler_Vendor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PC_Mobile_WebServiceSoap12" type="tns:PC_Mobile_WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="New_Event">
+      <soap12:operation soapAction="http://PC_Site_DMZ_WebService.com/New_Event" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Make_Travel_Policy_From_CompanyAgreements">
+      <soap12:operation soapAction="http://PC_Site_DMZ_WebService.com/Make_Travel_Policy_From_CompanyAgreements" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Mobile_LeadoMat_App_Handler">
+      <soap12:operation soapAction="http://PC_Site_DMZ_WebService.com/Mobile_LeadoMat_App_Handler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Mobile_LeadoMat_App_Handler_Vendor">
+      <soap12:operation soapAction="http://PC_Site_DMZ_WebService.com/Mobile_LeadoMat_App_Handler_Vendor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PC_Mobile_WebServiceHttpPost" type="tns:PC_Mobile_WebServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="New_Event">
+      <http:operation location="/New_Event" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Make_Travel_Policy_From_CompanyAgreements">
+      <http:operation location="/Make_Travel_Policy_From_CompanyAgreements" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Mobile_LeadoMat_App_Handler">
+      <http:operation location="/Mobile_LeadoMat_App_Handler" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Mobile_LeadoMat_App_Handler_Vendor">
+      <http:operation location="/Mobile_LeadoMat_App_Handler_Vendor" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PC_Mobile_WebService">
+    <wsdl:port name="PC_Mobile_WebServiceSoap" binding="tns:PC_Mobile_WebServiceSoap">
+      <soap:address location="http://services.passportcard.co.il/PC_Site_DMZ_WebService/PC_Mobile_WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PC_Mobile_WebServiceSoap12" binding="tns:PC_Mobile_WebServiceSoap12">
+      <soap12:address location="http://services.passportcard.co.il/PC_Site_DMZ_WebService/PC_Mobile_WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PC_Mobile_WebServiceHttpPost" binding="tns:PC_Mobile_WebServiceHttpPost">
+      <http:address location="http://services.passportcard.co.il/PC_Site_DMZ_WebService/PC_Mobile_WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "bizpower_pegasus", "http://josh-vm:/bizpower_pegasus_2018/bizpower_pegasus.vbproj", "{E0D6EA43-5286-43FE-BB1C-F875356FDE2E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E0D6EA43-5286-43FE-BB1C-F875356FDE2E}.Debug.ActiveCfg = Debug|.NET
+		{E0D6EA43-5286-43FE-BB1C-F875356FDE2E}.Debug.Build.0 = Debug|.NET
+		{E0D6EA43-5286-43FE-BB1C-F875356FDE2E}.Release.ActiveCfg = Release|.NET
+		{E0D6EA43-5286-43FE-BB1C-F875356FDE2E}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

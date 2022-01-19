@@ -1,0 +1,225 @@
+
+'-----------2020 --------------------
+
+'=====month 01 day >22
+insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=1 and day(DateKey)>22 
+
+update  Departments_Data
+ set departmentId =1 where departmentId = 0
+
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=1 and day(DateKey)>22 
+
+update  Departments_Data
+ set departmentId =2 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=1 and day(DateKey)>22 
+
+update  Departments_Data
+ set departmentId =3 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=1 and day(DateKey)>22 
+
+update  Departments_Data
+ set departmentId =4 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=1 and day(DateKey)>22 
+
+update  Departments_Data
+ set departmentId =5 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=1 and day(DateKey)>22 
+
+update  Departments_Data
+ set departmentId =6 where departmentId = 0
+ 
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=1 and day(DateKey)>22 
+
+update  Departments_Data
+ set departmentId =7 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=1 and day(DateKey)>22 
+
+update  Departments_Data
+ set departmentId =8 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=1 and day(DateKey)>22 
+
+update  Departments_Data
+ set departmentId =9 where departmentId = 0
+ 
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020  and month(DateKey)=1 and day(DateKey)>22 
+
+update  Departments_Data
+ set departmentId =10 where departmentId = 0
+ 
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020  and month(DateKey)=1 and day(DateKey)>22 
+
+update  Departments_Data
+ set departmentId =11 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=1 and day(DateKey)>22 
+
+update  Departments_Data
+ set departmentId =12 where departmentId = 0
+ 
+ 
+'=====month 01 day >22
+
+
+
+
+insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=12
+
+update  Departments_Data
+ set departmentId =1 where departmentId = 0
+
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=12 
+
+update  Departments_Data
+ set departmentId =2 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=12 
+
+update  Departments_Data
+ set departmentId =3 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=12 
+
+update  Departments_Data
+ set departmentId =4 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=12 
+
+update  Departments_Data
+ set departmentId =5 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=12 
+
+update  Departments_Data
+ set departmentId =6 where departmentId = 0
+ 
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=12 
+
+update  Departments_Data
+ set departmentId =7 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=12 
+
+update  Departments_Data
+ set departmentId =8 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=12 
+
+update  Departments_Data
+ set departmentId =9 where departmentId = 0
+ 
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=4 
+
+update  Departments_Data
+ set departmentId =10 where departmentId = 0
+ 
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=4 
+
+update  Departments_Data
+ set departmentId =11 where departmentId = 0
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2020 and month(DateKey)=12 
+
+update  Departments_Data
+ set departmentId =12 where departmentId = 0
+ 
+ 
+'----------2020 ---------------------
+
+
+insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 0, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=1 and day(DateKey)>14
+
+
+select 0, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=1 and day(DateKey)>14
+
+
+
+
+SELECT        Id, departmentId, Id_DimDate, DateKey, P16735, P16735_Bitulim, call_Service, call_Sales
+FROM            Departments_Data
+WHERE        (departmentId = 0)
+
+update  Departments_Data
+ set departmentId =1 where departmentId = 0
+ 
+ 
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 2, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=1 and day(DateKey)>14
+
+
+ 
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 1, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=12
+ insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 2, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=12 
+insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 3, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=12 
+insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 4, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=12 
+insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 5, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=12 
+insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 6, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=12 
+insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 7, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=12 
+insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 8, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=12 
+insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 9, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=12 
+insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 10, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=12 
+insert into Departments_Data 
+(departmentId,Id_DimDate, DateKey) 
+select 11, Id,DateKey  from DimDate where year(DateKey)=2019 and month(DateKey)=12 

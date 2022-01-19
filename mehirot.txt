@@ -1,0 +1,28 @@
+select P16735_Bitulim from Departments_Data where  P16735_Bitulim is null
+update Departments_Data set  P16735_Bitulim=0  where  P16735_Bitulim is null
+
+select P16735 from Departments_Data where  P16735 is null
+update Departments_Data set  P16735=0  where  P16735 is null
+
+
+
+select call_Service from Departments_Data where  call_Service is null
+update Departments_Data set  call_Service=0  where  call_Service is null
+
+
+select call_Sales from Departments_Data where  call_Sales is null
+update Departments_Data set  call_Sales=0  where  call_Sales is null
+
+
+
+
+SELECT        Dim_Month, ISNULL(dbo.GetKishuriot(2017, Dim_Month, 2), 0) AS Kishuriot, ISNULL(Kishuriot, 0) AS KishuriotYear,
+ ISNULL(dbo.GetSales(2017, Dim_Month, 2), 0) AS Sales, ISNULL(Sales, 0) AS SalesYear, 
+                         ISNULL(dbo.GetActiveTime(2017, Dim_Month, 2), 0) AS ActiveTime, ISNULL(ActiveTime, 0) AS ActiveTimeYear, ISNULL(Sales_Point, 0) AS Sales_Point, ISNULL(KishuritService_Point, 0) AS KishuritService_Point, 
+                         ISNULL(ActiveTime_Point, 0) AS ActiveTime_Point, ISNULL(dbo.GetSActiveTime(2017, Dim_Month, 2), 0) AS ActiveTimeBefore
+FROM            Departments_Data_Monthly
+WHERE        (DimYear = 2018) AND (Dim_Month = 12) AND (departmentId = 2)
+
+
+
+select sum(P16735) as sP16735,sum(P16735_Bitulim) as sP16735_Bitulim from Departments_Data  where departmentId=2 and (month(DateKey)=12 and year(DateKey)=2018)

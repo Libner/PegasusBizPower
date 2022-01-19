@@ -1,0 +1,19 @@
+1.updApp.asp -- update data from last appeal_id
+
+in all stored procedure check _2015 pegasus2015
+
+2.stored procedures
+
+ -- get_appeals
+ -- get_appeals_paging
+--dbo.get_appeals_report  
+
+-- new stored procedure
+FIELD_Destinition_Proc
+
+
+!!!!!למחוק מי טופס 16504  טופס מתעניין בטיול 
+שדה לאיזה יעד נסיעה הינך מתעניין?  דינמי
+
+update file reports/report_forms.asp
+

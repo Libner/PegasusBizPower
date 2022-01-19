@@ -1,0 +1,418 @@
+Subject,Start Date,Start Time,End Date,End Time,All day event,Description,Show time as,Location
+Asara B'Tevet,1/1/2034,,,,TRUE,Fast commemorating the siege of Jerusalem,3,Jewish Holidays
+Rosh Chodesh Sh'vat,21/1/2034,,,,TRUE,Beginning of new Hebrew month of Sh'vat,3,Jewish Holidays
+Tu BiShvat,4/2/2034,,,,TRUE,New Year for Trees,3,Jewish Holidays
+Shabbat Shekalim,18/2/2034,,,,TRUE,Shabbat before Rosh Chodesh Adar,3,Jewish Holidays
+Rosh Chodesh Adar,19/2/2034,,,,TRUE,Beginning of new Hebrew month of Adar,3,Jewish Holidays
+Rosh Chodesh Adar,20/2/2034,,,,TRUE,Beginning of new Hebrew month of Adar,3,Jewish Holidays
+Ta'anit Esther,2/3/2034,,,,TRUE,Fast of Esther,3,Jewish Holidays
+Shabbat Zachor,4/3/2034,,,,TRUE,Shabbat before Purim,3,Jewish Holidays
+Erev Purim,4/3/2034,,,,TRUE,Purim is one of the most joyous and fun holidays on the Jewish calendar,3,Jewish Holidays
+Purim,5/3/2034,,,,TRUE,Purim is one of the most joyous and fun holidays on the Jewish calendar,3,Jewish Holidays
+Shushan Purim,6/3/2034,,,,TRUE,Purim celebrated in Jerusalem and walled cities,3,Jewish Holidays
+Shabbat Parah,11/3/2034,,,,TRUE,Shabbat of the Red Heifer,3,Jewish Holidays
+Shabbat HaChodesh,18/3/2034,,,,TRUE,Shabbat before Rosh Chodesh Nissan,3,Jewish Holidays
+Rosh Chodesh Nisan,21/3/2034,,,,TRUE,Beginning of new Hebrew month of Nisan,3,Jewish Holidays
+Shabbat HaGadol,1/4/2034,,,,TRUE,Shabbat before Pesach,3,Jewish Holidays
+Ta'anit Bechorot,3/4/2034,,,,TRUE,Fast of the First Born,3,Jewish Holidays
+Erev Pesach,3/4/2034,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach I,4/4/2034,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach II,5/4/2034,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach III (CH''M),6/4/2034,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach IV (CH''M),7/4/2034,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach V (CH''M),8/4/2034,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach VI (CH''M),9/4/2034,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach VII,10/4/2034,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach VIII,11/4/2034,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Yom HaShoah,17/4/2034,,,,TRUE,Holocaust Memorial Day,3,Jewish Holidays
+Rosh Chodesh Iyyar,19/4/2034,,,,TRUE,Beginning of new Hebrew month of Iyyar,3,Jewish Holidays
+Rosh Chodesh Iyyar,20/4/2034,,,,TRUE,Beginning of new Hebrew month of Iyyar,3,Jewish Holidays
+Yom HaZikaron,24/4/2034,,,,TRUE,Israeli Memorial Day,3,Jewish Holidays
+Yom HaAtzma'ut,25/4/2034,,,,TRUE,Israeli Independence Day,3,Jewish Holidays
+Pesach Sheni,3/5/2034,,,,TRUE,Second Passover; one month after Passover,3,Jewish Holidays
+Lag BaOmer,7/5/2034,,,,TRUE,33rd day of counting the Omer,3,Jewish Holidays
+Yom Yerushalayim,17/5/2034,,,,TRUE,Jerusalem Day,3,Jewish Holidays
+Rosh Chodesh Sivan,19/5/2034,,,,TRUE,Beginning of new Hebrew month of Sivan,3,Jewish Holidays
+Erev Shavuot,23/5/2034,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,3,Jewish Holidays
+Shavuot I,24/5/2034,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,4,Jewish Holidays
+Shavuot II,25/5/2034,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,4,Jewish Holidays
+Rosh Chodesh Tamuz,17/6/2034,,,,TRUE,Beginning of new Hebrew month of Tamuz,3,Jewish Holidays
+Rosh Chodesh Tamuz,18/6/2034,,,,TRUE,Beginning of new Hebrew month of Tamuz,3,Jewish Holidays
+Tzom Tammuz,4/7/2034,,,,TRUE,Fast commemorating breaching of the walls of Jerusalem before the destruction of the Second Temple,3,Jewish Holidays
+Rosh Chodesh Av,17/7/2034,,,,TRUE,Beginning of new Hebrew month of Av,3,Jewish Holidays
+Shabbat Chazon,22/7/2034,,,,TRUE,Shabbat before Tish'a B'Av (Shabbat of Prophecy/Shabbat of Vision),3,Jewish Holidays
+Erev Tish'a B'Av,24/7/2034,,,,TRUE,The Ninth of Av; fast commemorating the destruction of the two Temples,3,Jewish Holidays
+Tish'a B'Av,25/7/2034,,,,TRUE,The Ninth of Av; fast commemorating the destruction of the two Temples,3,Jewish Holidays
+Shabbat Nachamu,29/7/2034,,,,TRUE,Shabbat after Tish'a B'Av (Shabbat of Consolation),3,Jewish Holidays
+Tu B'Av,31/7/2034,,,,TRUE,Jewish holiday of love; similar to Valentine's Day,3,Jewish Holidays
+Rosh Chodesh Elul,15/8/2034,,,,TRUE,Beginning of new Hebrew month of Elul,3,Jewish Holidays
+Rosh Chodesh Elul,16/8/2034,,,,TRUE,Beginning of new Hebrew month of Elul,3,Jewish Holidays
+Leil Selichot,9/9/2034,,,,TRUE,Prayers for forgiveness in preparation for the High Holidays,3,Jewish Holidays
+Erev Rosh Hashana,13/9/2034,,,,TRUE,The Jewish New Year,3,Jewish Holidays
+Rosh Hashana 5795,14/9/2034,,,,TRUE,The Jewish New Year,4,Jewish Holidays
+Rosh Hashana II,15/9/2034,,,,TRUE,The Jewish New Year,4,Jewish Holidays
+Shabbat Shuva,16/9/2034,,,,TRUE,Shabbat that falls between Rosh Hashanah and Yom Kippur (Shabbat of Returning),3,Jewish Holidays
+Tzom Gedaliah,17/9/2034,,,,TRUE,Fast of the Seventh Month; commemorates the assassination of the Jewish governor of Judah,3,Jewish Holidays
+Erev Yom Kippur,22/9/2034,,,,TRUE,Day of Atonement,3,Jewish Holidays
+Yom Kippur,23/9/2034,,,,TRUE,Day of Atonement,4,Jewish Holidays
+Erev Sukkot,27/9/2034,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot I,28/9/2034,,,,TRUE,Feast of Tabernacles,4,Jewish Holidays
+Sukkot II,29/9/2034,,,,TRUE,Feast of Tabernacles,4,Jewish Holidays
+Sukkot III (CH''M),30/9/2034,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot IV (CH''M),1/10/2034,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot V (CH''M),2/10/2034,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot VI (CH''M),3/10/2034,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot VII (Hoshana Raba),4/10/2034,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Shmini Atzeret,5/10/2034,,,,TRUE,Eighth Day of Assembly,4,Jewish Holidays
+Simchat Torah,6/10/2034,,,,TRUE,Day of Celebrating the Torah,4,Jewish Holidays
+Rosh Chodesh Cheshvan,13/10/2034,,,,TRUE,Beginning of new Hebrew month of Cheshvan,3,Jewish Holidays
+Rosh Chodesh Cheshvan,14/10/2034,,,,TRUE,Beginning of new Hebrew month of Cheshvan,3,Jewish Holidays
+Yom HaAliyah,20/10/2034,,,,TRUE,Recognizes Aliyah; immigration to the Jewish State of Israel,3,Jewish Holidays
+Sigd,11/11/2034,,,,TRUE,Ethiopian Jewish holiday occurring 50 days after Yom Kippur,3,Jewish Holidays
+Rosh Chodesh Kislev,12/11/2034,,,,TRUE,Beginning of new Hebrew month of Kislev,3,Jewish Holidays
+Rosh Chodesh Kislev,13/11/2034,,,,TRUE,Beginning of new Hebrew month of Kislev,3,Jewish Holidays
+Chanukah: 1 Candle,6/12/2034,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 2 Candles,7/12/2034,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 3 Candles,8/12/2034,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 4 Candles,9/12/2034,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 5 Candles,10/12/2034,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 6 Candles,11/12/2034,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Rosh Chodesh Tevet,12/12/2034,,,,TRUE,Beginning of new Hebrew month of Tevet,3,Jewish Holidays
+Chanukah: 7 Candles,12/12/2034,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Rosh Chodesh Tevet,13/12/2034,,,,TRUE,Beginning of new Hebrew month of Tevet,3,Jewish Holidays
+Chanukah: 8 Candles,13/12/2034,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 8th Day,14/12/2034,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Asara B'Tevet,22/12/2034,,,,TRUE,Fast commemorating the siege of Jerusalem,3,Jewish Holidays
+Rosh Chodesh Sh'vat,11/1/2035,,,,TRUE,Beginning of new Hebrew month of Sh'vat,3,Jewish Holidays
+Tu BiShvat,25/1/2035,,,,TRUE,New Year for Trees,3,Jewish Holidays
+Rosh Chodesh Adar I,9/2/2035,,,,TRUE,Beginning of new Hebrew month of Adar,3,Jewish Holidays
+Rosh Chodesh Adar I,10/2/2035,,,,TRUE,Beginning of new Hebrew month of Adar,3,Jewish Holidays
+Purim Katan,23/2/2035,,,,TRUE,Minor Purim celebration during Adar I on leap years,3,Jewish Holidays
+Shabbat Shekalim,10/3/2035,,,,TRUE,Shabbat before Rosh Chodesh Adar,3,Jewish Holidays
+Rosh Chodesh Adar II,11/3/2035,,,,TRUE,Beginning of new Hebrew month of Adar II (on leap years),3,Jewish Holidays
+Rosh Chodesh Adar II,12/3/2035,,,,TRUE,Beginning of new Hebrew month of Adar II (on leap years),3,Jewish Holidays
+Ta'anit Esther,22/3/2035,,,,TRUE,Fast of Esther,3,Jewish Holidays
+Shabbat Zachor,24/3/2035,,,,TRUE,Shabbat before Purim,3,Jewish Holidays
+Erev Purim,24/3/2035,,,,TRUE,Purim is one of the most joyous and fun holidays on the Jewish calendar,3,Jewish Holidays
+Purim,25/3/2035,,,,TRUE,Purim is one of the most joyous and fun holidays on the Jewish calendar,3,Jewish Holidays
+Shushan Purim,26/3/2035,,,,TRUE,Purim celebrated in Jerusalem and walled cities,3,Jewish Holidays
+Shabbat Parah,31/3/2035,,,,TRUE,Shabbat of the Red Heifer,3,Jewish Holidays
+Shabbat HaChodesh,7/4/2035,,,,TRUE,Shabbat before Rosh Chodesh Nissan,3,Jewish Holidays
+Rosh Chodesh Nisan,10/4/2035,,,,TRUE,Beginning of new Hebrew month of Nisan,3,Jewish Holidays
+Shabbat HaGadol,21/4/2035,,,,TRUE,Shabbat before Pesach,3,Jewish Holidays
+Ta'anit Bechorot,23/4/2035,,,,TRUE,Fast of the First Born,3,Jewish Holidays
+Erev Pesach,23/4/2035,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach I,24/4/2035,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach II,25/4/2035,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach III (CH''M),26/4/2035,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach IV (CH''M),27/4/2035,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach V (CH''M),28/4/2035,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach VI (CH''M),29/4/2035,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach VII,30/4/2035,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach VIII,1/5/2035,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Yom HaShoah,7/5/2035,,,,TRUE,Holocaust Memorial Day,3,Jewish Holidays
+Rosh Chodesh Iyyar,9/5/2035,,,,TRUE,Beginning of new Hebrew month of Iyyar,3,Jewish Holidays
+Rosh Chodesh Iyyar,10/5/2035,,,,TRUE,Beginning of new Hebrew month of Iyyar,3,Jewish Holidays
+Yom HaZikaron,14/5/2035,,,,TRUE,Israeli Memorial Day,3,Jewish Holidays
+Yom HaAtzma'ut,15/5/2035,,,,TRUE,Israeli Independence Day,3,Jewish Holidays
+Pesach Sheni,23/5/2035,,,,TRUE,Second Passover; one month after Passover,3,Jewish Holidays
+Lag BaOmer,27/5/2035,,,,TRUE,33rd day of counting the Omer,3,Jewish Holidays
+Yom Yerushalayim,6/6/2035,,,,TRUE,Jerusalem Day,3,Jewish Holidays
+Rosh Chodesh Sivan,8/6/2035,,,,TRUE,Beginning of new Hebrew month of Sivan,3,Jewish Holidays
+Erev Shavuot,12/6/2035,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,3,Jewish Holidays
+Shavuot I,13/6/2035,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,4,Jewish Holidays
+Shavuot II,14/6/2035,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,4,Jewish Holidays
+Rosh Chodesh Tamuz,7/7/2035,,,,TRUE,Beginning of new Hebrew month of Tamuz,3,Jewish Holidays
+Rosh Chodesh Tamuz,8/7/2035,,,,TRUE,Beginning of new Hebrew month of Tamuz,3,Jewish Holidays
+Tzom Tammuz,24/7/2035,,,,TRUE,Fast commemorating breaching of the walls of Jerusalem before the destruction of the Second Temple,3,Jewish Holidays
+Rosh Chodesh Av,6/8/2035,,,,TRUE,Beginning of new Hebrew month of Av,3,Jewish Holidays
+Shabbat Chazon,11/8/2035,,,,TRUE,Shabbat before Tish'a B'Av (Shabbat of Prophecy/Shabbat of Vision),3,Jewish Holidays
+Erev Tish'a B'Av,13/8/2035,,,,TRUE,The Ninth of Av; fast commemorating the destruction of the two Temples,3,Jewish Holidays
+Tish'a B'Av,14/8/2035,,,,TRUE,The Ninth of Av; fast commemorating the destruction of the two Temples,3,Jewish Holidays
+Shabbat Nachamu,18/8/2035,,,,TRUE,Shabbat after Tish'a B'Av (Shabbat of Consolation),3,Jewish Holidays
+Tu B'Av,20/8/2035,,,,TRUE,Jewish holiday of love; similar to Valentine's Day,3,Jewish Holidays
+Rosh Chodesh Elul,4/9/2035,,,,TRUE,Beginning of new Hebrew month of Elul,3,Jewish Holidays
+Rosh Chodesh Elul,5/9/2035,,,,TRUE,Beginning of new Hebrew month of Elul,3,Jewish Holidays
+Leil Selichot,29/9/2035,,,,TRUE,Prayers for forgiveness in preparation for the High Holidays,3,Jewish Holidays
+Erev Rosh Hashana,3/10/2035,,,,TRUE,The Jewish New Year,3,Jewish Holidays
+Rosh Hashana 5796,4/10/2035,,,,TRUE,The Jewish New Year,4,Jewish Holidays
+Rosh Hashana II,5/10/2035,,,,TRUE,The Jewish New Year,4,Jewish Holidays
+Shabbat Shuva,6/10/2035,,,,TRUE,Shabbat that falls between Rosh Hashanah and Yom Kippur (Shabbat of Returning),3,Jewish Holidays
+Tzom Gedaliah,7/10/2035,,,,TRUE,Fast of the Seventh Month; commemorates the assassination of the Jewish governor of Judah,3,Jewish Holidays
+Erev Yom Kippur,12/10/2035,,,,TRUE,Day of Atonement,3,Jewish Holidays
+Yom Kippur,13/10/2035,,,,TRUE,Day of Atonement,4,Jewish Holidays
+Erev Sukkot,17/10/2035,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot I,18/10/2035,,,,TRUE,Feast of Tabernacles,4,Jewish Holidays
+Sukkot II,19/10/2035,,,,TRUE,Feast of Tabernacles,4,Jewish Holidays
+Sukkot III (CH''M),20/10/2035,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot IV (CH''M),21/10/2035,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot V (CH''M),22/10/2035,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot VI (CH''M),23/10/2035,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot VII (Hoshana Raba),24/10/2035,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Shmini Atzeret,25/10/2035,,,,TRUE,Eighth Day of Assembly,4,Jewish Holidays
+Simchat Torah,26/10/2035,,,,TRUE,Day of Celebrating the Torah,4,Jewish Holidays
+Rosh Chodesh Cheshvan,2/11/2035,,,,TRUE,Beginning of new Hebrew month of Cheshvan,3,Jewish Holidays
+Rosh Chodesh Cheshvan,3/11/2035,,,,TRUE,Beginning of new Hebrew month of Cheshvan,3,Jewish Holidays
+Yom HaAliyah,9/11/2035,,,,TRUE,Recognizes Aliyah; immigration to the Jewish State of Israel,3,Jewish Holidays
+Sigd,1/12/2035,,,,TRUE,Ethiopian Jewish holiday occurring 50 days after Yom Kippur,3,Jewish Holidays
+Rosh Chodesh Kislev,2/12/2035,,,,TRUE,Beginning of new Hebrew month of Kislev,3,Jewish Holidays
+Chanukah: 1 Candle,25/12/2035,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 2 Candles,26/12/2035,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 3 Candles,27/12/2035,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 4 Candles,28/12/2035,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 5 Candles,29/12/2035,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 6 Candles,30/12/2035,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Rosh Chodesh Tevet,31/12/2035,,,,TRUE,Beginning of new Hebrew month of Tevet,3,Jewish Holidays
+Chanukah: 7 Candles,31/12/2035,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Rosh Chodesh Tevet,1/1/2036,,,,TRUE,Beginning of new Hebrew month of Tevet,3,Jewish Holidays
+Chanukah: 8 Candles,1/1/2036,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 8th Day,2/1/2036,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Asara B'Tevet,10/1/2036,,,,TRUE,Fast commemorating the siege of Jerusalem,3,Jewish Holidays
+Rosh Chodesh Sh'vat,30/1/2036,,,,TRUE,Beginning of new Hebrew month of Sh'vat,3,Jewish Holidays
+Tu BiShvat,13/2/2036,,,,TRUE,New Year for Trees,3,Jewish Holidays
+Shabbat Shekalim,23/2/2036,,,,TRUE,Shabbat before Rosh Chodesh Adar,3,Jewish Holidays
+Rosh Chodesh Adar,28/2/2036,,,,TRUE,Beginning of new Hebrew month of Adar,3,Jewish Holidays
+Rosh Chodesh Adar,29/2/2036,,,,TRUE,Beginning of new Hebrew month of Adar,3,Jewish Holidays
+Shabbat Zachor,8/3/2036,,,,TRUE,Shabbat before Purim,3,Jewish Holidays
+Ta'anit Esther,12/3/2036,,,,TRUE,Fast of Esther,3,Jewish Holidays
+Erev Purim,12/3/2036,,,,TRUE,Purim is one of the most joyous and fun holidays on the Jewish calendar,3,Jewish Holidays
+Purim,13/3/2036,,,,TRUE,Purim is one of the most joyous and fun holidays on the Jewish calendar,3,Jewish Holidays
+Shushan Purim,14/3/2036,,,,TRUE,Purim celebrated in Jerusalem and walled cities,3,Jewish Holidays
+Shabbat Parah,22/3/2036,,,,TRUE,Shabbat of the Red Heifer,3,Jewish Holidays
+Rosh Chodesh Nisan,29/3/2036,,,,TRUE,Beginning of new Hebrew month of Nisan,3,Jewish Holidays
+Shabbat HaChodesh,29/3/2036,,,,TRUE,Shabbat before Rosh Chodesh Nissan,3,Jewish Holidays
+Shabbat HaGadol,5/4/2036,,,,TRUE,Shabbat before Pesach,3,Jewish Holidays
+Ta'anit Bechorot,11/4/2036,,,,TRUE,Fast of the First Born,3,Jewish Holidays
+Erev Pesach,11/4/2036,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach I,12/4/2036,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach II,13/4/2036,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach III (CH''M),14/4/2036,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach IV (CH''M),15/4/2036,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach V (CH''M),16/4/2036,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach VI (CH''M),17/4/2036,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach VII,18/4/2036,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach VIII,19/4/2036,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Yom HaShoah,24/4/2036,,,,TRUE,Holocaust Memorial Day,3,Jewish Holidays
+Rosh Chodesh Iyyar,27/4/2036,,,,TRUE,Beginning of new Hebrew month of Iyyar,3,Jewish Holidays
+Rosh Chodesh Iyyar,28/4/2036,,,,TRUE,Beginning of new Hebrew month of Iyyar,3,Jewish Holidays
+Yom HaZikaron,30/4/2036,,,,TRUE,Israeli Memorial Day,3,Jewish Holidays
+Yom HaAtzma'ut,1/5/2036,,,,TRUE,Israeli Independence Day,3,Jewish Holidays
+Pesach Sheni,11/5/2036,,,,TRUE,Second Passover; one month after Passover,3,Jewish Holidays
+Lag BaOmer,15/5/2036,,,,TRUE,33rd day of counting the Omer,3,Jewish Holidays
+Yom Yerushalayim,25/5/2036,,,,TRUE,Jerusalem Day,3,Jewish Holidays
+Rosh Chodesh Sivan,27/5/2036,,,,TRUE,Beginning of new Hebrew month of Sivan,3,Jewish Holidays
+Erev Shavuot,31/5/2036,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,3,Jewish Holidays
+Shavuot I,1/6/2036,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,4,Jewish Holidays
+Shavuot II,2/6/2036,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,4,Jewish Holidays
+Rosh Chodesh Tamuz,25/6/2036,,,,TRUE,Beginning of new Hebrew month of Tamuz,3,Jewish Holidays
+Rosh Chodesh Tamuz,26/6/2036,,,,TRUE,Beginning of new Hebrew month of Tamuz,3,Jewish Holidays
+Tzom Tammuz,13/7/2036,,,,TRUE,Fast commemorating breaching of the walls of Jerusalem before the destruction of the Second Temple,3,Jewish Holidays
+Rosh Chodesh Av,25/7/2036,,,,TRUE,Beginning of new Hebrew month of Av,3,Jewish Holidays
+Shabbat Chazon,2/8/2036,,,,TRUE,Shabbat before Tish'a B'Av (Shabbat of Prophecy/Shabbat of Vision),3,Jewish Holidays
+Erev Tish'a B'Av,2/8/2036,,,,TRUE,The Ninth of Av; fast commemorating the destruction of the two Temples,3,Jewish Holidays
+Tish'a B'Av,3/8/2036,,,,TRUE,The Ninth of Av; fast commemorating the destruction of the two Temples,3,Jewish Holidays
+Tu B'Av,8/8/2036,,,,TRUE,Jewish holiday of love; similar to Valentine's Day,3,Jewish Holidays
+Shabbat Nachamu,9/8/2036,,,,TRUE,Shabbat after Tish'a B'Av (Shabbat of Consolation),3,Jewish Holidays
+Rosh Chodesh Elul,23/8/2036,,,,TRUE,Beginning of new Hebrew month of Elul,3,Jewish Holidays
+Rosh Chodesh Elul,24/8/2036,,,,TRUE,Beginning of new Hebrew month of Elul,3,Jewish Holidays
+Leil Selichot,13/9/2036,,,,TRUE,Prayers for forgiveness in preparation for the High Holidays,3,Jewish Holidays
+Erev Rosh Hashana,21/9/2036,,,,TRUE,The Jewish New Year,3,Jewish Holidays
+Rosh Hashana 5797,22/9/2036,,,,TRUE,The Jewish New Year,4,Jewish Holidays
+Rosh Hashana II,23/9/2036,,,,TRUE,The Jewish New Year,4,Jewish Holidays
+Tzom Gedaliah,24/9/2036,,,,TRUE,Fast of the Seventh Month; commemorates the assassination of the Jewish governor of Judah,3,Jewish Holidays
+Shabbat Shuva,27/9/2036,,,,TRUE,Shabbat that falls between Rosh Hashanah and Yom Kippur (Shabbat of Returning),3,Jewish Holidays
+Erev Yom Kippur,30/9/2036,,,,TRUE,Day of Atonement,3,Jewish Holidays
+Yom Kippur,1/10/2036,,,,TRUE,Day of Atonement,4,Jewish Holidays
+Erev Sukkot,5/10/2036,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot I,6/10/2036,,,,TRUE,Feast of Tabernacles,4,Jewish Holidays
+Sukkot II,7/10/2036,,,,TRUE,Feast of Tabernacles,4,Jewish Holidays
+Sukkot III (CH''M),8/10/2036,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot IV (CH''M),9/10/2036,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot V (CH''M),10/10/2036,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot VI (CH''M),11/10/2036,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot VII (Hoshana Raba),12/10/2036,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Shmini Atzeret,13/10/2036,,,,TRUE,Eighth Day of Assembly,4,Jewish Holidays
+Simchat Torah,14/10/2036,,,,TRUE,Day of Celebrating the Torah,4,Jewish Holidays
+Rosh Chodesh Cheshvan,21/10/2036,,,,TRUE,Beginning of new Hebrew month of Cheshvan,3,Jewish Holidays
+Rosh Chodesh Cheshvan,22/10/2036,,,,TRUE,Beginning of new Hebrew month of Cheshvan,3,Jewish Holidays
+Yom HaAliyah,28/10/2036,,,,TRUE,Recognizes Aliyah; immigration to the Jewish State of Israel,3,Jewish Holidays
+Sigd,19/11/2036,,,,TRUE,Ethiopian Jewish holiday occurring 50 days after Yom Kippur,3,Jewish Holidays
+Rosh Chodesh Kislev,20/11/2036,,,,TRUE,Beginning of new Hebrew month of Kislev,3,Jewish Holidays
+Chanukah: 1 Candle,13/12/2036,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 2 Candles,14/12/2036,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 3 Candles,15/12/2036,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 4 Candles,16/12/2036,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 5 Candles,17/12/2036,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 6 Candles,18/12/2036,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Rosh Chodesh Tevet,19/12/2036,,,,TRUE,Beginning of new Hebrew month of Tevet,3,Jewish Holidays
+Chanukah: 7 Candles,19/12/2036,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 8 Candles,20/12/2036,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 8th Day,21/12/2036,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Asara B'Tevet,28/12/2036,,,,TRUE,Fast commemorating the siege of Jerusalem,3,Jewish Holidays
+Rosh Chodesh Sh'vat,17/1/2037,,,,TRUE,Beginning of new Hebrew month of Sh'vat,3,Jewish Holidays
+Tu BiShvat,31/1/2037,,,,TRUE,New Year for Trees,3,Jewish Holidays
+Shabbat Shekalim,14/2/2037,,,,TRUE,Shabbat before Rosh Chodesh Adar,3,Jewish Holidays
+Rosh Chodesh Adar,15/2/2037,,,,TRUE,Beginning of new Hebrew month of Adar,3,Jewish Holidays
+Rosh Chodesh Adar,16/2/2037,,,,TRUE,Beginning of new Hebrew month of Adar,3,Jewish Holidays
+Ta'anit Esther,26/2/2037,,,,TRUE,Fast of Esther,3,Jewish Holidays
+Shabbat Zachor,28/2/2037,,,,TRUE,Shabbat before Purim,3,Jewish Holidays
+Erev Purim,28/2/2037,,,,TRUE,Purim is one of the most joyous and fun holidays on the Jewish calendar,3,Jewish Holidays
+Purim,1/3/2037,,,,TRUE,Purim is one of the most joyous and fun holidays on the Jewish calendar,3,Jewish Holidays
+Shushan Purim,2/3/2037,,,,TRUE,Purim celebrated in Jerusalem and walled cities,3,Jewish Holidays
+Shabbat Parah,7/3/2037,,,,TRUE,Shabbat of the Red Heifer,3,Jewish Holidays
+Shabbat HaChodesh,14/3/2037,,,,TRUE,Shabbat before Rosh Chodesh Nissan,3,Jewish Holidays
+Rosh Chodesh Nisan,17/3/2037,,,,TRUE,Beginning of new Hebrew month of Nisan,3,Jewish Holidays
+Shabbat HaGadol,28/3/2037,,,,TRUE,Shabbat before Pesach,3,Jewish Holidays
+Ta'anit Bechorot,30/3/2037,,,,TRUE,Fast of the First Born,3,Jewish Holidays
+Erev Pesach,30/3/2037,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach I,31/3/2037,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach II,1/4/2037,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach III (CH''M),2/4/2037,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach IV (CH''M),3/4/2037,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach V (CH''M),4/4/2037,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach VI (CH''M),5/4/2037,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach VII,6/4/2037,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach VIII,7/4/2037,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Yom HaShoah,13/4/2037,,,,TRUE,Holocaust Memorial Day,3,Jewish Holidays
+Rosh Chodesh Iyyar,15/4/2037,,,,TRUE,Beginning of new Hebrew month of Iyyar,3,Jewish Holidays
+Rosh Chodesh Iyyar,16/4/2037,,,,TRUE,Beginning of new Hebrew month of Iyyar,3,Jewish Holidays
+Yom HaZikaron,20/4/2037,,,,TRUE,Israeli Memorial Day,3,Jewish Holidays
+Yom HaAtzma'ut,21/4/2037,,,,TRUE,Israeli Independence Day,3,Jewish Holidays
+Pesach Sheni,29/4/2037,,,,TRUE,Second Passover; one month after Passover,3,Jewish Holidays
+Lag BaOmer,3/5/2037,,,,TRUE,33rd day of counting the Omer,3,Jewish Holidays
+Yom Yerushalayim,13/5/2037,,,,TRUE,Jerusalem Day,3,Jewish Holidays
+Rosh Chodesh Sivan,15/5/2037,,,,TRUE,Beginning of new Hebrew month of Sivan,3,Jewish Holidays
+Erev Shavuot,19/5/2037,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,3,Jewish Holidays
+Shavuot I,20/5/2037,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,4,Jewish Holidays
+Shavuot II,21/5/2037,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,4,Jewish Holidays
+Rosh Chodesh Tamuz,13/6/2037,,,,TRUE,Beginning of new Hebrew month of Tamuz,3,Jewish Holidays
+Rosh Chodesh Tamuz,14/6/2037,,,,TRUE,Beginning of new Hebrew month of Tamuz,3,Jewish Holidays
+Tzom Tammuz,30/6/2037,,,,TRUE,Fast commemorating breaching of the walls of Jerusalem before the destruction of the Second Temple,3,Jewish Holidays
+Rosh Chodesh Av,13/7/2037,,,,TRUE,Beginning of new Hebrew month of Av,3,Jewish Holidays
+Shabbat Chazon,18/7/2037,,,,TRUE,Shabbat before Tish'a B'Av (Shabbat of Prophecy/Shabbat of Vision),3,Jewish Holidays
+Erev Tish'a B'Av,20/7/2037,,,,TRUE,The Ninth of Av; fast commemorating the destruction of the two Temples,3,Jewish Holidays
+Tish'a B'Av,21/7/2037,,,,TRUE,The Ninth of Av; fast commemorating the destruction of the two Temples,3,Jewish Holidays
+Shabbat Nachamu,25/7/2037,,,,TRUE,Shabbat after Tish'a B'Av (Shabbat of Consolation),3,Jewish Holidays
+Tu B'Av,27/7/2037,,,,TRUE,Jewish holiday of love; similar to Valentine's Day,3,Jewish Holidays
+Rosh Chodesh Elul,11/8/2037,,,,TRUE,Beginning of new Hebrew month of Elul,3,Jewish Holidays
+Rosh Chodesh Elul,12/8/2037,,,,TRUE,Beginning of new Hebrew month of Elul,3,Jewish Holidays
+Leil Selichot,5/9/2037,,,,TRUE,Prayers for forgiveness in preparation for the High Holidays,3,Jewish Holidays
+Erev Rosh Hashana,9/9/2037,,,,TRUE,The Jewish New Year,3,Jewish Holidays
+Rosh Hashana 5798,10/9/2037,,,,TRUE,The Jewish New Year,4,Jewish Holidays
+Rosh Hashana II,11/9/2037,,,,TRUE,The Jewish New Year,4,Jewish Holidays
+Shabbat Shuva,12/9/2037,,,,TRUE,Shabbat that falls between Rosh Hashanah and Yom Kippur (Shabbat of Returning),3,Jewish Holidays
+Tzom Gedaliah,13/9/2037,,,,TRUE,Fast of the Seventh Month; commemorates the assassination of the Jewish governor of Judah,3,Jewish Holidays
+Erev Yom Kippur,18/9/2037,,,,TRUE,Day of Atonement,3,Jewish Holidays
+Yom Kippur,19/9/2037,,,,TRUE,Day of Atonement,4,Jewish Holidays
+Erev Sukkot,23/9/2037,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot I,24/9/2037,,,,TRUE,Feast of Tabernacles,4,Jewish Holidays
+Sukkot II,25/9/2037,,,,TRUE,Feast of Tabernacles,4,Jewish Holidays
+Sukkot III (CH''M),26/9/2037,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot IV (CH''M),27/9/2037,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot V (CH''M),28/9/2037,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot VI (CH''M),29/9/2037,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot VII (Hoshana Raba),30/9/2037,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Shmini Atzeret,1/10/2037,,,,TRUE,Eighth Day of Assembly,4,Jewish Holidays
+Simchat Torah,2/10/2037,,,,TRUE,Day of Celebrating the Torah,4,Jewish Holidays
+Rosh Chodesh Cheshvan,9/10/2037,,,,TRUE,Beginning of new Hebrew month of Cheshvan,3,Jewish Holidays
+Rosh Chodesh Cheshvan,10/10/2037,,,,TRUE,Beginning of new Hebrew month of Cheshvan,3,Jewish Holidays
+Yom HaAliyah,16/10/2037,,,,TRUE,Recognizes Aliyah; immigration to the Jewish State of Israel,3,Jewish Holidays
+Sigd,7/11/2037,,,,TRUE,Ethiopian Jewish holiday occurring 50 days after Yom Kippur,3,Jewish Holidays
+Rosh Chodesh Kislev,8/11/2037,,,,TRUE,Beginning of new Hebrew month of Kislev,3,Jewish Holidays
+Rosh Chodesh Kislev,9/11/2037,,,,TRUE,Beginning of new Hebrew month of Kislev,3,Jewish Holidays
+Chanukah: 1 Candle,2/12/2037,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 2 Candles,3/12/2037,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 3 Candles,4/12/2037,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 4 Candles,5/12/2037,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 5 Candles,6/12/2037,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 6 Candles,7/12/2037,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Rosh Chodesh Tevet,8/12/2037,,,,TRUE,Beginning of new Hebrew month of Tevet,3,Jewish Holidays
+Chanukah: 7 Candles,8/12/2037,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Rosh Chodesh Tevet,9/12/2037,,,,TRUE,Beginning of new Hebrew month of Tevet,3,Jewish Holidays
+Chanukah: 8 Candles,9/12/2037,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 8th Day,10/12/2037,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Asara B'Tevet,18/12/2037,,,,TRUE,Fast commemorating the siege of Jerusalem,3,Jewish Holidays
+Rosh Chodesh Sh'vat,7/1/2038,,,,TRUE,Beginning of new Hebrew month of Sh'vat,3,Jewish Holidays
+Tu BiShvat,21/1/2038,,,,TRUE,New Year for Trees,3,Jewish Holidays
+Rosh Chodesh Adar I,5/2/2038,,,,TRUE,Beginning of new Hebrew month of Adar,3,Jewish Holidays
+Rosh Chodesh Adar I,6/2/2038,,,,TRUE,Beginning of new Hebrew month of Adar,3,Jewish Holidays
+Purim Katan,19/2/2038,,,,TRUE,Minor Purim celebration during Adar I on leap years,3,Jewish Holidays
+Shabbat Shekalim,6/3/2038,,,,TRUE,Shabbat before Rosh Chodesh Adar,3,Jewish Holidays
+Rosh Chodesh Adar II,7/3/2038,,,,TRUE,Beginning of new Hebrew month of Adar II (on leap years),3,Jewish Holidays
+Rosh Chodesh Adar II,8/3/2038,,,,TRUE,Beginning of new Hebrew month of Adar II (on leap years),3,Jewish Holidays
+Ta'anit Esther,18/3/2038,,,,TRUE,Fast of Esther,3,Jewish Holidays
+Shabbat Zachor,20/3/2038,,,,TRUE,Shabbat before Purim,3,Jewish Holidays
+Erev Purim,20/3/2038,,,,TRUE,Purim is one of the most joyous and fun holidays on the Jewish calendar,3,Jewish Holidays
+Purim,21/3/2038,,,,TRUE,Purim is one of the most joyous and fun holidays on the Jewish calendar,3,Jewish Holidays
+Shushan Purim,22/3/2038,,,,TRUE,Purim celebrated in Jerusalem and walled cities,3,Jewish Holidays
+Shabbat Parah,27/3/2038,,,,TRUE,Shabbat of the Red Heifer,3,Jewish Holidays
+Shabbat HaChodesh,3/4/2038,,,,TRUE,Shabbat before Rosh Chodesh Nissan,3,Jewish Holidays
+Rosh Chodesh Nisan,6/4/2038,,,,TRUE,Beginning of new Hebrew month of Nisan,3,Jewish Holidays
+Shabbat HaGadol,17/4/2038,,,,TRUE,Shabbat before Pesach,3,Jewish Holidays
+Ta'anit Bechorot,19/4/2038,,,,TRUE,Fast of the First Born,3,Jewish Holidays
+Erev Pesach,19/4/2038,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach I,20/4/2038,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach II,21/4/2038,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach III (CH''M),22/4/2038,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach IV (CH''M),23/4/2038,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach V (CH''M),24/4/2038,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach VI (CH''M),25/4/2038,,,,TRUE,Passover; the Feast of Unleavened Bread,3,Jewish Holidays
+Pesach VII,26/4/2038,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Pesach VIII,27/4/2038,,,,TRUE,Passover; the Feast of Unleavened Bread,4,Jewish Holidays
+Yom HaShoah,3/5/2038,,,,TRUE,Holocaust Memorial Day,3,Jewish Holidays
+Rosh Chodesh Iyyar,5/5/2038,,,,TRUE,Beginning of new Hebrew month of Iyyar,3,Jewish Holidays
+Rosh Chodesh Iyyar,6/5/2038,,,,TRUE,Beginning of new Hebrew month of Iyyar,3,Jewish Holidays
+Yom HaZikaron,10/5/2038,,,,TRUE,Israeli Memorial Day,3,Jewish Holidays
+Yom HaAtzma'ut,11/5/2038,,,,TRUE,Israeli Independence Day,3,Jewish Holidays
+Pesach Sheni,19/5/2038,,,,TRUE,Second Passover; one month after Passover,3,Jewish Holidays
+Lag BaOmer,23/5/2038,,,,TRUE,33rd day of counting the Omer,3,Jewish Holidays
+Yom Yerushalayim,2/6/2038,,,,TRUE,Jerusalem Day,3,Jewish Holidays
+Rosh Chodesh Sivan,4/6/2038,,,,TRUE,Beginning of new Hebrew month of Sivan,3,Jewish Holidays
+Erev Shavuot,8/6/2038,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,3,Jewish Holidays
+Shavuot I,9/6/2038,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,4,Jewish Holidays
+Shavuot II,10/6/2038,,,,TRUE,Festival of Weeks; commemorates the giving of the Torah at Mount Sinai,4,Jewish Holidays
+Rosh Chodesh Tamuz,3/7/2038,,,,TRUE,Beginning of new Hebrew month of Tamuz,3,Jewish Holidays
+Rosh Chodesh Tamuz,4/7/2038,,,,TRUE,Beginning of new Hebrew month of Tamuz,3,Jewish Holidays
+Tzom Tammuz,20/7/2038,,,,TRUE,Fast commemorating breaching of the walls of Jerusalem before the destruction of the Second Temple,3,Jewish Holidays
+Rosh Chodesh Av,2/8/2038,,,,TRUE,Beginning of new Hebrew month of Av,3,Jewish Holidays
+Shabbat Chazon,7/8/2038,,,,TRUE,Shabbat before Tish'a B'Av (Shabbat of Prophecy/Shabbat of Vision),3,Jewish Holidays
+Erev Tish'a B'Av,9/8/2038,,,,TRUE,The Ninth of Av; fast commemorating the destruction of the two Temples,3,Jewish Holidays
+Tish'a B'Av,10/8/2038,,,,TRUE,The Ninth of Av; fast commemorating the destruction of the two Temples,3,Jewish Holidays
+Shabbat Nachamu,14/8/2038,,,,TRUE,Shabbat after Tish'a B'Av (Shabbat of Consolation),3,Jewish Holidays
+Tu B'Av,16/8/2038,,,,TRUE,Jewish holiday of love; similar to Valentine's Day,3,Jewish Holidays
+Rosh Chodesh Elul,31/8/2038,,,,TRUE,Beginning of new Hebrew month of Elul,3,Jewish Holidays
+Rosh Chodesh Elul,1/9/2038,,,,TRUE,Beginning of new Hebrew month of Elul,3,Jewish Holidays
+Leil Selichot,25/9/2038,,,,TRUE,Prayers for forgiveness in preparation for the High Holidays,3,Jewish Holidays
+Erev Rosh Hashana,29/9/2038,,,,TRUE,The Jewish New Year,3,Jewish Holidays
+Rosh Hashana 5799,30/9/2038,,,,TRUE,The Jewish New Year,4,Jewish Holidays
+Rosh Hashana II,1/10/2038,,,,TRUE,The Jewish New Year,4,Jewish Holidays
+Shabbat Shuva,2/10/2038,,,,TRUE,Shabbat that falls between Rosh Hashanah and Yom Kippur (Shabbat of Returning),3,Jewish Holidays
+Tzom Gedaliah,3/10/2038,,,,TRUE,Fast of the Seventh Month; commemorates the assassination of the Jewish governor of Judah,3,Jewish Holidays
+Erev Yom Kippur,8/10/2038,,,,TRUE,Day of Atonement,3,Jewish Holidays
+Yom Kippur,9/10/2038,,,,TRUE,Day of Atonement,4,Jewish Holidays
+Erev Sukkot,13/10/2038,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot I,14/10/2038,,,,TRUE,Feast of Tabernacles,4,Jewish Holidays
+Sukkot II,15/10/2038,,,,TRUE,Feast of Tabernacles,4,Jewish Holidays
+Sukkot III (CH''M),16/10/2038,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot IV (CH''M),17/10/2038,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot V (CH''M),18/10/2038,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot VI (CH''M),19/10/2038,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Sukkot VII (Hoshana Raba),20/10/2038,,,,TRUE,Feast of Tabernacles,3,Jewish Holidays
+Shmini Atzeret,21/10/2038,,,,TRUE,Eighth Day of Assembly,4,Jewish Holidays
+Simchat Torah,22/10/2038,,,,TRUE,Day of Celebrating the Torah,4,Jewish Holidays
+Rosh Chodesh Cheshvan,29/10/2038,,,,TRUE,Beginning of new Hebrew month of Cheshvan,3,Jewish Holidays
+Rosh Chodesh Cheshvan,30/10/2038,,,,TRUE,Beginning of new Hebrew month of Cheshvan,3,Jewish Holidays
+Yom HaAliyah,5/11/2038,,,,TRUE,Recognizes Aliyah; immigration to the Jewish State of Israel,3,Jewish Holidays
+Sigd,27/11/2038,,,,TRUE,Ethiopian Jewish holiday occurring 50 days after Yom Kippur,3,Jewish Holidays
+Rosh Chodesh Kislev,28/11/2038,,,,TRUE,Beginning of new Hebrew month of Kislev,3,Jewish Holidays
+Chanukah: 1 Candle,21/12/2038,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 2 Candles,22/12/2038,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 3 Candles,23/12/2038,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 4 Candles,24/12/2038,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 5 Candles,25/12/2038,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 6 Candles,26/12/2038,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Rosh Chodesh Tevet,27/12/2038,,,,TRUE,Beginning of new Hebrew month of Tevet,3,Jewish Holidays
+Chanukah: 7 Candles,27/12/2038,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Rosh Chodesh Tevet,28/12/2038,,,,TRUE,Beginning of new Hebrew month of Tevet,3,Jewish Holidays
+Chanukah: 8 Candles,28/12/2038,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays
+Chanukah: 8th Day,29/12/2038,,,,TRUE,The Jewish festival of rededication; also known as the Festival of Lights,3,Jewish Holidays

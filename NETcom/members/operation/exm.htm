@@ -1,0 +1,541 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.fixedtableheader.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".tbl1").fixedtableheader();
+              });
+
+      
+    </script>
+    <style type="text/css">
+        html *
+        {
+            font-family: Tahoma, "Trebuchet MS" , Verdana;
+            font-size: 11px;
+        }
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .baslik
+        {
+            background-color: #6b8e23;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px;
+        }
+        .tdmetin
+        {
+            background-color: #dcdcdc;
+            color: #00008b;
+            font-weight: bold;
+            padding: 5px;
+        }
+        .code
+        {
+            background-color: #EEEEEE;
+            border: 1px solid #CCCCCC;
+            padding: 5px;
+            width: 400px;
+        }
+      
+        .tbl1
+        {
+            border-collapse: collapse;
+            border: solid 1px gray;
+        }
+    </style>
+</head>
+<body>
+  
+    <table cellpadding="5" border="1" class="tbl1" ID="Table2">
+        <thead>
+            <tr style="background-color: #094b8d; color: White">
+                <td>
+                    School
+                </td>
+                <td>
+                    Date
+                </td>
+                <td>
+                    Time1
+                </td>
+                <td>
+                    Time2
+                </td>
+                <td>
+                    Time3
+                </td>
+                <td>
+                    Facility
+                </td>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="6">
+                    tfoot test row
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>
+                    School1
+                </td>
+                <td>
+                    01.01.2009
+                </td>
+                <td>
+                    08:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    11:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School2
+                </td>
+                <td>
+                    02.01.2009
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    12:00
+                </td>
+                <td>
+                    16:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School3
+                </td>
+                <td>
+                    03.01.2009
+                </td>
+                <td>
+                    8:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    17:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School4
+                </td>
+                <td>
+                    04.01.2009
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    10:43
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School5
+                </td>
+                <td>
+                    05.01.2009
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School6
+                </td>
+                <td>
+                    06.01.2009
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    21:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School7
+                </td>
+                <td>
+                    07.01.2009
+                </td>
+                <td>
+                    09:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    14:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School8
+                </td>
+                <td>
+                    08.01.2009
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    14:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School9
+                </td>
+                <td>
+                    09.01.2009
+                </td>
+                <td>
+                    6:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School10
+                </td>
+                <td>
+                    10.01.2009
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School11
+                </td>
+                <td>
+                    11.01.2009
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School12
+                </td>
+                <td>
+                    12.01.2009
+                </td>
+                <td>
+                    7:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School13
+                </td>
+                <td>
+                    13.01.2009
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    15:00
+                </td>
+                <td>
+                    16:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School14
+                </td>
+                <td>
+                    14.01.2009
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    18:00
+                </td>
+                <td>
+                    19:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School15
+                </td>
+                <td>
+                    15.01.2009
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    13:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School16
+                </td>
+                <td>
+                    16.01.2009
+                </td>
+                <td>
+                    6:00
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    12:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School17
+                </td>
+                <td>
+                    17.01.2009
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    16:00
+                </td>
+                <td>
+                    20:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    School18
+                </td>
+                <td>
+                    18.01.2009
+                </td>
+                <td>
+                    10:00
+                </td>
+                <td>
+                    11:00
+                </td>
+                <td>
+                    17:00
+                </td>
+                <td>
+                    Location of Event
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        You must add jquery.min.js and jquery.fixedtableheader.min.js in your code like this :
+        <br />
+        <br />
+        <div class="code">
+            &#60;script src="jquery.min.js" type="text/javascript"&#62; &#60;/script&#62;
+            <br />
+            &#60;script src="jquery.fixedtableheader.min.js" type="text/javascript"&#62; &#60;/script&#62;
+        </div>
+        <br />
+        <div class="code">
+            &#60;script type="text/javascript"&#62;
+            <br />
+            $(document).ready(function() {
+            <br />
+            &nbsp;&nbsp; $(&#39;.tbl&#39;).fixedtableheader();
+            <br />
+            });
+            <br />
+            &#60;/script&#62;
+        </div>
+        <br />
+        <br />
+        Finally you must set class property to "tbl&quot;.<br />
+        <div class="code">
+            &#60;table&nbsp; id="tblTest1" class="tbl&quot; &#62;.....</div>
+        <br />
+        <br />
+        There are three options in this plugin.
+        <br />
+        <br />
+        <b>First Option</b> = headerrowsize:1<br />
+        Default is 1 . It is <span lang="EN-US">support for </span>setting multiple fixed header rows.
+        <br />
+        If you are using one row for header you cannot use this parameter.
+        <br />
+        <div class="code">
+            &#60;script type="text/javascript"&#62;<br />
+			$(document).ready(function() {
+            <br />
+            &nbsp;&nbsp; $('.tbl').fixedtableheader({
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp; headerrowsize:2<br />
+            &nbsp;&nbsp; });
+            <br />
+            });
+            <br />
+            &#60;/script&#62;
+        </div>
+        <br />
+        <br />
+        <b>Second Option</b> = highlightrow: false
+        <br />
+        Default value is false. This option highlight row when mouse over.
+        <br />
+        <br />
+       
+        <br />
+        <br />
+        <br />
+    </p>
+   
+    <p>
+        <br />
+        <b>Third Option</b> = highlightclass: &quot;highlight&quot;<br />
+        Default value is &quot;highlight&quot;. This option set highlighted row's css class.
+        <br />
+        If you are set "highlightrow: true" you can set highlightclass.
+        <br />
+        <br />
+        <div class="code">
+            &#60;script type="text/javascript"&#62;<br />
+            $(document).ready(function() {
+            <br />
+            &nbsp;&nbsp; $('.tbl').fixedtableheader({
+            <br />
+            &nbsp;&nbsp;&nbsp; highlightclass: 'rowhlite'
+            <br />
+            &nbsp;&nbsp; });
+            <br />
+            });
+            <br />
+            &#60;/script&#62;
+        </div>
+        <br />
+        <br />
+    </p>
+
+</body>
+</html>

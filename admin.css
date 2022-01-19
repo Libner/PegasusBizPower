@@ -1,0 +1,388 @@
+body
+{
+   font-family:arial;
+}
+select
+{
+   font-family:arial;
+}
+input
+{
+   font-family:arial;
+}
+textarea
+{
+   font-family:arial;
+}
+TABLE.table_border
+{
+    BORDER-RIGHT: #808080 1px solid;
+    BORDER-TOP: #808080 1px solid;
+    BORDER-LEFT: #808080 1px solid;
+    BORDER-BOTTOM: #808080 1px solid
+}
+.12normalB
+{
+    color:#000000;
+    font-family:arial;
+    font-size:12pt;
+    font-weight:600;
+}
+.11normalB
+{
+    color:#000000;
+    font-family:arial;
+    font-size:11pt;
+    font-weight:600;
+}
+.normalB
+{
+    color:#000000;
+    font-family:arial;
+    font-size:13px;
+    font-weight:600;
+}
+.10normalB
+{
+    color:#000000;
+    font-family:arial;
+    font-size:10pt;
+    font-weight:600;
+    text-decoration:none;	
+}
+.10normalB:hover
+{
+    WIDTH: 100%;
+    BACKGROUND-COLOR: #D4D4D4;
+}
+.10normal
+{
+    color:#000000;
+    font-family:arial;
+    font-size:10pt;
+    font-weight:normal;
+
+}
+.11normal
+{
+    color:#000000;
+    font-family:arial;
+    font-size:11pt;
+    font-weight:normal;
+}
+A.admin
+{
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 11pt;
+    WIDTH: 100%;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+A.admin:hover
+{
+	TEXT-DECORATION: none
+}
+A
+{
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 10pt;  
+    COLOR: #000000;
+    FONT-FAMILY: Arial; 
+    TEXT-DECORATION: none;  
+}
+A:hover
+{
+   COLOR: #F58C00;    
+   TEXT-DECORATION: underline;
+}
+
+A.emails
+{
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 13pt;
+    WIDTH: 100%;
+    COLOR: #0b4e9f;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+A.emails:hover
+{
+    WIDTH: 100%;
+    HEIGHT: 100%;
+    BACKGROUND-COLOR: #93d1e6;
+    TEXT-DECORATION: underline
+}
+A.emails:visited
+{
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 13pt;
+    WIDTH: 100%;
+    COLOR: red;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+
+A.adm
+{
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 12pt;
+    COLOR: black;
+    LETTER-SPACING: normal;
+    HEIGHT: 100%;
+    TEXT-DECORATION: underline
+}
+A.adm:hover
+{
+   TEXT-DECORATION: underline
+}
+.button_admin_1
+{
+    BORDER-RIGHT: #696969 2px solid;
+    BORDER-TOP: white 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: #d3d3d3 2px solid;
+    WIDTH: 150px;
+    COLOR: #696969;
+    BORDER-BOTTOM: #696969 2px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 24px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+.button_admin_1:hover
+{
+    BORDER-RIGHT: #000000 2px solid;
+    BORDER-TOP: white 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: white 2px solid;
+    WIDTH: 150px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 2px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 24px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_admin_2
+{
+    BORDER-RIGHT: #696969 2px solid;
+    BORDER-TOP: white 2px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #d3d3d3 2px solid;
+    WIDTH: 90px;
+    COLOR: #696969;
+    BORDER-BOTTOM: #696969 2px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 12px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_admin_2:hover
+{
+    BORDER-RIGHT: #000000 2px solid;
+    BORDER-TOP: white 2px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: white 2px solid;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 2px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 12px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_edit_1
+{
+    BORDER-RIGHT: #696969 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #d3d3d3 1px solid;
+    WIDTH: 40px;
+    COLOR: #F58C00;
+    BORDER-BOTTOM: #696969 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_edit_1:hover
+{
+    BORDER-RIGHT: #F58C00 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #ffffff 1px solid;
+    WIDTH: 40px;
+    COLOR: #F58C00;
+    BORDER-BOTTOM: #F58C00 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_delete_1
+{
+    BORDER-RIGHT: #696969 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #d3d3d3 1px solid;
+    WIDTH: 40px;
+    COLOR: #ff0000;
+    BORDER-BOTTOM: #696969 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_delete_1:hover
+{
+    BORDER-RIGHT: #ff0000 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: white 1px solid;
+    WIDTH: 40px;
+    COLOR: #ff0000;
+    BORDER-BOTTOM: #ff0000 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.but_delete
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 9pt;   
+    PADDING-RIGHT :5px;    
+    PADDING-LEFT :5px;    
+    BORDER-LEFT: 1px solid;
+    CURSOR: hand;
+    WIDTH:100%;
+    COLOR: #000000;
+    BORDER-BOTTOM: 1px solid;
+    FONT-FAMILY: Arial;
+    LETTER-SPACING: 1px;
+    TEXT-DECORATION:NONE;
+    BACKGROUND-COLOR: #E4E4E4
+}
+A.but_delete:hover
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 9pt;   
+    PADDING-RIGHT :5px;    
+    PADDING-LEFT :5px;    
+    BORDER-LEFT: 1px solid;
+    CURSOR: hand;
+    WIDTH:100%;
+    COLOR: #000000;
+    BORDER-BOTTOM: 1px solid;
+    FONT-FAMILY: Arial;
+    LETTER-SPACING: 1px;
+    TEXT-DECORATION:NONE;
+    BACKGROUND-COLOR: #E4E4E4
+}
+A.but_edit
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 9pt;   
+    PADDING-RIGHT :5px;    
+    PADDING-LEFT :5px;    
+    BORDER-LEFT: 1px solid;
+    CURSOR: hand;
+    WIDTH:100%;
+    COLOR: #000000;
+    BORDER-BOTTOM: 1px solid;
+    FONT-FAMILY: Arial;
+    LETTER-SPACING: 1px;
+    TEXT-DECORATION:NONE;
+    BACKGROUND-COLOR: #E4E4E4
+}
+A.but_edit:hover
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 9pt;   
+    PADDING-RIGHT :5px;    
+    PADDING-LEFT :5px;    
+    BORDER-LEFT: 1px solid;
+    CURSOR: hand;
+    WIDTH:100%;
+    COLOR: #000000;
+    BORDER-BOTTOM: 1px solid;
+    FONT-FAMILY: Arial;
+    LETTER-SPACING: 1px;
+    TEXT-DECORATION:NONE;
+    BACKGROUND-COLOR: #E4E4E4
+}
+
+INPUT.but_browse
+{
+   FONT-SIZE: 12px;
+   FONT-WEIGHT: 400;
+   COLOR: #000000;
+   FONT-FAMILY: Arial;
+}
+
+A.link_browse
+{
+    WIDTH :90;
+    HEIGHT : 19;
+    BORDER-TOP: #ffffff 1px solid;
+    BORDER-LEFT: #ffffff 1px solid;
+    BORDER-RIGHT: #696969 1px solid;
+    BORDER-BOTTOM: #696969 1px solid;    
+    FONT-SIZE: 12px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #C0C0C0;
+    text-decoration:none;
+    text-align:center;
+}
+A.link_browse:hover
+{
+    WIDTH :90;
+    HEIGHT : 19;
+    BORDER-TOP: #ffffff 1px solid;
+    BORDER-LEFT: #ffffff 1px solid;
+    BORDER-RIGHT: #696969 1px solid;
+    BORDER-BOTTOM: #696969 1px solid;    
+    FONT-SIZE: 12px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #C0C0C0;
+    text-decoration:none;
+    text-align:center;
+}
+TD.page_title
+{
+	background-color: "#F58C00";
+	text-align: center;
+	FONT-FAMILY: Arial;
+	font-size: 13pt;
+	font-weight:600;
+	color: #FFFFFF;
+	height: 25px;
+	vertical-align:middle;
+}

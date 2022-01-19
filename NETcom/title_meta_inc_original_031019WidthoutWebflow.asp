@@ -1,0 +1,1 @@
+<title>Bizpower<%If lang_id <> "2" Then%> - כלים חזקים אונליין<%End If%></title>

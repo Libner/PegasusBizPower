@@ -1,0 +1,662 @@
+BODY.body_admin
+{
+    COLOR: white;
+    BACKGROUND-COLOR: #f9f9f9;
+}
+BODY.body_temp
+{
+    COLOR: #000000;
+    font-size: 10pt; 
+    font-family :Arial;
+}
+A.button_small
+{
+    BORDER-RIGHT: #696969 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: #d3d3d3 1px solid;
+    WIDTH: 20px;
+    COLOR: #696969;
+    BORDER-BOTTOM: #696969 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 24px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_small:hover
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #white 1px solid;
+    BORDER-LEFT: #d3d3d3 1px solid;
+    BORDER-BOTTOM: #000000 1px solid;
+    COLOR: #ff9100;
+}
+.button_admin_1
+{
+    BORDER-RIGHT: #696969 2px solid;
+    BORDER-TOP: white 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: #d3d3d3 2px solid;
+    WIDTH: 150px;
+    COLOR: #696969;
+    BORDER-BOTTOM: #696969 2px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 24px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none;
+    cursor: hand
+}
+.button_admin_1:hover
+{
+    BORDER-RIGHT: #000000 2px solid;
+    BORDER-TOP: white 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: white 2px solid;
+    WIDTH: 150px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 2px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 24px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none;
+    cursor: hand;
+}
+A.button_admin_2
+{
+    BORDER-RIGHT: #696969 2px solid;
+    BORDER-TOP: white 2px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #d3d3d3 2px solid;
+    WIDTH: 90px;
+    COLOR: #696969;
+    BORDER-BOTTOM: #696969 2px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 12px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_admin_2:hover
+{
+    BORDER-RIGHT: #000000 2px solid;
+    BORDER-TOP: white 2px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: white 2px solid;
+    WIDTH: 90px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 2px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 12px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+TABLE.table_admin_1
+{
+    BACKGROUND-COLOR: #d3d3d3
+}
+TD.td_admin_1
+{
+    BACKGROUND-COLOR: #60ade2
+}
+TD.title_admin_1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    COLOR: white;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #898989
+}
+A.button_edit_1
+{
+    BORDER-RIGHT: #696969 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #d3d3d3 1px solid;
+    WIDTH: 40px;
+    COLOR: #ff9100;
+    BORDER-BOTTOM: #696969 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_edit_1:hover
+{
+    BORDER-RIGHT: #ff9100 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #ffffff 1px solid;
+    WIDTH: 40px;
+    COLOR: #ff9100;
+    BORDER-BOTTOM: #ff9100 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_delete_1
+{
+    BORDER-RIGHT: #696969 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #d3d3d3 1px solid;
+    WIDTH: 40px;
+    COLOR: #ff0000;
+    BORDER-BOTTOM: #696969 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_delete_1:hover
+{
+    BORDER-RIGHT: #ff0000 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: white 1px solid;
+    WIDTH: 40px;
+    COLOR: #ff0000;
+    BORDER-BOTTOM: #ff0000 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+TD.td_admin_2
+{
+    BORDER-RIGHT: #f6f6f6 1px solid;
+    BORDER-TOP: #f6f6f6 1px solid;
+    BORDER-LEFT: #f6f6f6 1px solid;
+    BORDER-BOTTOM: #f6f6f6 1px solid;
+    BACKGROUND-COLOR: #ff9100
+}
+TABLE.table_admin_2
+{
+    BACKGROUND-COLOR: #c0c0c0
+}
+TD.td_title_2
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    COLOR: black;
+    BACKGROUND-COLOR: #c0c0c0
+}
+TD.td_admin_3
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: white;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #ff9100;
+    TEXT-ALIGN: center
+}
+TD.td_admin_4
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #e6e6e6
+}
+TD.td_line_darker
+{
+    BACKGROUND-COLOR: black
+}
+A.link_1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #ff9100;
+    FONT-FAMILY: Arial
+}
+TD.html_t
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15px;
+    COLOR: midnightblue;
+    FONT-FAMILY: Arial
+}
+INPUT#button1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    COLOR: white;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #696969
+}
+INPUT.form_button
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    COLOR: white;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #696969
+}
+TD.td_admin_4_left_align
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #e6e6e6;
+    TEXT-ALIGN: left
+}
+TD.td_admin_4_right_align
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #e6e6e6;
+    TEXT-ALIGN: right
+}
+A.a_long_title_button
+{
+    BORDER-RIGHT: #696969 2px solid;
+    BORDER-TOP: white 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: #d3d3d3 2px solid;
+    WIDTH: 350px;
+    COLOR: #696969;
+    BORDER-BOTTOM: #696969 2px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.a_long_title_button:hover
+{
+    BORDER-RIGHT: #000000 2px solid;
+    BORDER-TOP: white 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: #d3d3d3 2px solid;
+    WIDTH: 350px;
+    COLOR: black;
+    BORDER-BOTTOM: #000000 2px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+TD.a_title_big
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: white;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #ff9100;
+    TEXT-ALIGN: center
+}
+TD.under_update_image
+{
+    BORDER-RIGHT: #696969 1px solid;
+    BORDER-TOP: white 1px solid;
+    BORDER-BOTTOM: #696969 1px solid;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #d3d3d3
+}
+TD.under_delete_image
+{
+    BORDER-RIGHT: #696969 1px solid;
+    BORDER-TOP: white 1px solid;
+    BORDER-BOTTOM: #696969 1px solid;
+    BACKGROUND-COLOR: #d3d3d3
+}
+A.site_button
+{
+    BORDER-RIGHT: #696969 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    BORDER-LEFT: #d3d3d3 1px solid;
+    WIDTH: 450px;
+    COLOR: #696969;
+    BORDER-BOTTOM: #696969 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.site_button:hover
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    BORDER-LEFT: white 1px solid;
+    WIDTH: 450px;
+    COLOR: black;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_copy
+{
+    BORDER-RIGHT: #696969 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #d3d3d3 1px solid;
+    WIDTH: 40px;
+    COLOR: #696969;
+    BORDER-BOTTOM: #696969 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.button_copy:hover
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: white 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: white 1px solid;
+    WIDTH: 40px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #d3d3d3;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+A.link_categ
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    WIDTH: 100%;
+    COLOR: #000000;
+    HEIGHT: 20px;
+    TEXT-DECORATION: none
+}
+A.link_categ:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    WIDTH: 100%;
+    COLOR: #ff9100;
+    HEIGHT: 20px;
+    BACKGROUND-COLOR: #c0c0c0;
+    TEXT-DECORATION: none
+}
+TD.td_line_between
+{
+    HEIGHT: 1px;
+    BACKGROUND-COLOR: #ff9100
+}
+P.page_title
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: black
+}
+TD.td_admin_5
+{
+    BACKGROUND-COLOR: silver
+}
+.button_admin_e
+{
+    BORDER-RIGHT: #696969 2px solid;
+    BORDER-TOP: white 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: #d3d3d3 2px solid;
+    WIDTH: 150px;
+    COLOR: white;
+    BORDER-BOTTOM: #696969 2px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 24px;
+    BACKGROUND-COLOR: #ff9100;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+.button_admin_e:hover
+{
+    BORDER-RIGHT: #000000 2px solid;
+    BORDER-TOP: white 2px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: white 2px solid;
+    WIDTH: 150px;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 2px solid;
+    FONT-FAMILY: Arial;
+    HEIGHT: 24px;
+    BACKGROUND-COLOR: #f5f5f5;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+TD
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    COLOR: black
+}
+SPAN.map_site
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    COLOR: white;
+    BACKGROUND-COLOR: #ff9100
+}
+SPAN.map_site A
+{
+    FONT-WEIGHT: bold;
+    COLOR: white;
+    TEXT-DECORATION: none
+}
+SPAN.map_maincat
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    COLOR: white;
+    BACKGROUND-COLOR: #898989
+}
+SPAN.map_maincat A
+{
+    FONT-WEIGHT: bold;
+    COLOR: white;
+    TEXT-DECORATION: none
+}
+SPAN.map_cat
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    BACKGROUND-COLOR: #d3d3d3
+}
+SPAN.map_cat A
+{
+    FONT-WEIGHT: bold;
+    COLOR: black;
+    TEXT-DECORATION: none
+}
+SPAN.map_subcat
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    BACKGROUND-COLOR: #e6e6e6
+}
+SPAN.map_subcat A
+{
+    FONT-WEIGHT: bold;
+    COLOR: black;
+    TEXT-DECORATION: none
+}
+SPAN.map_site A:hover
+{
+    COLOR: #898989
+}
+SPAN.map_maincat A:hover
+{
+    COLOR: #ff9100
+}
+SPAN.map_cat A:hover
+{
+    COLOR: #ff9100
+}
+SPAN.map_subcat A:hover
+{
+    COLOR: #ff9100
+}
+TD.td_thanim
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 16px;
+    COLOR: black;
+    FONT-FAMILY: Arial
+}
+BODY
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: arial;
+}
+A.categories
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    WIDTH: 100%;
+    COLOR: #00307c;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+A.categories:hover
+{
+    FONT-SIZE: 11pt;
+    COLOR: #396ab7;
+    TEXT-DECORATION: none
+}
+A.categories_act
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ebb110;
+    TEXT-DECORATION: none
+}
+.categoris
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    COLOR: #0a356a;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+A.normal
+{
+    FONT-WEIGHT: 500;
+    FONT-SIZE: 12pt;
+    COLOR: #00307c;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: underline
+}
+A.normal:hover
+{
+    FONT-SIZE: 12pt;
+    COLOR: #00307c;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #f2f2f2;
+    TEXT-DECORATION: none
+}
+.whiteB12
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: white;
+    FONT-FAMILY: Arial
+}
+.catB13
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13pt;
+    COLOR: #00307c;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+.catB13 A
+{
+    FONT-SIZE: 13pt;
+    COLOR: #00307c;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+.catB13 A:hover
+{
+    FONT-SIZE: 13pt;
+    COLOR: #396ab7;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: underline
+}
+.normalB12
+{
+    FONT-WEIGHT: 500;
+    FONT-SIZE: 11pt;
+    COLOR: #00307c;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+.normalB12 A
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #00307c;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+.normalB12 A:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #396ab7;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: underline
+}
+.normal8
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+}
+.normal10
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Arial;
+}
+A.gormim
+{
+    FONT-WEIGHT: 600;
+    FONT-SIZE: 14px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none
+}
+A.stams
+{
+    COLOR: #e9ab75
+}

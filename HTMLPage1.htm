@@ -1,0 +1,21 @@
+SELECT        Feedback_FAQ.Category_Id, FeedBack_FormValue.Id, FeedBack_FormValue.FrmId, FeedBack_FormValue.FaqIndex, FeedBack_FormValue.Date, 
+                         FeedBack_FormValue.radioF * 20 AS perc
+FROM            FeedBack_FormValue LEFT OUTER JOIN
+                         Feedback_FAQ ON Feedback_FAQ.FAQ_ID = FeedBack_FormValue.FaqIndex
+WHERE        (FeedBack_FormValue.FrmId = 1004) AND (FeedBack_FormValue.FaqIndex > 2) AND (FeedBack_FormValue.FaqIndex < 15)
+
+
+
+SELECT        Feedback_FAQ.Category_Id, AVG(FeedBack_FormValue.radioF * 20) AS perc
+FROM            FeedBack_FormValue LEFT OUTER JOIN
+                         Feedback_FAQ ON Feedback_FAQ.FAQ_ID = FeedBack_FormValue.FaqIndex
+WHERE        (FeedBack_FormValue.FrmId = 1004) AND (FeedBack_FormValue.FaqIndex > 2) AND (FeedBack_FormValue.FaqIndex < 15)
+GROUP BY Feedback_FAQ.Category_Id
+
+
+
+SELECT Feedback_FAQ.Category_Id, AVG(FeedBack_FormValue.radioF * 20) AS perc
+FROM            FeedBack_FormValue LEFT OUTER JOIN
+                         Feedback_FAQ ON Feedback_FAQ.FAQ_ID = FeedBack_FormValue.FaqIndex
+WHERE        (FeedBack_FormValue.FrmId = @FormId) AND (FeedBack_FormValue.FaqIndex > 2) AND (FeedBack_FormValue.FaqIndex < 15)
+GROUP BY Feedback_FAQ.Category_Id

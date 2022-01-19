@@ -1,0 +1,1 @@
+<%@ Page Language="vb" contenttype="image/png" AutoEventWireup="false" Codebehind="img_graph.aspx.vb" Inherits="bizpower_pegasus.img_graph" %>
